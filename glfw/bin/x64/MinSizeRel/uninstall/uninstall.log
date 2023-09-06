@@ -1,0 +1,6 @@
+﻿  CMake Error at cmake_uninstall.cmake:3 (message):
+    Cannot find install manifest:
+    "D:/DEV/C++/Manul/external/glfw/bin/install_manifest.txt"
+  
+  
+D:\Progs\Visual Studio2022\IDE\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(248,5): error MSB8066: Custom build for 'D:\DEV\C++\Manul\external\glfw\bin\CMakeFiles\166cae2b15d7b8ba7d8db979c2288301\uninstall.rule;D:\DEV\C++\Manul\external\glfw\CMakeLists.txt' exited with code 1.

@@ -1,0 +1,4 @@
+D:\DEV\C++\Manul\external\glfw\tests\glfwinfo.c;D:\DEV\C++\Manul\external\glfw\bin\tests\glfwinfo.dir\MinSizeRel\glfwinfo.obj
+D:\DEV\C++\Manul\external\glfw\deps\getopt.c;D:\DEV\C++\Manul\external\glfw\bin\tests\glfwinfo.dir\MinSizeRel\getopt.obj
+D:\DEV\C++\Manul\external\glfw\deps\glad_gl.c;D:\DEV\C++\Manul\external\glfw\bin\tests\glfwinfo.dir\MinSizeRel\glad_gl.obj
+D:\DEV\C++\Manul\external\glfw\deps\glad_vulkan.c;D:\DEV\C++\Manul\external\glfw\bin\tests\glfwinfo.dir\MinSizeRel\glad_vulkan.obj

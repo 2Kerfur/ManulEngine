@@ -1,0 +1,20 @@
+^D:\DEV\C++\MANUL\EXTERNAL\GLFW\BIN\CMAKEFILES\166CAE2B15D7B8BA7D8DB979C2288301\UNINSTALL.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/DEV/C++/Manul/external/glfw/bin/cmake_uninstall.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\DEV\C++\MANUL\EXTERNAL\GLFW\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/DEV/C++/Manul/external/glfw -BD:/DEV/C++/Manul/external/glfw/bin --check-stamp-file D:/DEV/C++/Manul/external/glfw/bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
