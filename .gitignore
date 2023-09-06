@@ -1034,6 +1034,7 @@ _deps
 *.mod*
 *.cmd
 .tmp_versions/
+/cmake-build-release
 modules.order
 Module.symvers
 Mkfile.old
