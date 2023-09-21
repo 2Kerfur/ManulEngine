@@ -40,9 +40,36 @@ if(${CMAKE_SYSTEM_NAME} MATCHES "Windows")
 	link_directories(${VULKAN_PATH}/Bin;${VULKAN_PATH}/Lib;)
 endif()
 
-add_executable(ManulEngine WIN32 "ManulEngine/src/main.cpp" "ManulEngine/src/Window.cpp" "ManulEngine/src/Window.h" "ManulEngine/src/Renderer.cpp" "ManulEngine/src/Renderer.h" "ManulEngine/src/Logger.cpp" "ManulEngine/src/Logger.h" "ManulEngine/src/VK_Renderer/VulkanDebug.cpp" "ManulEngine/src/VK_Renderer/VulkanDebug.h" "ManulEngine/src/VK_Renderer/VulkanDevice.h" "ManulEngine/src/VK_Renderer/VulkanDevice.cpp" "ManulEngine/src/VK_Renderer/VulkanBackend.cpp" "ManulEngine/src/VK_Renderer/VulkanBackend.h")
+add_executable(ManulEngine WIN32 "ManulEngine/src/main.cpp"
+		"ManulEngine/src/ManulEngine/Core/Window.cpp"
+		"ManulEngine/src/ManulEngine/Core/Window.h"
+		"ManulEngine/src/ManulEngine/Renderer/Renderer.cpp"
+		"ManulEngine/src/ManulEngine/Renderer/Renderer.h"
+		"ManulEngine/src/ManulEngine/Core/Logger.cpp"
+		"ManulEngine/src/ManulEngine/Core/Logger.h"
+		"ManulEngine/src/Platform/Vulkan/VulkanDebug.cpp"
+		"ManulEngine/src/Platform/Vulkan/VulkanDebug.h"
+		"ManulEngine/src/Platform/Vulkan/VulkanDevice.h"
+		"ManulEngine/src/Platform/Vulkan/VulkanDevice.cpp"
+		"ManulEngine/src/Platform/Vulkan/VulkanBackend.cpp"
+		"ManulEngine/src/Platform/Vulkan/VulkanBackend.h"
+		"ManulEngine/src/ManulEngine.h"
+		"ManulEngine/src/Platform/Windows/WindowsWindow.cpp"
+		"ManulEngine/src/Platform/Windows/WindowsWindow.h"
+		"ManulEngine/src/ManulEngine/Math/Math.cpp"
+		"ManulEngine/src/ManulEngine/Math/Math.h"
+		"ManulEngine/src/ManulEngine/Physics/2D/Physics2D.cpp"
+		"ManulEngine/src/ManulEngine/Physics/2D/Physics2D.h"
+		"ManulEngine/src/ManulEngine/Core/Application.cpp"
+		"ManulEngine/src/ManulEngine/Core/Application.h"
+		ManulEngine/src/ManulEngine/Core/FileSystem.cpp
+		ManulEngine/src/ManulEngine/Core/FileSystem.h)
+
+include_directories("ManulEngine/src/ManulEngine")
+include_directories("ManulEngine/src")
 set_target_properties(ManulEngine PROPERTIES LINKER_LANGUAGE CXX)
 target_compile_features(ManulEngine PRIVATE cxx_std_17)
+
 target_link_libraries(ManulEngine ${VULKAN_LIB_LIST} )
 target_link_libraries(ManulEngine ${OPENGL_LIBRARIES} glfw )
 

@@ -1,7 +1,7 @@
 #include "Renderer.h"
-#include "Logger.h"
+#include "../Core/Logger.h"
 #include <iostream>
-#include "VK_Renderer/VulkanDebug.h"
+#include "../../Platform/Vulkan/VulkanDebug.h"
 
 
 Renderer::Renderer()

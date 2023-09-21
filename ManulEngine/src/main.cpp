@@ -1,13 +1,13 @@
-#include "Window.h"
+#include "ManulEngine.h"
 
-int main(void)
+int main(int argc, char *argv[])
 {
-	
-	Window window;
-	window.Create(600, 600, "ManulEngine", false);
+    ManulEngine::Application application;
 
-	while (!window.windowShouldClose)
-	{
-		window.Update();
-	}
+	application.Create(nullptr);
+
+    while (!application.applicationExit)
+    {
+        application.Update();
+    }
 }

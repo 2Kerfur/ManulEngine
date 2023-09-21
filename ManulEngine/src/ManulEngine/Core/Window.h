@@ -1,10 +1,10 @@
 #pragma once
 
 
-#include "Renderer.h"
+#include "../Renderer/Renderer.h"
 #include <string>
 
-#include <GLFW/glfw3.h>
+#include "GLFW/glfw3.h"
 class Window
 {
 public:

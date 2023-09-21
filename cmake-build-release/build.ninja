@@ -52,65 +52,86 @@ build cmake_object_order_depends_target_ManulEngine: phony || cmake_object_order
 build CMakeFiles/ManulEngine.dir/ManulEngine/src/main.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/main.cpp || cmake_object_order_depends_target_ManulEngine
   DEP_FILE = CMakeFiles\ManulEngine.dir\ManulEngine\src\main.cpp.obj.d
   FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
-  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/glfw/include
+  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src
-  TARGET_COMPILE_PDB = CMakeFiles\ManulEngine.dir\
-  TARGET_PDB = ManulEngine.pdb
 
-build CMakeFiles/ManulEngine.dir/ManulEngine/src/Window.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/Window.cpp || cmake_object_order_depends_target_ManulEngine
-  DEP_FILE = CMakeFiles\ManulEngine.dir\ManulEngine\src\Window.cpp.obj.d
+build CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Core/Window.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine/Core/Window.cpp || cmake_object_order_depends_target_ManulEngine
+  DEP_FILE = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Core\Window.cpp.obj.d
   FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
-  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/glfw/include
+  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
-  OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src
-  TARGET_COMPILE_PDB = CMakeFiles\ManulEngine.dir\
-  TARGET_PDB = ManulEngine.pdb
+  OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Core
 
-build CMakeFiles/ManulEngine.dir/ManulEngine/src/Renderer.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/Renderer.cpp || cmake_object_order_depends_target_ManulEngine
-  DEP_FILE = CMakeFiles\ManulEngine.dir\ManulEngine\src\Renderer.cpp.obj.d
+build CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Renderer/Renderer.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine/Renderer/Renderer.cpp || cmake_object_order_depends_target_ManulEngine
+  DEP_FILE = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Renderer\Renderer.cpp.obj.d
   FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
-  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/glfw/include
+  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
-  OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src
-  TARGET_COMPILE_PDB = CMakeFiles\ManulEngine.dir\
-  TARGET_PDB = ManulEngine.pdb
+  OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Renderer
 
-build CMakeFiles/ManulEngine.dir/ManulEngine/src/Logger.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/Logger.cpp || cmake_object_order_depends_target_ManulEngine
-  DEP_FILE = CMakeFiles\ManulEngine.dir\ManulEngine\src\Logger.cpp.obj.d
+build CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Core/Logger.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine/Core/Logger.cpp || cmake_object_order_depends_target_ManulEngine
+  DEP_FILE = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Core\Logger.cpp.obj.d
   FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
-  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/glfw/include
+  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
-  OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src
-  TARGET_COMPILE_PDB = CMakeFiles\ManulEngine.dir\
-  TARGET_PDB = ManulEngine.pdb
+  OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Core
 
-build CMakeFiles/ManulEngine.dir/ManulEngine/src/VK_Renderer/VulkanDebug.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/VK_Renderer/VulkanDebug.cpp || cmake_object_order_depends_target_ManulEngine
-  DEP_FILE = CMakeFiles\ManulEngine.dir\ManulEngine\src\VK_Renderer\VulkanDebug.cpp.obj.d
+build CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Vulkan/VulkanDebug.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/Platform/Vulkan/VulkanDebug.cpp || cmake_object_order_depends_target_ManulEngine
+  DEP_FILE = CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan\VulkanDebug.cpp.obj.d
   FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
-  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/glfw/include
+  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
-  OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\VK_Renderer
-  TARGET_COMPILE_PDB = CMakeFiles\ManulEngine.dir\
-  TARGET_PDB = ManulEngine.pdb
+  OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan
 
-build CMakeFiles/ManulEngine.dir/ManulEngine/src/VK_Renderer/VulkanDevice.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/VK_Renderer/VulkanDevice.cpp || cmake_object_order_depends_target_ManulEngine
-  DEP_FILE = CMakeFiles\ManulEngine.dir\ManulEngine\src\VK_Renderer\VulkanDevice.cpp.obj.d
+build CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Vulkan/VulkanDevice.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/Platform/Vulkan/VulkanDevice.cpp || cmake_object_order_depends_target_ManulEngine
+  DEP_FILE = CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan\VulkanDevice.cpp.obj.d
   FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
-  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/glfw/include
+  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
-  OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\VK_Renderer
-  TARGET_COMPILE_PDB = CMakeFiles\ManulEngine.dir\
-  TARGET_PDB = ManulEngine.pdb
+  OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan
 
-build CMakeFiles/ManulEngine.dir/ManulEngine/src/VK_Renderer/VulkanBackend.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/VK_Renderer/VulkanBackend.cpp || cmake_object_order_depends_target_ManulEngine
-  DEP_FILE = CMakeFiles\ManulEngine.dir\ManulEngine\src\VK_Renderer\VulkanBackend.cpp.obj.d
+build CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Vulkan/VulkanBackend.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/Platform/Vulkan/VulkanBackend.cpp || cmake_object_order_depends_target_ManulEngine
+  DEP_FILE = CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan\VulkanBackend.cpp.obj.d
   FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
-  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/glfw/include
+  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
-  OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\VK_Renderer
-  TARGET_COMPILE_PDB = CMakeFiles\ManulEngine.dir\
-  TARGET_PDB = ManulEngine.pdb
+  OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan
+
+build CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Windows/WindowsWindow.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/Platform/Windows/WindowsWindow.cpp || cmake_object_order_depends_target_ManulEngine
+  DEP_FILE = CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Windows\WindowsWindow.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
+  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/glfw/include
+  OBJECT_DIR = CMakeFiles\ManulEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Windows
+
+build CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Math/Math.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine/Math/Math.cpp || cmake_object_order_depends_target_ManulEngine
+  DEP_FILE = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Math\Math.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
+  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/glfw/include
+  OBJECT_DIR = CMakeFiles\ManulEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Math
+
+build CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Physics/2D/Physics2D.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine/Physics/2D/Physics2D.cpp || cmake_object_order_depends_target_ManulEngine
+  DEP_FILE = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Physics\2D\Physics2D.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
+  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/glfw/include
+  OBJECT_DIR = CMakeFiles\ManulEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Physics\2D
+
+build CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Core/Application.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine/Core/Application.cpp || cmake_object_order_depends_target_ManulEngine
+  DEP_FILE = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Core\Application.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
+  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/glfw/include
+  OBJECT_DIR = CMakeFiles\ManulEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Core
+
+build CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Core/FileSystem.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine/Core/FileSystem.cpp || cmake_object_order_depends_target_ManulEngine
+  DEP_FILE = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Core\FileSystem.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
+  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/glfw/include
+  OBJECT_DIR = CMakeFiles\ManulEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Core
 
 
 # =============================================================================
@@ -120,7 +141,7 @@ build CMakeFiles/ManulEngine.dir/ManulEngine/src/VK_Renderer/VulkanBackend.cpp.o
 #############################################
 # Link the executable ManulEngine.exe
 
-build ManulEngine.exe: CXX_EXECUTABLE_LINKER__ManulEngine_Release CMakeFiles/ManulEngine.dir/ManulEngine/src/main.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/Window.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/Renderer.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/Logger.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/VK_Renderer/VulkanDebug.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/VK_Renderer/VulkanDevice.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/VK_Renderer/VulkanBackend.cpp.obj | glfw/src/libglfw3.a || glfw/src/libglfw3.a
+build ManulEngine.exe: CXX_EXECUTABLE_LINKER__ManulEngine_Release CMakeFiles/ManulEngine.dir/ManulEngine/src/main.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Core/Window.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Renderer/Renderer.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Core/Logger.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Vulkan/VulkanDebug.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Vulkan/VulkanDevice.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Vulkan/VulkanBackend.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Windows/WindowsWindow.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Math/Math.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Physics/2D/Physics2D.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Core/Application.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Core/FileSystem.cpp.obj | glfw/src/libglfw3.a || glfw/src/libglfw3.a
   FLAGS = -O3 -DNDEBUG
   LINK_FLAGS = -mwindows
   LINK_LIBRARIES = -lvulkan-1  -lopengl32  -lglu32  glfw/src/libglfw3.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
@@ -128,10 +149,9 @@ build ManulEngine.exe: CXX_EXECUTABLE_LINKER__ManulEngine_Release CMakeFiles/Man
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\ManulEngine.dir\
   TARGET_FILE = ManulEngine.exe
   TARGET_IMPLIB = libManulEngine.dll.a
-  TARGET_PDB = ManulEngine.pdb
+  TARGET_PDB = ManulEngine.exe.dbg
 
 
 #############################################
@@ -211,8 +231,6 @@ build glfw/src/CMakeFiles/glfw.dir/context.c.obj: C_COMPILER__glfw_unscanned_Rel
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/include -ID:/DEV/C++/ManulEngine/glfw/src -ID:/DEV/C++/ManulEngine/cmake-build-release/glfw/src
   OBJECT_DIR = glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = glfw\src\libglfw3.pdb
 
 build glfw/src/CMakeFiles/glfw.dir/init.c.obj: C_COMPILER__glfw_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/src/init.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
@@ -221,8 +239,6 @@ build glfw/src/CMakeFiles/glfw.dir/init.c.obj: C_COMPILER__glfw_unscanned_Releas
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/include -ID:/DEV/C++/ManulEngine/glfw/src -ID:/DEV/C++/ManulEngine/cmake-build-release/glfw/src
   OBJECT_DIR = glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = glfw\src\libglfw3.pdb
 
 build glfw/src/CMakeFiles/glfw.dir/input.c.obj: C_COMPILER__glfw_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/src/input.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
@@ -231,8 +247,6 @@ build glfw/src/CMakeFiles/glfw.dir/input.c.obj: C_COMPILER__glfw_unscanned_Relea
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/include -ID:/DEV/C++/ManulEngine/glfw/src -ID:/DEV/C++/ManulEngine/cmake-build-release/glfw/src
   OBJECT_DIR = glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = glfw\src\libglfw3.pdb
 
 build glfw/src/CMakeFiles/glfw.dir/monitor.c.obj: C_COMPILER__glfw_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/src/monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
@@ -241,8 +255,6 @@ build glfw/src/CMakeFiles/glfw.dir/monitor.c.obj: C_COMPILER__glfw_unscanned_Rel
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/include -ID:/DEV/C++/ManulEngine/glfw/src -ID:/DEV/C++/ManulEngine/cmake-build-release/glfw/src
   OBJECT_DIR = glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = glfw\src\libglfw3.pdb
 
 build glfw/src/CMakeFiles/glfw.dir/vulkan.c.obj: C_COMPILER__glfw_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/src/vulkan.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
@@ -251,8 +263,6 @@ build glfw/src/CMakeFiles/glfw.dir/vulkan.c.obj: C_COMPILER__glfw_unscanned_Rele
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/include -ID:/DEV/C++/ManulEngine/glfw/src -ID:/DEV/C++/ManulEngine/cmake-build-release/glfw/src
   OBJECT_DIR = glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = glfw\src\libglfw3.pdb
 
 build glfw/src/CMakeFiles/glfw.dir/window.c.obj: C_COMPILER__glfw_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/src/window.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
@@ -261,8 +271,6 @@ build glfw/src/CMakeFiles/glfw.dir/window.c.obj: C_COMPILER__glfw_unscanned_Rele
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/include -ID:/DEV/C++/ManulEngine/glfw/src -ID:/DEV/C++/ManulEngine/cmake-build-release/glfw/src
   OBJECT_DIR = glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = glfw\src\libglfw3.pdb
 
 build glfw/src/CMakeFiles/glfw.dir/win32_init.c.obj: C_COMPILER__glfw_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/src/win32_init.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
@@ -271,8 +279,6 @@ build glfw/src/CMakeFiles/glfw.dir/win32_init.c.obj: C_COMPILER__glfw_unscanned_
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/include -ID:/DEV/C++/ManulEngine/glfw/src -ID:/DEV/C++/ManulEngine/cmake-build-release/glfw/src
   OBJECT_DIR = glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = glfw\src\libglfw3.pdb
 
 build glfw/src/CMakeFiles/glfw.dir/win32_joystick.c.obj: C_COMPILER__glfw_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/src/win32_joystick.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
@@ -281,8 +287,6 @@ build glfw/src/CMakeFiles/glfw.dir/win32_joystick.c.obj: C_COMPILER__glfw_unscan
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/include -ID:/DEV/C++/ManulEngine/glfw/src -ID:/DEV/C++/ManulEngine/cmake-build-release/glfw/src
   OBJECT_DIR = glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = glfw\src\libglfw3.pdb
 
 build glfw/src/CMakeFiles/glfw.dir/win32_monitor.c.obj: C_COMPILER__glfw_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/src/win32_monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
@@ -291,8 +295,6 @@ build glfw/src/CMakeFiles/glfw.dir/win32_monitor.c.obj: C_COMPILER__glfw_unscann
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/include -ID:/DEV/C++/ManulEngine/glfw/src -ID:/DEV/C++/ManulEngine/cmake-build-release/glfw/src
   OBJECT_DIR = glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = glfw\src\libglfw3.pdb
 
 build glfw/src/CMakeFiles/glfw.dir/win32_time.c.obj: C_COMPILER__glfw_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/src/win32_time.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
@@ -301,8 +303,6 @@ build glfw/src/CMakeFiles/glfw.dir/win32_time.c.obj: C_COMPILER__glfw_unscanned_
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/include -ID:/DEV/C++/ManulEngine/glfw/src -ID:/DEV/C++/ManulEngine/cmake-build-release/glfw/src
   OBJECT_DIR = glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = glfw\src\libglfw3.pdb
 
 build glfw/src/CMakeFiles/glfw.dir/win32_thread.c.obj: C_COMPILER__glfw_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/src/win32_thread.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
@@ -311,8 +311,6 @@ build glfw/src/CMakeFiles/glfw.dir/win32_thread.c.obj: C_COMPILER__glfw_unscanne
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/include -ID:/DEV/C++/ManulEngine/glfw/src -ID:/DEV/C++/ManulEngine/cmake-build-release/glfw/src
   OBJECT_DIR = glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = glfw\src\libglfw3.pdb
 
 build glfw/src/CMakeFiles/glfw.dir/win32_window.c.obj: C_COMPILER__glfw_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/src/win32_window.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
@@ -321,8 +319,6 @@ build glfw/src/CMakeFiles/glfw.dir/win32_window.c.obj: C_COMPILER__glfw_unscanne
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/include -ID:/DEV/C++/ManulEngine/glfw/src -ID:/DEV/C++/ManulEngine/cmake-build-release/glfw/src
   OBJECT_DIR = glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = glfw\src\libglfw3.pdb
 
 build glfw/src/CMakeFiles/glfw.dir/wgl_context.c.obj: C_COMPILER__glfw_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/src/wgl_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
@@ -331,8 +327,6 @@ build glfw/src/CMakeFiles/glfw.dir/wgl_context.c.obj: C_COMPILER__glfw_unscanned
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/include -ID:/DEV/C++/ManulEngine/glfw/src -ID:/DEV/C++/ManulEngine/cmake-build-release/glfw/src
   OBJECT_DIR = glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = glfw\src\libglfw3.pdb
 
 build glfw/src/CMakeFiles/glfw.dir/egl_context.c.obj: C_COMPILER__glfw_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/src/egl_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
@@ -341,8 +335,6 @@ build glfw/src/CMakeFiles/glfw.dir/egl_context.c.obj: C_COMPILER__glfw_unscanned
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/include -ID:/DEV/C++/ManulEngine/glfw/src -ID:/DEV/C++/ManulEngine/cmake-build-release/glfw/src
   OBJECT_DIR = glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = glfw\src\libglfw3.pdb
 
 build glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.obj: C_COMPILER__glfw_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/src/osmesa_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
@@ -351,8 +343,6 @@ build glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.obj: C_COMPILER__glfw_unscan
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/include -ID:/DEV/C++/ManulEngine/glfw/src -ID:/DEV/C++/ManulEngine/cmake-build-release/glfw/src
   OBJECT_DIR = glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = glfw\src\libglfw3.pdb
 
 
 # =============================================================================
@@ -367,9 +357,8 @@ build glfw/src/libglfw3.a: C_STATIC_LIBRARY_LINKER__glfw_Release glfw/src/CMakeF
   OBJECT_DIR = glfw\src\CMakeFiles\glfw.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_FILE = glfw\src\libglfw3.a
-  TARGET_PDB = glfw\src\libglfw3.pdb
+  TARGET_PDB = glfw3.a.dbg
 
 
 #############################################
@@ -422,16 +411,12 @@ build glfw/examples/CMakeFiles/boing.dir/boing.c.obj: C_COMPILER__boing_unscanne
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\examples\CMakeFiles\boing.dir
   OBJECT_FILE_DIR = glfw\examples\CMakeFiles\boing.dir
-  TARGET_COMPILE_PDB = glfw\examples\CMakeFiles\boing.dir\
-  TARGET_PDB = glfw\examples\boing.pdb
 
 build glfw/examples/CMakeFiles/boing.dir/glfw.rc.obj: RC_COMPILER__boing_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/examples/glfw.rc || cmake_object_order_depends_target_boing
   DEP_FILE = glfw\examples\CMakeFiles\boing.dir\glfw.rc.obj.d
   INCLUDES = -I D:/DEV/C++/ManulEngine/glfw/deps -I D:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\examples\CMakeFiles\boing.dir
   OBJECT_FILE_DIR = glfw\examples\CMakeFiles\boing.dir
-  TARGET_COMPILE_PDB = glfw\examples\CMakeFiles\boing.dir\
-  TARGET_PDB = glfw\examples\boing.pdb
 
 build glfw/examples/CMakeFiles/boing.dir/__/deps/glad_gl.c.obj: C_COMPILER__boing_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/glad_gl.c || cmake_object_order_depends_target_boing
   DEP_FILE = glfw\examples\CMakeFiles\boing.dir\__\deps\glad_gl.c.obj.d
@@ -439,8 +424,6 @@ build glfw/examples/CMakeFiles/boing.dir/__/deps/glad_gl.c.obj: C_COMPILER__boin
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\examples\CMakeFiles\boing.dir
   OBJECT_FILE_DIR = glfw\examples\CMakeFiles\boing.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\examples\CMakeFiles\boing.dir\
-  TARGET_PDB = glfw\examples\boing.pdb
 
 
 # =============================================================================
@@ -457,10 +440,9 @@ build glfw/examples/boing.exe: C_EXECUTABLE_LINKER__boing_Release glfw/examples/
   OBJECT_DIR = glfw\examples\CMakeFiles\boing.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = glfw\examples\CMakeFiles\boing.dir\
   TARGET_FILE = glfw\examples\boing.exe
   TARGET_IMPLIB = glfw\examples\libboing.dll.a
-  TARGET_PDB = glfw\examples\boing.pdb
+  TARGET_PDB = boing.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target gears
@@ -477,16 +459,12 @@ build glfw/examples/CMakeFiles/gears.dir/gears.c.obj: C_COMPILER__gears_unscanne
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\examples\CMakeFiles\gears.dir
   OBJECT_FILE_DIR = glfw\examples\CMakeFiles\gears.dir
-  TARGET_COMPILE_PDB = glfw\examples\CMakeFiles\gears.dir\
-  TARGET_PDB = glfw\examples\gears.pdb
 
 build glfw/examples/CMakeFiles/gears.dir/glfw.rc.obj: RC_COMPILER__gears_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/examples/glfw.rc || cmake_object_order_depends_target_gears
   DEP_FILE = glfw\examples\CMakeFiles\gears.dir\glfw.rc.obj.d
   INCLUDES = -I D:/DEV/C++/ManulEngine/glfw/deps -I D:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\examples\CMakeFiles\gears.dir
   OBJECT_FILE_DIR = glfw\examples\CMakeFiles\gears.dir
-  TARGET_COMPILE_PDB = glfw\examples\CMakeFiles\gears.dir\
-  TARGET_PDB = glfw\examples\gears.pdb
 
 build glfw/examples/CMakeFiles/gears.dir/__/deps/glad_gl.c.obj: C_COMPILER__gears_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/glad_gl.c || cmake_object_order_depends_target_gears
   DEP_FILE = glfw\examples\CMakeFiles\gears.dir\__\deps\glad_gl.c.obj.d
@@ -494,8 +472,6 @@ build glfw/examples/CMakeFiles/gears.dir/__/deps/glad_gl.c.obj: C_COMPILER__gear
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\examples\CMakeFiles\gears.dir
   OBJECT_FILE_DIR = glfw\examples\CMakeFiles\gears.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\examples\CMakeFiles\gears.dir\
-  TARGET_PDB = glfw\examples\gears.pdb
 
 
 # =============================================================================
@@ -512,10 +488,9 @@ build glfw/examples/gears.exe: C_EXECUTABLE_LINKER__gears_Release glfw/examples/
   OBJECT_DIR = glfw\examples\CMakeFiles\gears.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = glfw\examples\CMakeFiles\gears.dir\
   TARGET_FILE = glfw\examples\gears.exe
   TARGET_IMPLIB = glfw\examples\libgears.dll.a
-  TARGET_PDB = glfw\examples\gears.pdb
+  TARGET_PDB = gears.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target heightmap
@@ -532,16 +507,12 @@ build glfw/examples/CMakeFiles/heightmap.dir/heightmap.c.obj: C_COMPILER__height
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\examples\CMakeFiles\heightmap.dir
   OBJECT_FILE_DIR = glfw\examples\CMakeFiles\heightmap.dir
-  TARGET_COMPILE_PDB = glfw\examples\CMakeFiles\heightmap.dir\
-  TARGET_PDB = glfw\examples\heightmap.pdb
 
 build glfw/examples/CMakeFiles/heightmap.dir/glfw.rc.obj: RC_COMPILER__heightmap_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/examples/glfw.rc || cmake_object_order_depends_target_heightmap
   DEP_FILE = glfw\examples\CMakeFiles\heightmap.dir\glfw.rc.obj.d
   INCLUDES = -I D:/DEV/C++/ManulEngine/glfw/deps -I D:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\examples\CMakeFiles\heightmap.dir
   OBJECT_FILE_DIR = glfw\examples\CMakeFiles\heightmap.dir
-  TARGET_COMPILE_PDB = glfw\examples\CMakeFiles\heightmap.dir\
-  TARGET_PDB = glfw\examples\heightmap.pdb
 
 build glfw/examples/CMakeFiles/heightmap.dir/__/deps/glad_gl.c.obj: C_COMPILER__heightmap_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/glad_gl.c || cmake_object_order_depends_target_heightmap
   DEP_FILE = glfw\examples\CMakeFiles\heightmap.dir\__\deps\glad_gl.c.obj.d
@@ -549,8 +520,6 @@ build glfw/examples/CMakeFiles/heightmap.dir/__/deps/glad_gl.c.obj: C_COMPILER__
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\examples\CMakeFiles\heightmap.dir
   OBJECT_FILE_DIR = glfw\examples\CMakeFiles\heightmap.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\examples\CMakeFiles\heightmap.dir\
-  TARGET_PDB = glfw\examples\heightmap.pdb
 
 
 # =============================================================================
@@ -567,10 +536,9 @@ build glfw/examples/heightmap.exe: C_EXECUTABLE_LINKER__heightmap_Release glfw/e
   OBJECT_DIR = glfw\examples\CMakeFiles\heightmap.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = glfw\examples\CMakeFiles\heightmap.dir\
   TARGET_FILE = glfw\examples\heightmap.exe
   TARGET_IMPLIB = glfw\examples\libheightmap.dll.a
-  TARGET_PDB = glfw\examples\heightmap.pdb
+  TARGET_PDB = heightmap.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target offscreen
@@ -587,16 +555,12 @@ build glfw/examples/CMakeFiles/offscreen.dir/offscreen.c.obj: C_COMPILER__offscr
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\examples\CMakeFiles\offscreen.dir
   OBJECT_FILE_DIR = glfw\examples\CMakeFiles\offscreen.dir
-  TARGET_COMPILE_PDB = glfw\examples\CMakeFiles\offscreen.dir\
-  TARGET_PDB = glfw\examples\offscreen.pdb
 
 build glfw/examples/CMakeFiles/offscreen.dir/glfw.rc.obj: RC_COMPILER__offscreen_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/examples/glfw.rc || cmake_object_order_depends_target_offscreen
   DEP_FILE = glfw\examples\CMakeFiles\offscreen.dir\glfw.rc.obj.d
   INCLUDES = -I D:/DEV/C++/ManulEngine/glfw/deps -I D:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\examples\CMakeFiles\offscreen.dir
   OBJECT_FILE_DIR = glfw\examples\CMakeFiles\offscreen.dir
-  TARGET_COMPILE_PDB = glfw\examples\CMakeFiles\offscreen.dir\
-  TARGET_PDB = glfw\examples\offscreen.pdb
 
 build glfw/examples/CMakeFiles/offscreen.dir/__/deps/glad_gl.c.obj: C_COMPILER__offscreen_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/glad_gl.c || cmake_object_order_depends_target_offscreen
   DEP_FILE = glfw\examples\CMakeFiles\offscreen.dir\__\deps\glad_gl.c.obj.d
@@ -604,8 +568,6 @@ build glfw/examples/CMakeFiles/offscreen.dir/__/deps/glad_gl.c.obj: C_COMPILER__
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\examples\CMakeFiles\offscreen.dir
   OBJECT_FILE_DIR = glfw\examples\CMakeFiles\offscreen.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\examples\CMakeFiles\offscreen.dir\
-  TARGET_PDB = glfw\examples\offscreen.pdb
 
 
 # =============================================================================
@@ -621,10 +583,9 @@ build glfw/examples/offscreen.exe: C_EXECUTABLE_LINKER__offscreen_Release glfw/e
   OBJECT_DIR = glfw\examples\CMakeFiles\offscreen.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = glfw\examples\CMakeFiles\offscreen.dir\
   TARGET_FILE = glfw\examples\offscreen.exe
   TARGET_IMPLIB = glfw\examples\liboffscreen.dll.a
-  TARGET_PDB = glfw\examples\offscreen.pdb
+  TARGET_PDB = offscreen.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target particles
@@ -641,16 +602,12 @@ build glfw/examples/CMakeFiles/particles.dir/particles.c.obj: C_COMPILER__partic
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\examples\CMakeFiles\particles.dir
   OBJECT_FILE_DIR = glfw\examples\CMakeFiles\particles.dir
-  TARGET_COMPILE_PDB = glfw\examples\CMakeFiles\particles.dir\
-  TARGET_PDB = glfw\examples\particles.pdb
 
 build glfw/examples/CMakeFiles/particles.dir/glfw.rc.obj: RC_COMPILER__particles_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/examples/glfw.rc || cmake_object_order_depends_target_particles
   DEP_FILE = glfw\examples\CMakeFiles\particles.dir\glfw.rc.obj.d
   INCLUDES = -I D:/DEV/C++/ManulEngine/glfw/deps -I D:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\examples\CMakeFiles\particles.dir
   OBJECT_FILE_DIR = glfw\examples\CMakeFiles\particles.dir
-  TARGET_COMPILE_PDB = glfw\examples\CMakeFiles\particles.dir\
-  TARGET_PDB = glfw\examples\particles.pdb
 
 build glfw/examples/CMakeFiles/particles.dir/__/deps/tinycthread.c.obj: C_COMPILER__particles_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/tinycthread.c || cmake_object_order_depends_target_particles
   DEP_FILE = glfw\examples\CMakeFiles\particles.dir\__\deps\tinycthread.c.obj.d
@@ -658,8 +615,6 @@ build glfw/examples/CMakeFiles/particles.dir/__/deps/tinycthread.c.obj: C_COMPIL
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\examples\CMakeFiles\particles.dir
   OBJECT_FILE_DIR = glfw\examples\CMakeFiles\particles.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\examples\CMakeFiles\particles.dir\
-  TARGET_PDB = glfw\examples\particles.pdb
 
 build glfw/examples/CMakeFiles/particles.dir/__/deps/getopt.c.obj: C_COMPILER__particles_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/getopt.c || cmake_object_order_depends_target_particles
   DEP_FILE = glfw\examples\CMakeFiles\particles.dir\__\deps\getopt.c.obj.d
@@ -667,8 +622,6 @@ build glfw/examples/CMakeFiles/particles.dir/__/deps/getopt.c.obj: C_COMPILER__p
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\examples\CMakeFiles\particles.dir
   OBJECT_FILE_DIR = glfw\examples\CMakeFiles\particles.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\examples\CMakeFiles\particles.dir\
-  TARGET_PDB = glfw\examples\particles.pdb
 
 build glfw/examples/CMakeFiles/particles.dir/__/deps/glad_gl.c.obj: C_COMPILER__particles_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/glad_gl.c || cmake_object_order_depends_target_particles
   DEP_FILE = glfw\examples\CMakeFiles\particles.dir\__\deps\glad_gl.c.obj.d
@@ -676,8 +629,6 @@ build glfw/examples/CMakeFiles/particles.dir/__/deps/glad_gl.c.obj: C_COMPILER__
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\examples\CMakeFiles\particles.dir
   OBJECT_FILE_DIR = glfw\examples\CMakeFiles\particles.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\examples\CMakeFiles\particles.dir\
-  TARGET_PDB = glfw\examples\particles.pdb
 
 
 # =============================================================================
@@ -694,10 +645,9 @@ build glfw/examples/particles.exe: C_EXECUTABLE_LINKER__particles_Release glfw/e
   OBJECT_DIR = glfw\examples\CMakeFiles\particles.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = glfw\examples\CMakeFiles\particles.dir\
   TARGET_FILE = glfw\examples\particles.exe
   TARGET_IMPLIB = glfw\examples\libparticles.dll.a
-  TARGET_PDB = glfw\examples\particles.pdb
+  TARGET_PDB = particles.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target sharing
@@ -714,16 +664,12 @@ build glfw/examples/CMakeFiles/sharing.dir/sharing.c.obj: C_COMPILER__sharing_un
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\examples\CMakeFiles\sharing.dir
   OBJECT_FILE_DIR = glfw\examples\CMakeFiles\sharing.dir
-  TARGET_COMPILE_PDB = glfw\examples\CMakeFiles\sharing.dir\
-  TARGET_PDB = glfw\examples\sharing.pdb
 
 build glfw/examples/CMakeFiles/sharing.dir/glfw.rc.obj: RC_COMPILER__sharing_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/examples/glfw.rc || cmake_object_order_depends_target_sharing
   DEP_FILE = glfw\examples\CMakeFiles\sharing.dir\glfw.rc.obj.d
   INCLUDES = -I D:/DEV/C++/ManulEngine/glfw/deps -I D:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\examples\CMakeFiles\sharing.dir
   OBJECT_FILE_DIR = glfw\examples\CMakeFiles\sharing.dir
-  TARGET_COMPILE_PDB = glfw\examples\CMakeFiles\sharing.dir\
-  TARGET_PDB = glfw\examples\sharing.pdb
 
 build glfw/examples/CMakeFiles/sharing.dir/__/deps/glad_gl.c.obj: C_COMPILER__sharing_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/glad_gl.c || cmake_object_order_depends_target_sharing
   DEP_FILE = glfw\examples\CMakeFiles\sharing.dir\__\deps\glad_gl.c.obj.d
@@ -731,8 +677,6 @@ build glfw/examples/CMakeFiles/sharing.dir/__/deps/glad_gl.c.obj: C_COMPILER__sh
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\examples\CMakeFiles\sharing.dir
   OBJECT_FILE_DIR = glfw\examples\CMakeFiles\sharing.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\examples\CMakeFiles\sharing.dir\
-  TARGET_PDB = glfw\examples\sharing.pdb
 
 
 # =============================================================================
@@ -749,10 +693,9 @@ build glfw/examples/sharing.exe: C_EXECUTABLE_LINKER__sharing_Release glfw/examp
   OBJECT_DIR = glfw\examples\CMakeFiles\sharing.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = glfw\examples\CMakeFiles\sharing.dir\
   TARGET_FILE = glfw\examples\sharing.exe
   TARGET_IMPLIB = glfw\examples\libsharing.dll.a
-  TARGET_PDB = glfw\examples\sharing.pdb
+  TARGET_PDB = sharing.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target simple
@@ -769,16 +712,12 @@ build glfw/examples/CMakeFiles/simple.dir/simple.c.obj: C_COMPILER__simple_unsca
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\examples\CMakeFiles\simple.dir
   OBJECT_FILE_DIR = glfw\examples\CMakeFiles\simple.dir
-  TARGET_COMPILE_PDB = glfw\examples\CMakeFiles\simple.dir\
-  TARGET_PDB = glfw\examples\simple.pdb
 
 build glfw/examples/CMakeFiles/simple.dir/glfw.rc.obj: RC_COMPILER__simple_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/examples/glfw.rc || cmake_object_order_depends_target_simple
   DEP_FILE = glfw\examples\CMakeFiles\simple.dir\glfw.rc.obj.d
   INCLUDES = -I D:/DEV/C++/ManulEngine/glfw/deps -I D:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\examples\CMakeFiles\simple.dir
   OBJECT_FILE_DIR = glfw\examples\CMakeFiles\simple.dir
-  TARGET_COMPILE_PDB = glfw\examples\CMakeFiles\simple.dir\
-  TARGET_PDB = glfw\examples\simple.pdb
 
 build glfw/examples/CMakeFiles/simple.dir/__/deps/glad_gl.c.obj: C_COMPILER__simple_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/glad_gl.c || cmake_object_order_depends_target_simple
   DEP_FILE = glfw\examples\CMakeFiles\simple.dir\__\deps\glad_gl.c.obj.d
@@ -786,8 +725,6 @@ build glfw/examples/CMakeFiles/simple.dir/__/deps/glad_gl.c.obj: C_COMPILER__sim
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\examples\CMakeFiles\simple.dir
   OBJECT_FILE_DIR = glfw\examples\CMakeFiles\simple.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\examples\CMakeFiles\simple.dir\
-  TARGET_PDB = glfw\examples\simple.pdb
 
 
 # =============================================================================
@@ -804,10 +741,9 @@ build glfw/examples/simple.exe: C_EXECUTABLE_LINKER__simple_Release glfw/example
   OBJECT_DIR = glfw\examples\CMakeFiles\simple.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = glfw\examples\CMakeFiles\simple.dir\
   TARGET_FILE = glfw\examples\simple.exe
   TARGET_IMPLIB = glfw\examples\libsimple.dll.a
-  TARGET_PDB = glfw\examples\simple.pdb
+  TARGET_PDB = simple.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target splitview
@@ -824,16 +760,12 @@ build glfw/examples/CMakeFiles/splitview.dir/splitview.c.obj: C_COMPILER__splitv
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\examples\CMakeFiles\splitview.dir
   OBJECT_FILE_DIR = glfw\examples\CMakeFiles\splitview.dir
-  TARGET_COMPILE_PDB = glfw\examples\CMakeFiles\splitview.dir\
-  TARGET_PDB = glfw\examples\splitview.pdb
 
 build glfw/examples/CMakeFiles/splitview.dir/glfw.rc.obj: RC_COMPILER__splitview_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/examples/glfw.rc || cmake_object_order_depends_target_splitview
   DEP_FILE = glfw\examples\CMakeFiles\splitview.dir\glfw.rc.obj.d
   INCLUDES = -I D:/DEV/C++/ManulEngine/glfw/deps -I D:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\examples\CMakeFiles\splitview.dir
   OBJECT_FILE_DIR = glfw\examples\CMakeFiles\splitview.dir
-  TARGET_COMPILE_PDB = glfw\examples\CMakeFiles\splitview.dir\
-  TARGET_PDB = glfw\examples\splitview.pdb
 
 build glfw/examples/CMakeFiles/splitview.dir/__/deps/glad_gl.c.obj: C_COMPILER__splitview_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/glad_gl.c || cmake_object_order_depends_target_splitview
   DEP_FILE = glfw\examples\CMakeFiles\splitview.dir\__\deps\glad_gl.c.obj.d
@@ -841,8 +773,6 @@ build glfw/examples/CMakeFiles/splitview.dir/__/deps/glad_gl.c.obj: C_COMPILER__
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\examples\CMakeFiles\splitview.dir
   OBJECT_FILE_DIR = glfw\examples\CMakeFiles\splitview.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\examples\CMakeFiles\splitview.dir\
-  TARGET_PDB = glfw\examples\splitview.pdb
 
 
 # =============================================================================
@@ -859,10 +789,9 @@ build glfw/examples/splitview.exe: C_EXECUTABLE_LINKER__splitview_Release glfw/e
   OBJECT_DIR = glfw\examples\CMakeFiles\splitview.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = glfw\examples\CMakeFiles\splitview.dir\
   TARGET_FILE = glfw\examples\splitview.exe
   TARGET_IMPLIB = glfw\examples\libsplitview.dll.a
-  TARGET_PDB = glfw\examples\splitview.pdb
+  TARGET_PDB = splitview.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target wave
@@ -879,16 +808,12 @@ build glfw/examples/CMakeFiles/wave.dir/wave.c.obj: C_COMPILER__wave_unscanned_R
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\examples\CMakeFiles\wave.dir
   OBJECT_FILE_DIR = glfw\examples\CMakeFiles\wave.dir
-  TARGET_COMPILE_PDB = glfw\examples\CMakeFiles\wave.dir\
-  TARGET_PDB = glfw\examples\wave.pdb
 
 build glfw/examples/CMakeFiles/wave.dir/glfw.rc.obj: RC_COMPILER__wave_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/examples/glfw.rc || cmake_object_order_depends_target_wave
   DEP_FILE = glfw\examples\CMakeFiles\wave.dir\glfw.rc.obj.d
   INCLUDES = -I D:/DEV/C++/ManulEngine/glfw/deps -I D:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\examples\CMakeFiles\wave.dir
   OBJECT_FILE_DIR = glfw\examples\CMakeFiles\wave.dir
-  TARGET_COMPILE_PDB = glfw\examples\CMakeFiles\wave.dir\
-  TARGET_PDB = glfw\examples\wave.pdb
 
 build glfw/examples/CMakeFiles/wave.dir/__/deps/glad_gl.c.obj: C_COMPILER__wave_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/glad_gl.c || cmake_object_order_depends_target_wave
   DEP_FILE = glfw\examples\CMakeFiles\wave.dir\__\deps\glad_gl.c.obj.d
@@ -896,8 +821,6 @@ build glfw/examples/CMakeFiles/wave.dir/__/deps/glad_gl.c.obj: C_COMPILER__wave_
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\examples\CMakeFiles\wave.dir
   OBJECT_FILE_DIR = glfw\examples\CMakeFiles\wave.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\examples\CMakeFiles\wave.dir\
-  TARGET_PDB = glfw\examples\wave.pdb
 
 
 # =============================================================================
@@ -914,10 +837,9 @@ build glfw/examples/wave.exe: C_EXECUTABLE_LINKER__wave_Release glfw/examples/CM
   OBJECT_DIR = glfw\examples\CMakeFiles\wave.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = glfw\examples\CMakeFiles\wave.dir\
   TARGET_FILE = glfw\examples\wave.exe
   TARGET_IMPLIB = glfw\examples\libwave.dll.a
-  TARGET_PDB = glfw\examples\wave.pdb
+  TARGET_PDB = wave.exe.dbg
 
 
 #############################################
@@ -962,8 +884,6 @@ build glfw/tests/CMakeFiles/clipboard.dir/clipboard.c.obj: C_COMPILER__clipboard
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\clipboard.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\clipboard.dir
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\clipboard.dir\
-  TARGET_PDB = glfw\tests\clipboard.pdb
 
 build glfw/tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.obj: C_COMPILER__clipboard_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/getopt.c || cmake_object_order_depends_target_clipboard
   DEP_FILE = glfw\tests\CMakeFiles\clipboard.dir\__\deps\getopt.c.obj.d
@@ -971,8 +891,6 @@ build glfw/tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.obj: C_COMPILER__clip
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\clipboard.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\clipboard.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\clipboard.dir\
-  TARGET_PDB = glfw\tests\clipboard.pdb
 
 build glfw/tests/CMakeFiles/clipboard.dir/__/deps/glad_gl.c.obj: C_COMPILER__clipboard_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/glad_gl.c || cmake_object_order_depends_target_clipboard
   DEP_FILE = glfw\tests\CMakeFiles\clipboard.dir\__\deps\glad_gl.c.obj.d
@@ -980,8 +898,6 @@ build glfw/tests/CMakeFiles/clipboard.dir/__/deps/glad_gl.c.obj: C_COMPILER__cli
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\clipboard.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\clipboard.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\clipboard.dir\
-  TARGET_PDB = glfw\tests\clipboard.pdb
 
 
 # =============================================================================
@@ -997,10 +913,9 @@ build glfw/tests/clipboard.exe: C_EXECUTABLE_LINKER__clipboard_Release glfw/test
   OBJECT_DIR = glfw\tests\CMakeFiles\clipboard.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\clipboard.dir\
   TARGET_FILE = glfw\tests\clipboard.exe
   TARGET_IMPLIB = glfw\tests\libclipboard.dll.a
-  TARGET_PDB = glfw\tests\clipboard.pdb
+  TARGET_PDB = clipboard.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target events
@@ -1017,8 +932,6 @@ build glfw/tests/CMakeFiles/events.dir/events.c.obj: C_COMPILER__events_unscanne
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\events.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\events.dir
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\events.dir\
-  TARGET_PDB = glfw\tests\events.pdb
 
 build glfw/tests/CMakeFiles/events.dir/__/deps/getopt.c.obj: C_COMPILER__events_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/getopt.c || cmake_object_order_depends_target_events
   DEP_FILE = glfw\tests\CMakeFiles\events.dir\__\deps\getopt.c.obj.d
@@ -1026,8 +939,6 @@ build glfw/tests/CMakeFiles/events.dir/__/deps/getopt.c.obj: C_COMPILER__events_
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\events.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\events.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\events.dir\
-  TARGET_PDB = glfw\tests\events.pdb
 
 build glfw/tests/CMakeFiles/events.dir/__/deps/glad_gl.c.obj: C_COMPILER__events_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/glad_gl.c || cmake_object_order_depends_target_events
   DEP_FILE = glfw\tests\CMakeFiles\events.dir\__\deps\glad_gl.c.obj.d
@@ -1035,8 +946,6 @@ build glfw/tests/CMakeFiles/events.dir/__/deps/glad_gl.c.obj: C_COMPILER__events
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\events.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\events.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\events.dir\
-  TARGET_PDB = glfw\tests\events.pdb
 
 
 # =============================================================================
@@ -1052,10 +961,9 @@ build glfw/tests/events.exe: C_EXECUTABLE_LINKER__events_Release glfw/tests/CMak
   OBJECT_DIR = glfw\tests\CMakeFiles\events.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\events.dir\
   TARGET_FILE = glfw\tests\events.exe
   TARGET_IMPLIB = glfw\tests\libevents.dll.a
-  TARGET_PDB = glfw\tests\events.pdb
+  TARGET_PDB = events.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target msaa
@@ -1072,8 +980,6 @@ build glfw/tests/CMakeFiles/msaa.dir/msaa.c.obj: C_COMPILER__msaa_unscanned_Rele
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\msaa.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\msaa.dir
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\msaa.dir\
-  TARGET_PDB = glfw\tests\msaa.pdb
 
 build glfw/tests/CMakeFiles/msaa.dir/__/deps/getopt.c.obj: C_COMPILER__msaa_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/getopt.c || cmake_object_order_depends_target_msaa
   DEP_FILE = glfw\tests\CMakeFiles\msaa.dir\__\deps\getopt.c.obj.d
@@ -1081,8 +987,6 @@ build glfw/tests/CMakeFiles/msaa.dir/__/deps/getopt.c.obj: C_COMPILER__msaa_unsc
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\msaa.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\msaa.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\msaa.dir\
-  TARGET_PDB = glfw\tests\msaa.pdb
 
 build glfw/tests/CMakeFiles/msaa.dir/__/deps/glad_gl.c.obj: C_COMPILER__msaa_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/glad_gl.c || cmake_object_order_depends_target_msaa
   DEP_FILE = glfw\tests\CMakeFiles\msaa.dir\__\deps\glad_gl.c.obj.d
@@ -1090,8 +994,6 @@ build glfw/tests/CMakeFiles/msaa.dir/__/deps/glad_gl.c.obj: C_COMPILER__msaa_uns
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\msaa.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\msaa.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\msaa.dir\
-  TARGET_PDB = glfw\tests\msaa.pdb
 
 
 # =============================================================================
@@ -1107,10 +1009,9 @@ build glfw/tests/msaa.exe: C_EXECUTABLE_LINKER__msaa_Release glfw/tests/CMakeFil
   OBJECT_DIR = glfw\tests\CMakeFiles\msaa.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\msaa.dir\
   TARGET_FILE = glfw\tests\msaa.exe
   TARGET_IMPLIB = glfw\tests\libmsaa.dll.a
-  TARGET_PDB = glfw\tests\msaa.pdb
+  TARGET_PDB = msaa.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target glfwinfo
@@ -1127,8 +1028,6 @@ build glfw/tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.obj: C_COMPILER__glfwinfo_un
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\glfwinfo.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\glfwinfo.dir
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\glfwinfo.dir\
-  TARGET_PDB = glfw\tests\glfwinfo.pdb
 
 build glfw/tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.obj: C_COMPILER__glfwinfo_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/getopt.c || cmake_object_order_depends_target_glfwinfo
   DEP_FILE = glfw\tests\CMakeFiles\glfwinfo.dir\__\deps\getopt.c.obj.d
@@ -1136,8 +1035,6 @@ build glfw/tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.obj: C_COMPILER__glfwi
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\glfwinfo.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\glfwinfo.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\glfwinfo.dir\
-  TARGET_PDB = glfw\tests\glfwinfo.pdb
 
 build glfw/tests/CMakeFiles/glfwinfo.dir/__/deps/glad_gl.c.obj: C_COMPILER__glfwinfo_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/glad_gl.c || cmake_object_order_depends_target_glfwinfo
   DEP_FILE = glfw\tests\CMakeFiles\glfwinfo.dir\__\deps\glad_gl.c.obj.d
@@ -1145,8 +1042,6 @@ build glfw/tests/CMakeFiles/glfwinfo.dir/__/deps/glad_gl.c.obj: C_COMPILER__glfw
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\glfwinfo.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\glfwinfo.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\glfwinfo.dir\
-  TARGET_PDB = glfw\tests\glfwinfo.pdb
 
 build glfw/tests/CMakeFiles/glfwinfo.dir/__/deps/glad_vulkan.c.obj: C_COMPILER__glfwinfo_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/glad_vulkan.c || cmake_object_order_depends_target_glfwinfo
   DEP_FILE = glfw\tests\CMakeFiles\glfwinfo.dir\__\deps\glad_vulkan.c.obj.d
@@ -1154,8 +1049,6 @@ build glfw/tests/CMakeFiles/glfwinfo.dir/__/deps/glad_vulkan.c.obj: C_COMPILER__
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\glfwinfo.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\glfwinfo.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\glfwinfo.dir\
-  TARGET_PDB = glfw\tests\glfwinfo.pdb
 
 
 # =============================================================================
@@ -1171,10 +1064,9 @@ build glfw/tests/glfwinfo.exe: C_EXECUTABLE_LINKER__glfwinfo_Release glfw/tests/
   OBJECT_DIR = glfw\tests\CMakeFiles\glfwinfo.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\glfwinfo.dir\
   TARGET_FILE = glfw\tests\glfwinfo.exe
   TARGET_IMPLIB = glfw\tests\libglfwinfo.dll.a
-  TARGET_PDB = glfw\tests\glfwinfo.pdb
+  TARGET_PDB = glfwinfo.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target iconify
@@ -1191,8 +1083,6 @@ build glfw/tests/CMakeFiles/iconify.dir/iconify.c.obj: C_COMPILER__iconify_unsca
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\iconify.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\iconify.dir
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\iconify.dir\
-  TARGET_PDB = glfw\tests\iconify.pdb
 
 build glfw/tests/CMakeFiles/iconify.dir/__/deps/getopt.c.obj: C_COMPILER__iconify_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/getopt.c || cmake_object_order_depends_target_iconify
   DEP_FILE = glfw\tests\CMakeFiles\iconify.dir\__\deps\getopt.c.obj.d
@@ -1200,8 +1090,6 @@ build glfw/tests/CMakeFiles/iconify.dir/__/deps/getopt.c.obj: C_COMPILER__iconif
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\iconify.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\iconify.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\iconify.dir\
-  TARGET_PDB = glfw\tests\iconify.pdb
 
 build glfw/tests/CMakeFiles/iconify.dir/__/deps/glad_gl.c.obj: C_COMPILER__iconify_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/glad_gl.c || cmake_object_order_depends_target_iconify
   DEP_FILE = glfw\tests\CMakeFiles\iconify.dir\__\deps\glad_gl.c.obj.d
@@ -1209,8 +1097,6 @@ build glfw/tests/CMakeFiles/iconify.dir/__/deps/glad_gl.c.obj: C_COMPILER__iconi
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\iconify.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\iconify.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\iconify.dir\
-  TARGET_PDB = glfw\tests\iconify.pdb
 
 
 # =============================================================================
@@ -1226,10 +1112,9 @@ build glfw/tests/iconify.exe: C_EXECUTABLE_LINKER__iconify_Release glfw/tests/CM
   OBJECT_DIR = glfw\tests\CMakeFiles\iconify.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\iconify.dir\
   TARGET_FILE = glfw\tests\iconify.exe
   TARGET_IMPLIB = glfw\tests\libiconify.dll.a
-  TARGET_PDB = glfw\tests\iconify.pdb
+  TARGET_PDB = iconify.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target monitors
@@ -1246,8 +1131,6 @@ build glfw/tests/CMakeFiles/monitors.dir/monitors.c.obj: C_COMPILER__monitors_un
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\monitors.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\monitors.dir
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\monitors.dir\
-  TARGET_PDB = glfw\tests\monitors.pdb
 
 build glfw/tests/CMakeFiles/monitors.dir/__/deps/getopt.c.obj: C_COMPILER__monitors_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/getopt.c || cmake_object_order_depends_target_monitors
   DEP_FILE = glfw\tests\CMakeFiles\monitors.dir\__\deps\getopt.c.obj.d
@@ -1255,8 +1138,6 @@ build glfw/tests/CMakeFiles/monitors.dir/__/deps/getopt.c.obj: C_COMPILER__monit
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\monitors.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\monitors.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\monitors.dir\
-  TARGET_PDB = glfw\tests\monitors.pdb
 
 build glfw/tests/CMakeFiles/monitors.dir/__/deps/glad_gl.c.obj: C_COMPILER__monitors_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/glad_gl.c || cmake_object_order_depends_target_monitors
   DEP_FILE = glfw\tests\CMakeFiles\monitors.dir\__\deps\glad_gl.c.obj.d
@@ -1264,8 +1145,6 @@ build glfw/tests/CMakeFiles/monitors.dir/__/deps/glad_gl.c.obj: C_COMPILER__moni
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\monitors.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\monitors.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\monitors.dir\
-  TARGET_PDB = glfw\tests\monitors.pdb
 
 
 # =============================================================================
@@ -1281,10 +1160,9 @@ build glfw/tests/monitors.exe: C_EXECUTABLE_LINKER__monitors_Release glfw/tests/
   OBJECT_DIR = glfw\tests\CMakeFiles\monitors.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\monitors.dir\
   TARGET_FILE = glfw\tests\monitors.exe
   TARGET_IMPLIB = glfw\tests\libmonitors.dll.a
-  TARGET_PDB = glfw\tests\monitors.pdb
+  TARGET_PDB = monitors.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target reopen
@@ -1301,8 +1179,6 @@ build glfw/tests/CMakeFiles/reopen.dir/reopen.c.obj: C_COMPILER__reopen_unscanne
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\reopen.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\reopen.dir
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\reopen.dir\
-  TARGET_PDB = glfw\tests\reopen.pdb
 
 build glfw/tests/CMakeFiles/reopen.dir/__/deps/glad_gl.c.obj: C_COMPILER__reopen_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/glad_gl.c || cmake_object_order_depends_target_reopen
   DEP_FILE = glfw\tests\CMakeFiles\reopen.dir\__\deps\glad_gl.c.obj.d
@@ -1310,8 +1186,6 @@ build glfw/tests/CMakeFiles/reopen.dir/__/deps/glad_gl.c.obj: C_COMPILER__reopen
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\reopen.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\reopen.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\reopen.dir\
-  TARGET_PDB = glfw\tests\reopen.pdb
 
 
 # =============================================================================
@@ -1327,10 +1201,9 @@ build glfw/tests/reopen.exe: C_EXECUTABLE_LINKER__reopen_Release glfw/tests/CMak
   OBJECT_DIR = glfw\tests\CMakeFiles\reopen.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\reopen.dir\
   TARGET_FILE = glfw\tests\reopen.exe
   TARGET_IMPLIB = glfw\tests\libreopen.dll.a
-  TARGET_PDB = glfw\tests\reopen.pdb
+  TARGET_PDB = reopen.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target cursor
@@ -1347,8 +1220,6 @@ build glfw/tests/CMakeFiles/cursor.dir/cursor.c.obj: C_COMPILER__cursor_unscanne
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\cursor.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\cursor.dir
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\cursor.dir\
-  TARGET_PDB = glfw\tests\cursor.pdb
 
 build glfw/tests/CMakeFiles/cursor.dir/__/deps/glad_gl.c.obj: C_COMPILER__cursor_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/glad_gl.c || cmake_object_order_depends_target_cursor
   DEP_FILE = glfw\tests\CMakeFiles\cursor.dir\__\deps\glad_gl.c.obj.d
@@ -1356,8 +1227,6 @@ build glfw/tests/CMakeFiles/cursor.dir/__/deps/glad_gl.c.obj: C_COMPILER__cursor
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\cursor.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\cursor.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\cursor.dir\
-  TARGET_PDB = glfw\tests\cursor.pdb
 
 
 # =============================================================================
@@ -1373,10 +1242,9 @@ build glfw/tests/cursor.exe: C_EXECUTABLE_LINKER__cursor_Release glfw/tests/CMak
   OBJECT_DIR = glfw\tests\CMakeFiles\cursor.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\cursor.dir\
   TARGET_FILE = glfw\tests\cursor.exe
   TARGET_IMPLIB = glfw\tests\libcursor.dll.a
-  TARGET_PDB = glfw\tests\cursor.pdb
+  TARGET_PDB = cursor.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target empty
@@ -1393,8 +1261,6 @@ build glfw/tests/CMakeFiles/empty.dir/empty.c.obj: C_COMPILER__empty_unscanned_R
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\empty.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\empty.dir
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\empty.dir\
-  TARGET_PDB = glfw\tests\empty.pdb
 
 build glfw/tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.obj: C_COMPILER__empty_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/tinycthread.c || cmake_object_order_depends_target_empty
   DEP_FILE = glfw\tests\CMakeFiles\empty.dir\__\deps\tinycthread.c.obj.d
@@ -1402,8 +1268,6 @@ build glfw/tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.obj: C_COMPILER__emp
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\empty.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\empty.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\empty.dir\
-  TARGET_PDB = glfw\tests\empty.pdb
 
 build glfw/tests/CMakeFiles/empty.dir/__/deps/glad_gl.c.obj: C_COMPILER__empty_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/glad_gl.c || cmake_object_order_depends_target_empty
   DEP_FILE = glfw\tests\CMakeFiles\empty.dir\__\deps\glad_gl.c.obj.d
@@ -1411,8 +1275,6 @@ build glfw/tests/CMakeFiles/empty.dir/__/deps/glad_gl.c.obj: C_COMPILER__empty_u
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\empty.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\empty.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\empty.dir\
-  TARGET_PDB = glfw\tests\empty.pdb
 
 
 # =============================================================================
@@ -1429,10 +1291,9 @@ build glfw/tests/empty.exe: C_EXECUTABLE_LINKER__empty_Release glfw/tests/CMakeF
   OBJECT_DIR = glfw\tests\CMakeFiles\empty.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\empty.dir\
   TARGET_FILE = glfw\tests\empty.exe
   TARGET_IMPLIB = glfw\tests\libempty.dll.a
-  TARGET_PDB = glfw\tests\empty.pdb
+  TARGET_PDB = empty.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target gamma
@@ -1449,8 +1310,6 @@ build glfw/tests/CMakeFiles/gamma.dir/gamma.c.obj: C_COMPILER__gamma_unscanned_R
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\gamma.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\gamma.dir
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\gamma.dir\
-  TARGET_PDB = glfw\tests\gamma.pdb
 
 build glfw/tests/CMakeFiles/gamma.dir/__/deps/glad_gl.c.obj: C_COMPILER__gamma_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/glad_gl.c || cmake_object_order_depends_target_gamma
   DEP_FILE = glfw\tests\CMakeFiles\gamma.dir\__\deps\glad_gl.c.obj.d
@@ -1458,8 +1317,6 @@ build glfw/tests/CMakeFiles/gamma.dir/__/deps/glad_gl.c.obj: C_COMPILER__gamma_u
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\gamma.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\gamma.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\gamma.dir\
-  TARGET_PDB = glfw\tests\gamma.pdb
 
 
 # =============================================================================
@@ -1476,10 +1333,9 @@ build glfw/tests/gamma.exe: C_EXECUTABLE_LINKER__gamma_Release glfw/tests/CMakeF
   OBJECT_DIR = glfw\tests\CMakeFiles\gamma.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\gamma.dir\
   TARGET_FILE = glfw\tests\gamma.exe
   TARGET_IMPLIB = glfw\tests\libgamma.dll.a
-  TARGET_PDB = glfw\tests\gamma.pdb
+  TARGET_PDB = gamma.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target icon
@@ -1496,8 +1352,6 @@ build glfw/tests/CMakeFiles/icon.dir/icon.c.obj: C_COMPILER__icon_unscanned_Rele
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\icon.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\icon.dir
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\icon.dir\
-  TARGET_PDB = glfw\tests\icon.pdb
 
 build glfw/tests/CMakeFiles/icon.dir/__/deps/glad_gl.c.obj: C_COMPILER__icon_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/glad_gl.c || cmake_object_order_depends_target_icon
   DEP_FILE = glfw\tests\CMakeFiles\icon.dir\__\deps\glad_gl.c.obj.d
@@ -1505,8 +1359,6 @@ build glfw/tests/CMakeFiles/icon.dir/__/deps/glad_gl.c.obj: C_COMPILER__icon_uns
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\icon.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\icon.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\icon.dir\
-  TARGET_PDB = glfw\tests\icon.pdb
 
 
 # =============================================================================
@@ -1523,10 +1375,9 @@ build glfw/tests/icon.exe: C_EXECUTABLE_LINKER__icon_Release glfw/tests/CMakeFil
   OBJECT_DIR = glfw\tests\CMakeFiles\icon.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\icon.dir\
   TARGET_FILE = glfw\tests\icon.exe
   TARGET_IMPLIB = glfw\tests\libicon.dll.a
-  TARGET_PDB = glfw\tests\icon.pdb
+  TARGET_PDB = icon.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target inputlag
@@ -1543,8 +1394,6 @@ build glfw/tests/CMakeFiles/inputlag.dir/inputlag.c.obj: C_COMPILER__inputlag_un
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\inputlag.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\inputlag.dir
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\inputlag.dir\
-  TARGET_PDB = glfw\tests\inputlag.pdb
 
 build glfw/tests/CMakeFiles/inputlag.dir/__/deps/getopt.c.obj: C_COMPILER__inputlag_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/getopt.c || cmake_object_order_depends_target_inputlag
   DEP_FILE = glfw\tests\CMakeFiles\inputlag.dir\__\deps\getopt.c.obj.d
@@ -1552,8 +1401,6 @@ build glfw/tests/CMakeFiles/inputlag.dir/__/deps/getopt.c.obj: C_COMPILER__input
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\inputlag.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\inputlag.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\inputlag.dir\
-  TARGET_PDB = glfw\tests\inputlag.pdb
 
 build glfw/tests/CMakeFiles/inputlag.dir/__/deps/glad_gl.c.obj: C_COMPILER__inputlag_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/glad_gl.c || cmake_object_order_depends_target_inputlag
   DEP_FILE = glfw\tests\CMakeFiles\inputlag.dir\__\deps\glad_gl.c.obj.d
@@ -1561,8 +1408,6 @@ build glfw/tests/CMakeFiles/inputlag.dir/__/deps/glad_gl.c.obj: C_COMPILER__inpu
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\inputlag.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\inputlag.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\inputlag.dir\
-  TARGET_PDB = glfw\tests\inputlag.pdb
 
 
 # =============================================================================
@@ -1579,10 +1424,9 @@ build glfw/tests/inputlag.exe: C_EXECUTABLE_LINKER__inputlag_Release glfw/tests/
   OBJECT_DIR = glfw\tests\CMakeFiles\inputlag.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\inputlag.dir\
   TARGET_FILE = glfw\tests\inputlag.exe
   TARGET_IMPLIB = glfw\tests\libinputlag.dll.a
-  TARGET_PDB = glfw\tests\inputlag.pdb
+  TARGET_PDB = inputlag.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target joysticks
@@ -1599,8 +1443,6 @@ build glfw/tests/CMakeFiles/joysticks.dir/joysticks.c.obj: C_COMPILER__joysticks
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\joysticks.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\joysticks.dir
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\joysticks.dir\
-  TARGET_PDB = glfw\tests\joysticks.pdb
 
 build glfw/tests/CMakeFiles/joysticks.dir/__/deps/glad_gl.c.obj: C_COMPILER__joysticks_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/glad_gl.c || cmake_object_order_depends_target_joysticks
   DEP_FILE = glfw\tests\CMakeFiles\joysticks.dir\__\deps\glad_gl.c.obj.d
@@ -1608,8 +1450,6 @@ build glfw/tests/CMakeFiles/joysticks.dir/__/deps/glad_gl.c.obj: C_COMPILER__joy
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\joysticks.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\joysticks.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\joysticks.dir\
-  TARGET_PDB = glfw\tests\joysticks.pdb
 
 
 # =============================================================================
@@ -1626,10 +1466,9 @@ build glfw/tests/joysticks.exe: C_EXECUTABLE_LINKER__joysticks_Release glfw/test
   OBJECT_DIR = glfw\tests\CMakeFiles\joysticks.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\joysticks.dir\
   TARGET_FILE = glfw\tests\joysticks.exe
   TARGET_IMPLIB = glfw\tests\libjoysticks.dll.a
-  TARGET_PDB = glfw\tests\joysticks.pdb
+  TARGET_PDB = joysticks.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target opacity
@@ -1646,8 +1485,6 @@ build glfw/tests/CMakeFiles/opacity.dir/opacity.c.obj: C_COMPILER__opacity_unsca
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\opacity.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\opacity.dir
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\opacity.dir\
-  TARGET_PDB = glfw\tests\opacity.pdb
 
 build glfw/tests/CMakeFiles/opacity.dir/__/deps/glad_gl.c.obj: C_COMPILER__opacity_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/glad_gl.c || cmake_object_order_depends_target_opacity
   DEP_FILE = glfw\tests\CMakeFiles\opacity.dir\__\deps\glad_gl.c.obj.d
@@ -1655,8 +1492,6 @@ build glfw/tests/CMakeFiles/opacity.dir/__/deps/glad_gl.c.obj: C_COMPILER__opaci
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\opacity.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\opacity.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\opacity.dir\
-  TARGET_PDB = glfw\tests\opacity.pdb
 
 
 # =============================================================================
@@ -1673,10 +1508,9 @@ build glfw/tests/opacity.exe: C_EXECUTABLE_LINKER__opacity_Release glfw/tests/CM
   OBJECT_DIR = glfw\tests\CMakeFiles\opacity.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\opacity.dir\
   TARGET_FILE = glfw\tests\opacity.exe
   TARGET_IMPLIB = glfw\tests\libopacity.dll.a
-  TARGET_PDB = glfw\tests\opacity.pdb
+  TARGET_PDB = opacity.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target tearing
@@ -1693,8 +1527,6 @@ build glfw/tests/CMakeFiles/tearing.dir/tearing.c.obj: C_COMPILER__tearing_unsca
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\tearing.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\tearing.dir
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\tearing.dir\
-  TARGET_PDB = glfw\tests\tearing.pdb
 
 build glfw/tests/CMakeFiles/tearing.dir/__/deps/glad_gl.c.obj: C_COMPILER__tearing_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/glad_gl.c || cmake_object_order_depends_target_tearing
   DEP_FILE = glfw\tests\CMakeFiles\tearing.dir\__\deps\glad_gl.c.obj.d
@@ -1702,8 +1534,6 @@ build glfw/tests/CMakeFiles/tearing.dir/__/deps/glad_gl.c.obj: C_COMPILER__teari
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\tearing.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\tearing.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\tearing.dir\
-  TARGET_PDB = glfw\tests\tearing.pdb
 
 
 # =============================================================================
@@ -1720,10 +1550,9 @@ build glfw/tests/tearing.exe: C_EXECUTABLE_LINKER__tearing_Release glfw/tests/CM
   OBJECT_DIR = glfw\tests\CMakeFiles\tearing.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\tearing.dir\
   TARGET_FILE = glfw\tests\tearing.exe
   TARGET_IMPLIB = glfw\tests\libtearing.dll.a
-  TARGET_PDB = glfw\tests\tearing.pdb
+  TARGET_PDB = tearing.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target threads
@@ -1740,8 +1569,6 @@ build glfw/tests/CMakeFiles/threads.dir/threads.c.obj: C_COMPILER__threads_unsca
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\threads.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\threads.dir
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\threads.dir\
-  TARGET_PDB = glfw\tests\threads.pdb
 
 build glfw/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.obj: C_COMPILER__threads_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/tinycthread.c || cmake_object_order_depends_target_threads
   DEP_FILE = glfw\tests\CMakeFiles\threads.dir\__\deps\tinycthread.c.obj.d
@@ -1749,8 +1576,6 @@ build glfw/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.obj: C_COMPILER__t
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\threads.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\threads.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\threads.dir\
-  TARGET_PDB = glfw\tests\threads.pdb
 
 build glfw/tests/CMakeFiles/threads.dir/__/deps/glad_gl.c.obj: C_COMPILER__threads_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/glad_gl.c || cmake_object_order_depends_target_threads
   DEP_FILE = glfw\tests\CMakeFiles\threads.dir\__\deps\glad_gl.c.obj.d
@@ -1758,8 +1583,6 @@ build glfw/tests/CMakeFiles/threads.dir/__/deps/glad_gl.c.obj: C_COMPILER__threa
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\threads.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\threads.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\threads.dir\
-  TARGET_PDB = glfw\tests\threads.pdb
 
 
 # =============================================================================
@@ -1776,10 +1599,9 @@ build glfw/tests/threads.exe: C_EXECUTABLE_LINKER__threads_Release glfw/tests/CM
   OBJECT_DIR = glfw\tests\CMakeFiles\threads.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\threads.dir\
   TARGET_FILE = glfw\tests\threads.exe
   TARGET_IMPLIB = glfw\tests\libthreads.dll.a
-  TARGET_PDB = glfw\tests\threads.pdb
+  TARGET_PDB = threads.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target timeout
@@ -1796,8 +1618,6 @@ build glfw/tests/CMakeFiles/timeout.dir/timeout.c.obj: C_COMPILER__timeout_unsca
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\timeout.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\timeout.dir
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\timeout.dir\
-  TARGET_PDB = glfw\tests\timeout.pdb
 
 build glfw/tests/CMakeFiles/timeout.dir/__/deps/glad_gl.c.obj: C_COMPILER__timeout_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/glad_gl.c || cmake_object_order_depends_target_timeout
   DEP_FILE = glfw\tests\CMakeFiles\timeout.dir\__\deps\glad_gl.c.obj.d
@@ -1805,8 +1625,6 @@ build glfw/tests/CMakeFiles/timeout.dir/__/deps/glad_gl.c.obj: C_COMPILER__timeo
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\timeout.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\timeout.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\timeout.dir\
-  TARGET_PDB = glfw\tests\timeout.pdb
 
 
 # =============================================================================
@@ -1823,10 +1641,9 @@ build glfw/tests/timeout.exe: C_EXECUTABLE_LINKER__timeout_Release glfw/tests/CM
   OBJECT_DIR = glfw\tests\CMakeFiles\timeout.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\timeout.dir\
   TARGET_FILE = glfw\tests\timeout.exe
   TARGET_IMPLIB = glfw\tests\libtimeout.dll.a
-  TARGET_PDB = glfw\tests\timeout.pdb
+  TARGET_PDB = timeout.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target title
@@ -1843,8 +1660,6 @@ build glfw/tests/CMakeFiles/title.dir/title.c.obj: C_COMPILER__title_unscanned_R
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\title.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\title.dir
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\title.dir\
-  TARGET_PDB = glfw\tests\title.pdb
 
 build glfw/tests/CMakeFiles/title.dir/__/deps/glad_gl.c.obj: C_COMPILER__title_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/glad_gl.c || cmake_object_order_depends_target_title
   DEP_FILE = glfw\tests\CMakeFiles\title.dir\__\deps\glad_gl.c.obj.d
@@ -1852,8 +1667,6 @@ build glfw/tests/CMakeFiles/title.dir/__/deps/glad_gl.c.obj: C_COMPILER__title_u
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\title.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\title.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\title.dir\
-  TARGET_PDB = glfw\tests\title.pdb
 
 
 # =============================================================================
@@ -1870,10 +1683,9 @@ build glfw/tests/title.exe: C_EXECUTABLE_LINKER__title_Release glfw/tests/CMakeF
   OBJECT_DIR = glfw\tests\CMakeFiles\title.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\title.dir\
   TARGET_FILE = glfw\tests\title.exe
   TARGET_IMPLIB = glfw\tests\libtitle.dll.a
-  TARGET_PDB = glfw\tests\title.pdb
+  TARGET_PDB = title.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target triangle-vulkan
@@ -1890,8 +1702,6 @@ build glfw/tests/CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.obj: C_COMPILE
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\triangle-vulkan.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\triangle-vulkan.dir
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\triangle-vulkan.dir\
-  TARGET_PDB = glfw\tests\triangle-vulkan.pdb
 
 build glfw/tests/CMakeFiles/triangle-vulkan.dir/__/deps/glad_vulkan.c.obj: C_COMPILER__triangle-vulkan_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/glad_vulkan.c || cmake_object_order_depends_target_triangle-vulkan
   DEP_FILE = glfw\tests\CMakeFiles\triangle-vulkan.dir\__\deps\glad_vulkan.c.obj.d
@@ -1899,8 +1709,6 @@ build glfw/tests/CMakeFiles/triangle-vulkan.dir/__/deps/glad_vulkan.c.obj: C_COM
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\triangle-vulkan.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\triangle-vulkan.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\triangle-vulkan.dir\
-  TARGET_PDB = glfw\tests\triangle-vulkan.pdb
 
 
 # =============================================================================
@@ -1917,10 +1725,9 @@ build glfw/tests/triangle-vulkan.exe: C_EXECUTABLE_LINKER__triangle-vulkan_Relea
   OBJECT_DIR = glfw\tests\CMakeFiles\triangle-vulkan.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\triangle-vulkan.dir\
   TARGET_FILE = glfw\tests\triangle-vulkan.exe
   TARGET_IMPLIB = glfw\tests\libtriangle-vulkan.dll.a
-  TARGET_PDB = glfw\tests\triangle-vulkan.pdb
+  TARGET_PDB = triangle-vulkan.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target windows
@@ -1937,8 +1744,6 @@ build glfw/tests/CMakeFiles/windows.dir/windows.c.obj: C_COMPILER__windows_unsca
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\windows.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\windows.dir
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\windows.dir\
-  TARGET_PDB = glfw\tests\windows.pdb
 
 build glfw/tests/CMakeFiles/windows.dir/__/deps/getopt.c.obj: C_COMPILER__windows_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/getopt.c || cmake_object_order_depends_target_windows
   DEP_FILE = glfw\tests\CMakeFiles\windows.dir\__\deps\getopt.c.obj.d
@@ -1946,8 +1751,6 @@ build glfw/tests/CMakeFiles/windows.dir/__/deps/getopt.c.obj: C_COMPILER__window
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\windows.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\windows.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\windows.dir\
-  TARGET_PDB = glfw\tests\windows.pdb
 
 build glfw/tests/CMakeFiles/windows.dir/__/deps/glad_gl.c.obj: C_COMPILER__windows_unscanned_Release D$:/DEV/C++/ManulEngine/glfw/deps/glad_gl.c || cmake_object_order_depends_target_windows
   DEP_FILE = glfw\tests\CMakeFiles\windows.dir\__\deps\glad_gl.c.obj.d
@@ -1955,8 +1758,6 @@ build glfw/tests/CMakeFiles/windows.dir/__/deps/glad_gl.c.obj: C_COMPILER__windo
   INCLUDES = -ID:/DEV/C++/ManulEngine/glfw/deps -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = glfw\tests\CMakeFiles\windows.dir
   OBJECT_FILE_DIR = glfw\tests\CMakeFiles\windows.dir\__\deps
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\windows.dir\
-  TARGET_PDB = glfw\tests\windows.pdb
 
 
 # =============================================================================
@@ -1973,10 +1774,9 @@ build glfw/tests/windows.exe: C_EXECUTABLE_LINKER__windows_Release glfw/tests/CM
   OBJECT_DIR = glfw\tests\CMakeFiles\windows.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = glfw\tests\CMakeFiles\windows.dir\
   TARGET_FILE = glfw\tests\windows.exe
   TARGET_IMPLIB = glfw\tests\libwindows.dll.a
-  TARGET_PDB = glfw\tests\windows.pdb
+  TARGET_PDB = windows.exe.dbg
 
 
 #############################################
@@ -2178,14 +1978,14 @@ build glfw/tests/all: phony glfw/tests/clipboard.exe glfw/tests/events.exe glfw/
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake D$:/DEV/C++/ManulEngine/CMakeLists.txt D$:/DEV/C++/ManulEngine/glfw/CMakeLists.txt D$:/DEV/C++/ManulEngine/glfw/examples/CMakeLists.txt D$:/DEV/C++/ManulEngine/glfw/src/CMakeLists.txt D$:/DEV/C++/ManulEngine/glfw/src/glfw3.pc.in D$:/DEV/C++/ManulEngine/glfw/src/glfw3Config.cmake.in D$:/DEV/C++/ManulEngine/glfw/src/glfw_config.h.in D$:/DEV/C++/ManulEngine/glfw/tests/CMakeLists.txt D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/BasicConfigVersion-SameMajorVersion.cmake.in D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCCompiler.cmake.in D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCCompilerABI.c D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXCompiler.cmake.in D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCompilerIdDetection.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDependentOption.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompileFeatures.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineRCCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeFindBinUtils.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakePackageConfigHelpers.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseImplicitIncludeInfo.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseImplicitLinkInfo.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseLibraryArchitecture.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCCompiler.cmake.in D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystem.cmake.in D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCompilerCommon.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestRCCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckLibraryExists.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ADSP-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ARMCC-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ARMClang-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/AppleClang-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Borland-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Bruce-C-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompilerInternal.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Compaq-C-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Cray-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Embarcadero-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Fujitsu-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GHS-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-FindBinUtils.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/HP-C-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/HP-CXX-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IAR-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Intel-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/LCC-C-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/MSVC-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/NVHPC-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/NVIDIA-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/PGI-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/PathScale-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SCO-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SDCC-C-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SunPro-C-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/TI-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Tasking-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Watcom-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XL-C-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XL-CXX-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XLClang-C-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/zOS-C-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/FindOpenGL.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageMessage.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/FindThreads.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/GNUInstallDirs.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckFlagCommonConfig.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-Determine-CXX.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/WriteBasicConfigVersionFile.cmake
+build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake D$:/DEV/C++/ManulEngine/CMakeLists.txt D$:/DEV/C++/ManulEngine/glfw/CMakeLists.txt D$:/DEV/C++/ManulEngine/glfw/examples/CMakeLists.txt D$:/DEV/C++/ManulEngine/glfw/src/CMakeLists.txt D$:/DEV/C++/ManulEngine/glfw/src/glfw3.pc.in D$:/DEV/C++/ManulEngine/glfw/src/glfw3Config.cmake.in D$:/DEV/C++/ManulEngine/glfw/src/glfw_config.h.in D$:/DEV/C++/ManulEngine/glfw/tests/CMakeLists.txt D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/BasicConfigVersion-SameMajorVersion.cmake.in D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDependentOption.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakePackageConfigHelpers.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckLibraryExists.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/FindOpenGL.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageMessage.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/FindThreads.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/GNUInstallDirs.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckFlagCommonConfig.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/WriteBasicConfigVersionFile.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake D$:/DEV/C++/ManulEngine/CMakeLists.txt D$:/DEV/C++/ManulEngine/glfw/CMakeLists.txt D$:/DEV/C++/ManulEngine/glfw/examples/CMakeLists.txt D$:/DEV/C++/ManulEngine/glfw/src/CMakeLists.txt D$:/DEV/C++/ManulEngine/glfw/src/glfw3.pc.in D$:/DEV/C++/ManulEngine/glfw/src/glfw3Config.cmake.in D$:/DEV/C++/ManulEngine/glfw/src/glfw_config.h.in D$:/DEV/C++/ManulEngine/glfw/tests/CMakeLists.txt D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/BasicConfigVersion-SameMajorVersion.cmake.in D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCCompiler.cmake.in D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCCompilerABI.c D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXCompiler.cmake.in D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCompilerIdDetection.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDependentOption.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompileFeatures.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineRCCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeFindBinUtils.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakePackageConfigHelpers.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseImplicitIncludeInfo.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseImplicitLinkInfo.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseLibraryArchitecture.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCCompiler.cmake.in D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystem.cmake.in D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCompilerCommon.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestRCCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckLibraryExists.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ADSP-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ARMCC-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ARMClang-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/AppleClang-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Borland-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Bruce-C-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompilerInternal.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Compaq-C-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Cray-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Embarcadero-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Fujitsu-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GHS-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-FindBinUtils.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/HP-C-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/HP-CXX-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IAR-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Intel-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/LCC-C-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/MSVC-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/NVHPC-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/NVIDIA-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/PGI-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/PathScale-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SCO-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SDCC-C-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SunPro-C-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/TI-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Tasking-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Watcom-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XL-C-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XL-CXX-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XLClang-C-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/zOS-C-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/FindOpenGL.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageMessage.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/FindThreads.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/GNUInstallDirs.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckFlagCommonConfig.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-Determine-CXX.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/WriteBasicConfigVersionFile.cmake: phony
+build CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake D$:/DEV/C++/ManulEngine/CMakeLists.txt D$:/DEV/C++/ManulEngine/glfw/CMakeLists.txt D$:/DEV/C++/ManulEngine/glfw/examples/CMakeLists.txt D$:/DEV/C++/ManulEngine/glfw/src/CMakeLists.txt D$:/DEV/C++/ManulEngine/glfw/src/glfw3.pc.in D$:/DEV/C++/ManulEngine/glfw/src/glfw3Config.cmake.in D$:/DEV/C++/ManulEngine/glfw/src/glfw_config.h.in D$:/DEV/C++/ManulEngine/glfw/tests/CMakeLists.txt D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/BasicConfigVersion-SameMajorVersion.cmake.in D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDependentOption.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakePackageConfigHelpers.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckLibraryExists.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/FindOpenGL.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageMessage.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/FindThreads.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/GNUInstallDirs.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckFlagCommonConfig.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake D$:/Progs/Clion2023/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/WriteBasicConfigVersionFile.cmake: phony
 
 
 #############################################

@@ -1,6 +1,6 @@
 #include "Window.h"
 
-#include <Windows.h>
+#include <windows.h>
 #include <iostream>
 
 Window::Window()
