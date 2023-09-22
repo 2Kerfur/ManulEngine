@@ -11,15 +11,18 @@ void VulkanBackend::Init(int windowWidht, int windowHeight, GLFWwindow *window) 
     vulkanDebug.setupDebugMessenger(enableValidationLayers, instance);
     vulkanSurface.createSurface(instance, window);
     vulkanDevice.pickPhysicalDevice(instance, vulkanSurface.getSurface());
-    vulkanDevice.createLogicalDevice();
+    vulkanDevice.createLogicalDevice(enableValidationLayers, window);
     vulkanDevice.createSwapChain();
     vulkanDevice.createImageViews();
     vulkanDevice.createRenderPass();
-    vulkanPipline.createGraphicsPipeline();
-    vulkanPipline.createFramebuffers();
-    vulkanPipline.createCommandPool();
-    vulkanPipline.createCommandBuffer();
-    vulkanPipline.createSyncObjects();
+    vulkanPipline.createGraphicsPipeline(vulkanDevice.GetDevice(),
+                                         vulkanDevice.getSwapChainImageViews(),
+                                         vulkanDevice.getSwapChainFramebuffers(),
+                                         vulkanDevice.getSwapChainExtent());
+    //vulkanPipline.createFramebuffers(vulkanDevice.GetDevice());
+    //vulkanPipline.createCommandPool(vulkanDevice.GetPhysicalDevice(), vulkanDevice.GetDevice(), vulkanDevice.GetSurface());
+    //vulkanPipline.createCommandBuffer(vulkanDevice.GetDevice());
+    //vulkanPipline.createSyncObjects(vulkanDevice.GetDevice());
 }
 
 
