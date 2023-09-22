@@ -2,36 +2,32 @@
 #include "GLFW/glfw3.h"
 #include "VulkanDebug.h"
 #include "VulkanDevice.h"
-
+#include "VulkanSurface.h"
+#include "VulkanPipline.h"
 
 class VulkanBackend
 {
 public:
-	VulkanBackend();
-	~VulkanBackend();
 	void Init(int windowWidht, int windowHeight, GLFWwindow* window);
-	
+    void Render();
 	void OnWindowResize(int windowWidht, int windowHeigth);
-	void Render();
 private:
-	//Window Surface code TODO: Remove to another class
-	VkSurfaceKHR surface;
+    bool enableValidationLayers = true;
+    const std::vector<const char*> validationLayers = {
+            "VK_LAYER_KHRONOS_validation"
+    };
+    bool checkValidationLayerSupport();
+    std::vector<const char*> getRequiredExtensions();
+    void populateDebugMessengerCreateInfo(VkDebugUtilsMessengerCreateInfoEXT& createInfo);
 
 
-	VulkanDebug vulkanDebug;
+
+    void CreateInstance();
+    VkInstance instance;
+
     VulkanDevice vulkanDevice;
+    VulkanDebug vulkanDebug;
+    VulkanSurface vulkanSurface;
+    VulkanPipline vulkanPipline;
 
-	VkInstance instance;
-	
-	std::vector<const char*> getRequiredExtensions() {
-		uint32_t glfwExtensionCount = 0;
-		const char** glfwExtensions;
-		glfwExtensions = glfwGetRequiredInstanceExtensions(&glfwExtensionCount);
-
-		std::vector<const char*> extensions(glfwExtensions, glfwExtensions + glfwExtensionCount);
-		extensions.push_back(VK_EXT_DEBUG_UTILS_EXTENSION_NAME);
-
-		return extensions;
-	}
-	const bool enableValidationLayers = true; //TODO: Create Switch for this
 };

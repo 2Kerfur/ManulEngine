@@ -8,12 +8,15 @@ class VulkanDebug
 public:
     VkInstance vkInstance;
     ~VulkanDebug();
+    
+    bool Init(VkInstance instance);
 
-    static VKAPI_ATTR VkBool32 VKAPI_CALL DebugCallback(
+    static VKAPI_ATTR VkBool32 VKAPI_CALL DebugCallback( 
         VkDebugUtilsMessageSeverityFlagBitsEXT messageSeverity,
         VkDebugUtilsMessageTypeFlagsEXT messageType,
         const VkDebugUtilsMessengerCallbackDataEXT* pCallbackData,
         void* pUserData);
+    void SetupDebugMessenger(bool enableValidationLayers, VkInstance instance);
     VkDebugUtilsMessengerEXT debugMessenger;
     const std::vector<const char*> validationLayers = {
         "VK_LAYER_KHRONOS_validation"
@@ -24,6 +27,5 @@ public:
     
     bool CheckValidationLayerSupport();
 
-
-    void setupDebugMessenger(bool enableValidationLayers, VkInstance instance);
+    
 };

@@ -133,6 +133,20 @@ build CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Core/FileSystem.cpp
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Core
 
+build CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Vulkan/VulkanSurface.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/Platform/Vulkan/VulkanSurface.cpp || cmake_object_order_depends_target_ManulEngine
+  DEP_FILE = CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan\VulkanSurface.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
+  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/glfw/include
+  OBJECT_DIR = CMakeFiles\ManulEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan
+
+build CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Vulkan/VulkanPipline.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/Platform/Vulkan/VulkanPipline.cpp || cmake_object_order_depends_target_ManulEngine
+  DEP_FILE = CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan\VulkanPipline.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
+  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/glfw/include
+  OBJECT_DIR = CMakeFiles\ManulEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target ManulEngine
@@ -141,7 +155,7 @@ build CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Core/FileSystem.cpp
 #############################################
 # Link the executable ManulEngine.exe
 
-build ManulEngine.exe: CXX_EXECUTABLE_LINKER__ManulEngine_Release CMakeFiles/ManulEngine.dir/ManulEngine/src/main.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Core/Window.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Renderer/Renderer.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Core/Logger.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Vulkan/VulkanDebug.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Vulkan/VulkanDevice.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Vulkan/VulkanBackend.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Windows/WindowsWindow.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Math/Math.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Physics/2D/Physics2D.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Core/Application.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Core/FileSystem.cpp.obj | glfw/src/libglfw3.a || glfw/src/libglfw3.a
+build ManulEngine.exe: CXX_EXECUTABLE_LINKER__ManulEngine_Release CMakeFiles/ManulEngine.dir/ManulEngine/src/main.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Core/Window.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Renderer/Renderer.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Core/Logger.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Vulkan/VulkanDebug.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Vulkan/VulkanDevice.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Vulkan/VulkanBackend.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Windows/WindowsWindow.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Math/Math.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Physics/2D/Physics2D.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Core/Application.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Core/FileSystem.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Vulkan/VulkanSurface.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Vulkan/VulkanPipline.cpp.obj | glfw/src/libglfw3.a || glfw/src/libglfw3.a
   FLAGS = -O3 -DNDEBUG
   LINK_FLAGS = -mwindows
   LINK_LIBRARIES = -lvulkan-1  -lopengl32  -lglu32  glfw/src/libglfw3.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32

@@ -63,7 +63,11 @@ add_executable(ManulEngine WIN32 "ManulEngine/src/main.cpp"
 		"ManulEngine/src/ManulEngine/Core/Application.cpp"
 		"ManulEngine/src/ManulEngine/Core/Application.h"
 		ManulEngine/src/ManulEngine/Core/FileSystem.cpp
-		ManulEngine/src/ManulEngine/Core/FileSystem.h)
+		ManulEngine/src/ManulEngine/Core/FileSystem.h
+		ManulEngine/src/Platform/Vulkan/VulkanSurface.cpp
+		ManulEngine/src/Platform/Vulkan/VulkanSurface.h
+		ManulEngine/src/Platform/Vulkan/VulkanPipline.cpp
+		ManulEngine/src/Platform/Vulkan/VulkanPipline.h)
 
 include_directories("ManulEngine/src/ManulEngine")
 include_directories("ManulEngine/src")
