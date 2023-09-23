@@ -47,105 +47,140 @@ cmake_ninja_workdir = D$:/DEV/C++/ManulEngine/cmake-build-release/
 #############################################
 # Order-only phony target for ManulEngine
 
-build cmake_object_order_depends_target_ManulEngine: phony || cmake_object_order_depends_target_glfw
+build cmake_object_order_depends_target_ManulEngine: phony || cmake_object_order_depends_target_gladLib cmake_object_order_depends_target_glfw
 
-build CMakeFiles/ManulEngine.dir/ManulEngine/src/main.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/main.cpp || cmake_object_order_depends_target_ManulEngine
+build CMakeFiles/ManulEngine.dir/cmake_pch.hxx.gch: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/cmake-build-release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx.cxx | CMakeFiles/ManulEngine.dir/cmake_pch.hxx || cmake_object_order_depends_target_ManulEngine
+  DEP_FILE = CMakeFiles\ManulEngine.dir\cmake_pch.hxx.gch.d
+  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always -Winvalid-pch -x c++-header -include D:/DEV/C++/ManulEngine/cmake-build-release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
+  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/external/glad/include -ID:/DEV/C++/ManulEngine/external/zlib-1.3 -ID:/DEV/C++/ManulEngine/glfw/include
+  OBJECT_DIR = CMakeFiles\ManulEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir
+
+build CMakeFiles/ManulEngine.dir/ManulEngine/src/main.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/main.cpp | CMakeFiles/ManulEngine.dir/cmake_pch.hxx CMakeFiles/ManulEngine.dir/cmake_pch.hxx.gch || cmake_object_order_depends_target_ManulEngine
   DEP_FILE = CMakeFiles\ManulEngine.dir\ManulEngine\src\main.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
-  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/glfw/include
+  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always -Winvalid-pch -include D:/DEV/C++/ManulEngine/cmake-build-release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
+  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/external/glad/include -ID:/DEV/C++/ManulEngine/external/zlib-1.3 -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src
 
-build CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Core/Window.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine/Core/Window.cpp || cmake_object_order_depends_target_ManulEngine
+build CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Core/Window.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine/Core/Window.cpp | CMakeFiles/ManulEngine.dir/cmake_pch.hxx CMakeFiles/ManulEngine.dir/cmake_pch.hxx.gch || cmake_object_order_depends_target_ManulEngine
   DEP_FILE = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Core\Window.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
-  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/glfw/include
+  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always -Winvalid-pch -include D:/DEV/C++/ManulEngine/cmake-build-release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
+  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/external/glad/include -ID:/DEV/C++/ManulEngine/external/zlib-1.3 -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Core
 
-build CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Renderer/Renderer.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine/Renderer/Renderer.cpp || cmake_object_order_depends_target_ManulEngine
+build CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Renderer/Renderer.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine/Renderer/Renderer.cpp | CMakeFiles/ManulEngine.dir/cmake_pch.hxx CMakeFiles/ManulEngine.dir/cmake_pch.hxx.gch || cmake_object_order_depends_target_ManulEngine
   DEP_FILE = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Renderer\Renderer.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
-  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/glfw/include
+  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always -Winvalid-pch -include D:/DEV/C++/ManulEngine/cmake-build-release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
+  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/external/glad/include -ID:/DEV/C++/ManulEngine/external/zlib-1.3 -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Renderer
 
-build CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Core/Logger.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine/Core/Logger.cpp || cmake_object_order_depends_target_ManulEngine
+build CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Core/Logger.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine/Core/Logger.cpp | CMakeFiles/ManulEngine.dir/cmake_pch.hxx CMakeFiles/ManulEngine.dir/cmake_pch.hxx.gch || cmake_object_order_depends_target_ManulEngine
   DEP_FILE = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Core\Logger.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
-  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/glfw/include
+  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always -Winvalid-pch -include D:/DEV/C++/ManulEngine/cmake-build-release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
+  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/external/glad/include -ID:/DEV/C++/ManulEngine/external/zlib-1.3 -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Core
 
-build CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Vulkan/VulkanDebug.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/Platform/Vulkan/VulkanDebug.cpp || cmake_object_order_depends_target_ManulEngine
+build CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Vulkan/VulkanDebug.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/Platform/Vulkan/VulkanDebug.cpp | CMakeFiles/ManulEngine.dir/cmake_pch.hxx CMakeFiles/ManulEngine.dir/cmake_pch.hxx.gch || cmake_object_order_depends_target_ManulEngine
   DEP_FILE = CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan\VulkanDebug.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
-  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/glfw/include
+  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always -Winvalid-pch -include D:/DEV/C++/ManulEngine/cmake-build-release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
+  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/external/glad/include -ID:/DEV/C++/ManulEngine/external/zlib-1.3 -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan
 
-build CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Vulkan/VulkanDevice.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/Platform/Vulkan/VulkanDevice.cpp || cmake_object_order_depends_target_ManulEngine
+build CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Vulkan/VulkanDevice.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/Platform/Vulkan/VulkanDevice.cpp | CMakeFiles/ManulEngine.dir/cmake_pch.hxx CMakeFiles/ManulEngine.dir/cmake_pch.hxx.gch || cmake_object_order_depends_target_ManulEngine
   DEP_FILE = CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan\VulkanDevice.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
-  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/glfw/include
+  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always -Winvalid-pch -include D:/DEV/C++/ManulEngine/cmake-build-release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
+  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/external/glad/include -ID:/DEV/C++/ManulEngine/external/zlib-1.3 -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan
 
-build CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Vulkan/VulkanBackend.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/Platform/Vulkan/VulkanBackend.cpp || cmake_object_order_depends_target_ManulEngine
+build CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Vulkan/VulkanBackend.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/Platform/Vulkan/VulkanBackend.cpp | CMakeFiles/ManulEngine.dir/cmake_pch.hxx CMakeFiles/ManulEngine.dir/cmake_pch.hxx.gch || cmake_object_order_depends_target_ManulEngine
   DEP_FILE = CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan\VulkanBackend.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
-  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/glfw/include
+  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always -Winvalid-pch -include D:/DEV/C++/ManulEngine/cmake-build-release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
+  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/external/glad/include -ID:/DEV/C++/ManulEngine/external/zlib-1.3 -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan
 
-build CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Windows/WindowsWindow.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/Platform/Windows/WindowsWindow.cpp || cmake_object_order_depends_target_ManulEngine
+build CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Windows/WindowsWindow.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/Platform/Windows/WindowsWindow.cpp | CMakeFiles/ManulEngine.dir/cmake_pch.hxx CMakeFiles/ManulEngine.dir/cmake_pch.hxx.gch || cmake_object_order_depends_target_ManulEngine
   DEP_FILE = CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Windows\WindowsWindow.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
-  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/glfw/include
+  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always -Winvalid-pch -include D:/DEV/C++/ManulEngine/cmake-build-release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
+  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/external/glad/include -ID:/DEV/C++/ManulEngine/external/zlib-1.3 -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Windows
 
-build CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Math/Math.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine/Math/Math.cpp || cmake_object_order_depends_target_ManulEngine
+build CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Math/Math.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine/Math/Math.cpp | CMakeFiles/ManulEngine.dir/cmake_pch.hxx CMakeFiles/ManulEngine.dir/cmake_pch.hxx.gch || cmake_object_order_depends_target_ManulEngine
   DEP_FILE = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Math\Math.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
-  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/glfw/include
+  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always -Winvalid-pch -include D:/DEV/C++/ManulEngine/cmake-build-release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
+  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/external/glad/include -ID:/DEV/C++/ManulEngine/external/zlib-1.3 -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Math
 
-build CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Physics/2D/Physics2D.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine/Physics/2D/Physics2D.cpp || cmake_object_order_depends_target_ManulEngine
+build CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Physics/2D/Physics2D.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine/Physics/2D/Physics2D.cpp | CMakeFiles/ManulEngine.dir/cmake_pch.hxx CMakeFiles/ManulEngine.dir/cmake_pch.hxx.gch || cmake_object_order_depends_target_ManulEngine
   DEP_FILE = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Physics\2D\Physics2D.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
-  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/glfw/include
+  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always -Winvalid-pch -include D:/DEV/C++/ManulEngine/cmake-build-release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
+  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/external/glad/include -ID:/DEV/C++/ManulEngine/external/zlib-1.3 -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Physics\2D
 
-build CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Core/Application.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine/Core/Application.cpp || cmake_object_order_depends_target_ManulEngine
+build CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Core/Application.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine/Core/Application.cpp | CMakeFiles/ManulEngine.dir/cmake_pch.hxx CMakeFiles/ManulEngine.dir/cmake_pch.hxx.gch || cmake_object_order_depends_target_ManulEngine
   DEP_FILE = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Core\Application.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
-  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/glfw/include
+  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always -Winvalid-pch -include D:/DEV/C++/ManulEngine/cmake-build-release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
+  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/external/glad/include -ID:/DEV/C++/ManulEngine/external/zlib-1.3 -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Core
 
-build CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Core/FileSystem.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine/Core/FileSystem.cpp || cmake_object_order_depends_target_ManulEngine
+build CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Core/FileSystem.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine/Core/FileSystem.cpp | CMakeFiles/ManulEngine.dir/cmake_pch.hxx CMakeFiles/ManulEngine.dir/cmake_pch.hxx.gch || cmake_object_order_depends_target_ManulEngine
   DEP_FILE = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Core\FileSystem.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
-  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/glfw/include
+  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always -Winvalid-pch -include D:/DEV/C++/ManulEngine/cmake-build-release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
+  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/external/glad/include -ID:/DEV/C++/ManulEngine/external/zlib-1.3 -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Core
 
-build CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Vulkan/VulkanSurface.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/Platform/Vulkan/VulkanSurface.cpp || cmake_object_order_depends_target_ManulEngine
+build CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Vulkan/VulkanSurface.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/Platform/Vulkan/VulkanSurface.cpp | CMakeFiles/ManulEngine.dir/cmake_pch.hxx CMakeFiles/ManulEngine.dir/cmake_pch.hxx.gch || cmake_object_order_depends_target_ManulEngine
   DEP_FILE = CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan\VulkanSurface.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
-  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/glfw/include
+  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always -Winvalid-pch -include D:/DEV/C++/ManulEngine/cmake-build-release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
+  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/external/glad/include -ID:/DEV/C++/ManulEngine/external/zlib-1.3 -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan
 
-build CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Vulkan/VulkanPipline.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/Platform/Vulkan/VulkanPipline.cpp || cmake_object_order_depends_target_ManulEngine
+build CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Vulkan/VulkanPipline.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/Platform/Vulkan/VulkanPipline.cpp | CMakeFiles/ManulEngine.dir/cmake_pch.hxx CMakeFiles/ManulEngine.dir/cmake_pch.hxx.gch || cmake_object_order_depends_target_ManulEngine
   DEP_FILE = CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan\VulkanPipline.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
-  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/glfw/include
+  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always -Winvalid-pch -include D:/DEV/C++/ManulEngine/cmake-build-release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
+  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/external/glad/include -ID:/DEV/C++/ManulEngine/external/zlib-1.3 -ID:/DEV/C++/ManulEngine/glfw/include
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan
+
+build CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/OpenGL/OpenGLBackend.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/Platform/OpenGL/OpenGLBackend.cpp | CMakeFiles/ManulEngine.dir/cmake_pch.hxx CMakeFiles/ManulEngine.dir/cmake_pch.hxx.gch || cmake_object_order_depends_target_ManulEngine
+  DEP_FILE = CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\OpenGL\OpenGLBackend.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always -Winvalid-pch -include D:/DEV/C++/ManulEngine/cmake-build-release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
+  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/external/glad/include -ID:/DEV/C++/ManulEngine/external/zlib-1.3 -ID:/DEV/C++/ManulEngine/glfw/include
+  OBJECT_DIR = CMakeFiles\ManulEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\OpenGL
+
+build CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/ResourceManager/ResourcePacker.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine/ResourceManager/ResourcePacker.cpp | CMakeFiles/ManulEngine.dir/cmake_pch.hxx CMakeFiles/ManulEngine.dir/cmake_pch.hxx.gch || cmake_object_order_depends_target_ManulEngine
+  DEP_FILE = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\ResourceManager\ResourcePacker.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always -Winvalid-pch -include D:/DEV/C++/ManulEngine/cmake-build-release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
+  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/external/glad/include -ID:/DEV/C++/ManulEngine/external/zlib-1.3 -ID:/DEV/C++/ManulEngine/glfw/include
+  OBJECT_DIR = CMakeFiles\ManulEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\ResourceManager
+
+build CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/ResourceManager/ResourceManager.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine/ResourceManager/ResourceManager.cpp | CMakeFiles/ManulEngine.dir/cmake_pch.hxx CMakeFiles/ManulEngine.dir/cmake_pch.hxx.gch || cmake_object_order_depends_target_ManulEngine
+  DEP_FILE = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\ResourceManager\ResourceManager.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always -Winvalid-pch -include D:/DEV/C++/ManulEngine/cmake-build-release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
+  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/external/glad/include -ID:/DEV/C++/ManulEngine/external/zlib-1.3 -ID:/DEV/C++/ManulEngine/glfw/include
+  OBJECT_DIR = CMakeFiles\ManulEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\ResourceManager
+
+build CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/ResourceManager/ResourceLoader.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_Release D$:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine/ResourceManager/ResourceLoader.cpp | CMakeFiles/ManulEngine.dir/cmake_pch.hxx CMakeFiles/ManulEngine.dir/cmake_pch.hxx.gch || cmake_object_order_depends_target_ManulEngine
+  DEP_FILE = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\ResourceManager\ResourceLoader.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always -Winvalid-pch -include D:/DEV/C++/ManulEngine/cmake-build-release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
+  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/external/glad/include -ID:/DEV/C++/ManulEngine/external/zlib-1.3 -ID:/DEV/C++/ManulEngine/glfw/include
+  OBJECT_DIR = CMakeFiles\ManulEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\ResourceManager
 
 
 # =============================================================================
@@ -155,10 +190,10 @@ build CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Vulkan/VulkanPipline.c
 #############################################
 # Link the executable ManulEngine.exe
 
-build ManulEngine.exe: CXX_EXECUTABLE_LINKER__ManulEngine_Release CMakeFiles/ManulEngine.dir/ManulEngine/src/main.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Core/Window.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Renderer/Renderer.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Core/Logger.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Vulkan/VulkanDebug.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Vulkan/VulkanDevice.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Vulkan/VulkanBackend.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Windows/WindowsWindow.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Math/Math.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Physics/2D/Physics2D.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Core/Application.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Core/FileSystem.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Vulkan/VulkanSurface.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Vulkan/VulkanPipline.cpp.obj | glfw/src/libglfw3.a || glfw/src/libglfw3.a
+build ManulEngine.exe: CXX_EXECUTABLE_LINKER__ManulEngine_Release CMakeFiles/ManulEngine.dir/ManulEngine/src/main.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Core/Window.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Renderer/Renderer.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Core/Logger.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Vulkan/VulkanDebug.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Vulkan/VulkanDevice.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Vulkan/VulkanBackend.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Windows/WindowsWindow.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Math/Math.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Physics/2D/Physics2D.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Core/Application.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Core/FileSystem.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Vulkan/VulkanSurface.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Vulkan/VulkanPipline.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/OpenGL/OpenGLBackend.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/ResourceManager/ResourcePacker.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/ResourceManager/ResourceManager.cpp.obj CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/ResourceManager/ResourceLoader.cpp.obj | glfw/src/libglfw3.a libgladLib.a || glfw/src/libglfw3.a libgladLib.a
   FLAGS = -O3 -DNDEBUG
   LINK_FLAGS = -mwindows
-  LINK_LIBRARIES = -lvulkan-1  -lopengl32  -lglu32  glfw/src/libglfw3.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = -lvulkan-1  -lopengl32  -lglu32  glfw/src/libglfw3.a  libgladLib.a  -lzlib  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   LINK_PATH = -LD:/VulkanSDK/Bin   -LD:/VulkanSDK/Lib
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   POST_BUILD = cd .
@@ -166,6 +201,38 @@ build ManulEngine.exe: CXX_EXECUTABLE_LINKER__ManulEngine_Release CMakeFiles/Man
   TARGET_FILE = ManulEngine.exe
   TARGET_IMPLIB = libManulEngine.dll.a
   TARGET_PDB = ManulEngine.exe.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gladLib
+
+
+#############################################
+# Order-only phony target for gladLib
+
+build cmake_object_order_depends_target_gladLib: phony || CMakeFiles/gladLib.dir
+
+build CMakeFiles/gladLib.dir/external/glad/src/glad.c.obj: C_COMPILER__gladLib_unscanned_Release D$:/DEV/C++/ManulEngine/external/glad/src/glad.c || cmake_object_order_depends_target_gladLib
+  DEP_FILE = CMakeFiles\gladLib.dir\external\glad\src\glad.c.obj.d
+  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
+  INCLUDES = -ID:/VulkanSDK/Include -ID:/DEV/C++/ManulEngine/ManulEngine/src/ManulEngine -ID:/DEV/C++/ManulEngine/ManulEngine/src -ID:/DEV/C++/ManulEngine/external/glad/include -ID:/DEV/C++/ManulEngine/external/zlib-1.3
+  OBJECT_DIR = CMakeFiles\gladLib.dir
+  OBJECT_FILE_DIR = CMakeFiles\gladLib.dir\external\glad\src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gladLib
+
+
+#############################################
+# Link the static library libgladLib.a
+
+build libgladLib.a: C_STATIC_LIBRARY_LINKER__gladLib_Release CMakeFiles/gladLib.dir/external/glad/src/glad.c.obj
+  LANGUAGE_COMPILE_FLAGS = -O3 -DNDEBUG
+  OBJECT_DIR = CMakeFiles\gladLib.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = libgladLib.a
+  TARGET_PDB = gladLib.a.dbg
 
 
 #############################################
@@ -1848,6 +1915,8 @@ build gears: phony glfw/examples/gears.exe
 
 build gears.exe: phony glfw/examples/gears.exe
 
+build gladLib: phony libgladLib.a
+
 build glfw: phony glfw/src/libglfw3.a
 
 build glfwinfo: phony glfw/tests/glfwinfo.exe
@@ -1950,7 +2019,7 @@ build windows.exe: phony glfw/tests/windows.exe
 #############################################
 # Folder: D:/DEV/C++/ManulEngine/cmake-build-release
 
-build all: phony ManulEngine.exe glfw/all
+build all: phony ManulEngine.exe libgladLib.a glfw/all
 
 # =============================================================================
 

@@ -33,7 +33,7 @@ VkResult VulkanDebug::CreateDebugUtilsMessengerEXT(VkInstance instance, const Vk
 
 void VulkanDebug::setupDebugMessenger(bool enableValidationLayers, VkInstance instance) {
     if (!enableValidationLayers) return;
-
+    vkInstance = instance;
     VkDebugUtilsMessengerCreateInfoEXT createInfo{};
     createInfo = {};
     createInfo.sType = VK_STRUCTURE_TYPE_DEBUG_UTILS_MESSENGER_CREATE_INFO_EXT;

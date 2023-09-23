@@ -1,13 +1,21 @@
 #include "ManulEngine.h"
+#include "ResourceManager/ResourcePacker.h"
 
 int main(int argc, char *argv[])
 {
     ManulEngine::Application application;
 
-	application.Create(nullptr);
+    ResourcePacker resourceLoader;
+    Resource resource;
+    resource.path = "D:\\text.txt";
+    resource.type = Resource::Type::TextFile;
 
-    while (!application.applicationExit)
-    {
-        application.Update();
-    }
+    resourceLoader.PackResource(resource, "D:\\");
+
+    return 0;
+	//application.Create(nullptr);
+    //while (!application.applicationExit)
+    //{
+    //    application.Update();
+    //}
 }

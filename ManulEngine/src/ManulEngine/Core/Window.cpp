@@ -21,11 +21,18 @@ void Window::CreateConsoleWindow()
 int Window::Create(int width, int height, std::string title, bool fullscreen)
 {
     if (!glfwInit()) return -1;
-    
-    glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
-    glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
-    
+
+    //TODO: для vulkan api
+    //glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
+    //glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
+
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 0);
+    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+
+
     windowInstance = glfwCreateWindow(width, height, title.c_str(), NULL, NULL);
+    glfwMakeContextCurrent(windowInstance);
     CreateConsoleWindow();
 
     render.Init(width, height, windowInstance);
@@ -34,7 +41,6 @@ int Window::Create(int width, int height, std::string title, bool fullscreen)
         glfwTerminate();
         return -1;
     }
-    glfwMakeContextCurrent(windowInstance);
 
     return 0;
 }

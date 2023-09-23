@@ -332,6 +332,21 @@ GLFW_USE_HYBRID_HPG:BOOL=OFF
 //Assume the Vulkan loader is linked with the application
 GLFW_VULKAN_STATIC:BOOL=OFF
 
+//Installation directory for executables
+INSTALL_BIN_DIR:PATH=C:/Program Files (x86)/ManulEngine/bin
+
+//Installation directory for headers
+INSTALL_INC_DIR:PATH=C:/Program Files (x86)/ManulEngine/include
+
+//Installation directory for libraries
+INSTALL_LIB_DIR:PATH=C:/Program Files (x86)/ManulEngine/lib
+
+//Installation directory for manual pages
+INSTALL_MAN_DIR:PATH=C:/Program Files (x86)/ManulEngine/share/man
+
+//Installation directory for pkgconfig (.pc) files
+INSTALL_PKGCONFIG_DIR:PATH=C:/Program Files (x86)/ManulEngine/share/pkgconfig
+
 //Value Computed by CMake
 ManulEngine_BINARY_DIR:STATIC=D:/DEV/C++/ManulEngine/cmake-build-release
 
@@ -346,6 +361,15 @@ OPENGL_gl_LIBRARY:STRING=opengl32
 
 //GLU library for win32
 OPENGL_glu_LIBRARY:STRING=glu32
+
+//Value Computed by CMake
+zlib_BINARY_DIR:STATIC=D:/DEV/C++/ManulEngine/cmake-build-release/external/zlib-1.3
+
+//Value Computed by CMake
+zlib_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+zlib_SOURCE_DIR:STATIC=D:/DEV/C++/ManulEngine/external/zlib-1.3
 
 
 ########################
@@ -544,12 +568,26 @@ DINPUT_H_FOUND:INTERNAL=1
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[opengl32][c ][v()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+//Have function fseeko
+HAVE_FSEEKO:INTERNAL=1
+//Result of TRY_COMPILE
+HAVE_OFF64_T:INTERNAL=TRUE
+//Have include stddef.h
+HAVE_STDDEF_H:INTERNAL=1
+//Have include stdint.h
+HAVE_STDINT_H:INTERNAL=1
+//Have include sys/types.h
+HAVE_SYS_TYPES_H:INTERNAL=1
+//CHECK_TYPE_SIZE: sizeof(off64_t)
+OFF64_T:INTERNAL=8
 //ADVANCED property for variable: OPENGL_gl_LIBRARY
 OPENGL_gl_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENGL_glu_LIBRARY
 OPENGL_glu_LIBRARY-ADVANCED:INTERNAL=1
 //Have include xinput.h
 XINPUT_H_FOUND:INTERNAL=1
+//Have include unistd.h
+Z_HAVE_UNISTD_H:INTERNAL=1
 //linker supports push/pop state
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
 //Test _GLFW_HAS_64ASLR

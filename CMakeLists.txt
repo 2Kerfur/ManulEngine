@@ -9,7 +9,9 @@ include_directories( ${OPENGL_INCLUDE_DIRS} )
 set( GLFW_BUILD_DOCS OFF CACHE BOOL  "GLFW lib only" )
 set( GLFW_INSTALL OFF CACHE BOOL  "GLFW lib only" )
 
+
 add_subdirectory( glfw )
+#add_subdirectory( external/zlib-1.3 )
 
 if( MSVC )
     SET( CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /ENTRY:mainCRTStartup" )
@@ -67,16 +69,40 @@ add_executable(ManulEngine WIN32 "ManulEngine/src/main.cpp"
 		ManulEngine/src/Platform/Vulkan/VulkanSurface.cpp
 		ManulEngine/src/Platform/Vulkan/VulkanSurface.h
 		ManulEngine/src/Platform/Vulkan/VulkanPipline.cpp
-		ManulEngine/src/Platform/Vulkan/VulkanPipline.h)
+		ManulEngine/src/Platform/Vulkan/VulkanPipline.h
+        ManulEngine/src/Platform/OpenGL/OpenGLBackend.cpp
+        ManulEngine/src/Platform/OpenGL/OpenGLBackend.h
+		ManulEngine/src/ManulEngine/ResourceManager/ResourcePacker.cpp
+		ManulEngine/src/ManulEngine/ResourceManager/ResourcePacker.h
+		ManulEngine/src/ManulEngine/ResourceManager/ResourceManager.cpp
+		ManulEngine/src/ManulEngine/ResourceManager/ResourceManager.h
+		ManulEngine/src/ManulEngine/ResourceManager/ResourceLoader.cpp
+		ManulEngine/src/ManulEngine/ResourceManager/ResourceLoader.h
+		ManulEngine/src/ManulEngine/ResourceManager/ResourcePacker.cpp
+		ManulEngine/src/ManulEngine/ResourceManager/ResourcePacker.h
+		ManulEngine/src/ManulEngine/ResourceManager/Resource.h
+)
 
+link_directories(ManulEngine external/zlib-1.3/MinSizeRel)
 include_directories("ManulEngine/src/ManulEngine")
 include_directories("ManulEngine/src")
+
+add_library(gladLib STATIC
+		external/glad/src/glad.c
+
+)
+include_directories("external/glad/include")
+include_directories("external/zlib-1.3")
+
 set_target_properties(ManulEngine PROPERTIES LINKER_LANGUAGE CXX)
 target_compile_features(ManulEngine PRIVATE cxx_std_17)
 
 target_link_libraries(ManulEngine ${VULKAN_LIB_LIST} )
-target_link_libraries(ManulEngine ${OPENGL_LIBRARIES} glfw )
 
+
+target_link_libraries(ManulEngine ${OPENGL_LIBRARIES} glfw gladLib zlib)
+
+target_precompile_headers(ManulEngine PRIVATE ManulEngine/src/mapch.h)
 if( MSVC )
     if(${CMAKE_VERSION} VERSION_LESS "3.6.0") 
         message( "\n\t[ WARNING ]\n\n\tCMake version lower than 3.6.\n\n\t - Please update CMake and rerun; OR\n\t - Manually set 'GLFW-CMake-starter' as StartUp Project in Visual Studio.\n" )

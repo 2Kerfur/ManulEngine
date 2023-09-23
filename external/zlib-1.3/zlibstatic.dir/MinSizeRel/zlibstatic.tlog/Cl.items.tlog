@@ -1,0 +1,15 @@
+D:\DEV\C++\ManulEngine\external\zlib-1.3\adler32.c;D:\DEV\C++\ManulEngine\external\zlib-1.3\zlibstatic.dir\MinSizeRel\adler32.obj
+D:\DEV\C++\ManulEngine\external\zlib-1.3\compress.c;D:\DEV\C++\ManulEngine\external\zlib-1.3\zlibstatic.dir\MinSizeRel\compress.obj
+D:\DEV\C++\ManulEngine\external\zlib-1.3\crc32.c;D:\DEV\C++\ManulEngine\external\zlib-1.3\zlibstatic.dir\MinSizeRel\crc32.obj
+D:\DEV\C++\ManulEngine\external\zlib-1.3\deflate.c;D:\DEV\C++\ManulEngine\external\zlib-1.3\zlibstatic.dir\MinSizeRel\deflate.obj
+D:\DEV\C++\ManulEngine\external\zlib-1.3\gzclose.c;D:\DEV\C++\ManulEngine\external\zlib-1.3\zlibstatic.dir\MinSizeRel\gzclose.obj
+D:\DEV\C++\ManulEngine\external\zlib-1.3\gzlib.c;D:\DEV\C++\ManulEngine\external\zlib-1.3\zlibstatic.dir\MinSizeRel\gzlib.obj
+D:\DEV\C++\ManulEngine\external\zlib-1.3\gzread.c;D:\DEV\C++\ManulEngine\external\zlib-1.3\zlibstatic.dir\MinSizeRel\gzread.obj
+D:\DEV\C++\ManulEngine\external\zlib-1.3\gzwrite.c;D:\DEV\C++\ManulEngine\external\zlib-1.3\zlibstatic.dir\MinSizeRel\gzwrite.obj
+D:\DEV\C++\ManulEngine\external\zlib-1.3\inflate.c;D:\DEV\C++\ManulEngine\external\zlib-1.3\zlibstatic.dir\MinSizeRel\inflate.obj
+D:\DEV\C++\ManulEngine\external\zlib-1.3\infback.c;D:\DEV\C++\ManulEngine\external\zlib-1.3\zlibstatic.dir\MinSizeRel\infback.obj
+D:\DEV\C++\ManulEngine\external\zlib-1.3\inftrees.c;D:\DEV\C++\ManulEngine\external\zlib-1.3\zlibstatic.dir\MinSizeRel\inftrees.obj
+D:\DEV\C++\ManulEngine\external\zlib-1.3\inffast.c;D:\DEV\C++\ManulEngine\external\zlib-1.3\zlibstatic.dir\MinSizeRel\inffast.obj
+D:\DEV\C++\ManulEngine\external\zlib-1.3\trees.c;D:\DEV\C++\ManulEngine\external\zlib-1.3\zlibstatic.dir\MinSizeRel\trees.obj
+D:\DEV\C++\ManulEngine\external\zlib-1.3\uncompr.c;D:\DEV\C++\ManulEngine\external\zlib-1.3\zlibstatic.dir\MinSizeRel\uncompr.obj
+D:\DEV\C++\ManulEngine\external\zlib-1.3\zutil.c;D:\DEV\C++\ManulEngine\external\zlib-1.3\zlibstatic.dir\MinSizeRel\zutil.obj
