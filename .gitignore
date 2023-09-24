@@ -1035,7 +1035,7 @@ _deps
 *.cmd
 .tmp_versions/
 /cmake-build-release
-/.idea
+.idea/
 
 cmake-build-debug/
 cmake-build-debug-visual-studio/
