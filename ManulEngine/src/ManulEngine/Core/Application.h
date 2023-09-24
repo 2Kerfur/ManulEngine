@@ -1,7 +1,7 @@
 #pragma once
 #include <string>
 #include "Window.h"
-#include "Math/Math.h"
+#include "ManulEngine/Math/Math.h"
 
 namespace ManulEngine {
 

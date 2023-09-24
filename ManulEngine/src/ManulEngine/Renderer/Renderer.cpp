@@ -1,23 +1,19 @@
 #include "Renderer.h"
-#include "../Core/Logger.h"
 
-
-Renderer::Renderer()
+void Renderer::Init(uint32_t windowWidht, uint32_t windowHegiht, GLFWwindow* window)
 {
-}
+    Renderer2D::Init(windowWidht, windowHegiht, window);
 
-Renderer::~Renderer()
-{
-    
-}
-
-void Renderer::Init(int windowWidht, int windowHegiht, GLFWwindow* window)
-{
-    //vulkanBackend.Init(windowWidht, windowHegiht, window);
-    openGlBackend.Init(windowWidht, windowHegiht, window);
 }
 void Renderer::Render()
 {
-    openGlBackend.Render();
-    //vulkanBackend.Render();
+    Renderer2D::Render();
+}
+
+void Renderer::Shutdown() {
+    Renderer2D::Shutdown();
+}
+
+void Renderer::OnWindowResize(uint32_t width, uint32_t height) {
+
 }

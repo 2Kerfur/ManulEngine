@@ -1035,6 +1035,14 @@ _deps
 *.cmd
 .tmp_versions/
 /cmake-build-release
+/.idea
+
+cmake-build-debug/
+cmake-build-debug-visual-studio/
+cmake-build-minsizerel/
+cmake-build-minsizerel-visual-studio/
+cmake-build-release/
+cmake-build-release-visual-studio/
 modules.order
 Module.symvers
 Mkfile.old

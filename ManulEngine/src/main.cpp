@@ -1,5 +1,5 @@
 #include "ManulEngine.h"
-#include "ResourceManager/ResourcePacker.h"
+#include "ManulEngine/ResourceManager/ResourcePacker.h"
 
 int main(int argc, char *argv[])
 {
@@ -10,12 +10,14 @@ int main(int argc, char *argv[])
     resource.path = "D:\\text.txt";
     resource.type = Resource::Type::TextFile;
 
-    resourceLoader.PackResource(resource, "D:\\");
+    //resourceLoader.PackResource(resource, "D:\\");
 
+
+	application.Create(nullptr);
+    while (!application.applicationExit)
+    {
+        application.Update();
+    }
     return 0;
-	//application.Create(nullptr);
-    //while (!application.applicationExit)
-    //{
-    //    application.Update();
-    //}
 }
+

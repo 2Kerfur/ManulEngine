@@ -1,18 +1,15 @@
 #pragma once
-//#include "Platform/Vulkan/VulkanBackend.h"
-#include "Platform/OpenGL/OpenGLBackend.h"
 
+#include "Renderer2D.h"
 #include "GLFW/glfw3.h"
 class Renderer
 {
 public:
-	Renderer();
-	~Renderer();
+	static void Init(uint32_t windowWidht, uint32_t windowHegiht, GLFWwindow* window);
+    static void Shutdown();
+	static void Render();
 
-	void Init(int windowWidht, int windowHegiht, GLFWwindow* window);
-	void Render();
+    static void OnWindowResize(uint32_t width, uint32_t height);
 private:
 
-    //VulkanBackend vulkanBackend;
-    OpenGLBackend openGlBackend;
 };
