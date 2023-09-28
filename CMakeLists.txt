@@ -19,7 +19,9 @@ if(${CMAKE_SYSTEM_NAME} MATCHES "Windows")
 	link_directories(external/glfw/bin/src/MinSizeRel)
 endif()
 
-add_library(glad STATIC external/glad/src/glad.c)
+add_library(glad STATIC external/glad/src/glad.c
+		ManulEngine/src/ManulEngine/Audio/AudioEngine.cpp
+		ManulEngine/src/ManulEngine/Audio/AudioEngine.h)
 
 include_directories("ManulEngine/src")
 
