@@ -40,7 +40,7 @@ namespace ManulEngine
             }
             else
             {
-                //TODO: Иправить это говно
+                //TODO: Исправить
                 m_Specification.readFromFile = applicationSpecification->readFromFile;
                 m_Specification.Name = applicationSpecification->Name;
                 m_Specification.Vendor = applicationSpecification->Vendor;

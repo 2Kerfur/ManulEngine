@@ -20,8 +20,7 @@ if(${CMAKE_SYSTEM_NAME} MATCHES "Windows")
 endif()
 
 add_library(glad STATIC external/glad/src/glad.c
-		ManulEngine/src/ManulEngine/Audio/AudioEngine.cpp
-		ManulEngine/src/ManulEngine/Audio/AudioEngine.h)
+)
 
 include_directories("ManulEngine/src")
 
@@ -76,9 +75,11 @@ add_executable(ManulEngine WIN32
 		ManulEngine/src/ManulEngine/Renderer/OrthographicCamera.h
 		ManulEngine/src/ManulEngine/Renderer/RendererBackend.cpp
 		ManulEngine/src/ManulEngine/Renderer/RendererBackend.h
+		ManulEngine/src/ManulEngine/Audio/AudioEngine.cpp
+		ManulEngine/src/ManulEngine/Audio/AudioEngine.h
 )
 target_precompile_headers(ManulEngine PRIVATE ManulEngine/src/mapch.h)
-target_link_libraries(ManulEngine vulkan-1 glfw3 glad zlib )
+target_link_libraries(ManulEngine vulkan-1 glfw3 glad zlib)
 
 set_target_properties(ManulEngine PROPERTIES LINKER_LANGUAGE CXX)
 target_compile_features(ManulEngine PRIVATE cxx_std_17)
