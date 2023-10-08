@@ -5,11 +5,11 @@
 class Renderer
 {
 public:
-	static void Init(uint32_t windowWidht, uint32_t windowHegiht, GLFWwindow* window);
-    static void Shutdown();
-	static void Render();
+	void Init(uint32_t windowWidht, uint32_t windowHegiht, GLFWwindow* window);
+    void Shutdown();
+	void Render();
 
-    static void OnWindowResize(uint32_t width, uint32_t height);
+    void OnWindowResize(uint32_t width, uint32_t height);
 private:
-
+	Renderer2D renderer2D;
 };

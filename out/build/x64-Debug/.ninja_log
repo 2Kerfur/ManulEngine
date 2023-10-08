@@ -1,0 +1,21 @@
+# ninja log v5
+5	995	7185061442323552	CMakeFiles/glad.dir/external/glad/src/glad.c.obj	c08aed4272861dd7
+997	1049	7185061442854029	glad.lib	7d55884a8308eac4
+9	1695	7185061449316235	CMakeFiles/ManulEngine.dir/cmake_pch.cxx.obj	5891a0e91853a12b
+1715	1801	7185061450327462	CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Physics/2D/Physics2D.cpp.obj	316d6a39651d9d6d
+1700	1801	7185061450327462	CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Core/Logger.cpp.obj	620cbbf61dd975cb
+1712	1802	7185061450387532	CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Math/Math.cpp.obj	4a1a77e70721dbe
+1710	1808	7185061450357499	CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/Windows/WindowsWindow.cpp.obj	a03d13b286dff052
+1719	1825	7185061450597716	CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Core/FileSystem.cpp.obj	30168dc708e50465
+1699	1854	7185061450787900	CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Renderer/Renderer.cpp.obj	421af963e90ad947
+1695	1854	7185061450827918	CMakeFiles/ManulEngine.dir/ManulEngine/src/main.cpp.obj	7f08ab3f72dcbc7a
+1717	1882	7185061451198245	CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Core/Application.cpp.obj	c87b73f534c9bb7d
+1697	2288	7185061455227172	CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Core/Window.cpp.obj	10f8832ab5b0a4f9
+27	111	7185061546781568	CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Renderer/OrthographicCamera.cpp.obj	504549d734fbfd42
+20	112	7185061546781568	CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/ResourceManager/ResourceManager.cpp.obj	76fa7dd40acbad84
+22	112	7185061546781568	CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/ResourceManager/ResourceLoader.cpp.obj	c5dbf2d2e6948352
+32	112	7185061546781568	CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Audio/AudioEngine.cpp.obj	9828a5e44e7f2057
+30	149	7185061547171912	CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Renderer/RendererBackend.cpp.obj	ffd257170763cf04
+25	150	7185061547171912	CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/Renderer/Renderer2D.cpp.obj	bde2749a0c6bc224
+17	155	7185061547221994	CMakeFiles/ManulEngine.dir/ManulEngine/src/ManulEngine/ResourceManager/ResourcePacker.cpp.obj	be40c4dafe486434
+15	163	7185061547312041	CMakeFiles/ManulEngine.dir/ManulEngine/src/Platform/OpenGL/OpenGLBackend.cpp.obj	80f0907e1a564a73

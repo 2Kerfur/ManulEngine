@@ -10,7 +10,7 @@ if( MSVC )
     SET( CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /ENTRY:mainCRTStartup" )
 endif()
 
-set(VULKAN_PATH "D:/VulkanSDK")
+set(VULKAN_PATH "C:/VulkanSDK")
 
 if(${CMAKE_SYSTEM_NAME} MATCHES "Windows")
 	include_directories(AFTER ${VULKAN_PATH}/Include)
