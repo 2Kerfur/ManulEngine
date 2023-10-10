@@ -1,7 +1,7 @@
 #pragma once
 #include <string>
 #include "Window.h"
-#include "ManulEngine/Math/Math.h"
+#include "ManulEngine/Core/Math/Math.h"
 
 namespace ManulEngine {
 
@@ -19,24 +19,17 @@ namespace ManulEngine {
             bool fullscreen;
             Vector2Int windowSize;
             Vector2Int windowPos;
-            //Command line arguments
+            
         };
 
         Application();
         ~Application();
 
-        void Create(ApplicationSpecification* applicationSpecification);
+        void Create();
         void Update();
-
-        //static Application& Get() { return *s_Instance; }
-        //static Window& GetWindow() { return *m_Window; }
-
-        //static const ApplicationSpecification GetSpecification() { return *m_Specification; }
 
         bool applicationExit = false;
     private:
-        //bool OnWindowClose();
-        //bool OnWindowResize();
 
         bool m_Running = true;
         bool m_Minimized = false;
