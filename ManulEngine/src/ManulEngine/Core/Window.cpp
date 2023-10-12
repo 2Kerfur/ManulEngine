@@ -47,6 +47,7 @@ int Window::Create(int width, int height, std::string title, bool fullscreen)
 
 void Window::SetSize(int width, int height, bool fullscreen)
 {
+    
 }
 
 void Window::Update()

@@ -29,6 +29,7 @@ namespace ManulEngine {
         void Update();
 
         bool applicationExit = false;
+        
     private:
 
         bool m_Running = true;

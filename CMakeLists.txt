@@ -45,14 +45,14 @@ add_executable(ManulEngine WIN32
 		ManulEngine/src/ManulEngine.h
 		ManulEngine/src/Platform/Windows/WindowsWindow.cpp
 		ManulEngine/src/Platform/Windows/WindowsWindow.h
-		ManulEngine/src/ManulEngine/Math/Math.cpp
-		ManulEngine/src/ManulEngine/Math/Math.h
+		ManulEngine/src/ManulEngine/Core/Math/Math.cpp
+		ManulEngine/src/ManulEngine/Core/Math/Math.h
 		ManulEngine/src/ManulEngine/Physics/2D/Physics2D.cpp
 		ManulEngine/src/ManulEngine/Physics/2D/Physics2D.h
 		ManulEngine/src/ManulEngine/Core/Application.cpp
 		ManulEngine/src/ManulEngine/Core/Application.h
-		ManulEngine/src/ManulEngine/Core/FileSystem.cpp
-		ManulEngine/src/ManulEngine/Core/FileSystem.h
+		
+		
 		ManulEngine/src/Platform/Vulkan/VulkanSurface.cpp
 		ManulEngine/src/Platform/Vulkan/VulkanSurface.h
 		ManulEngine/src/Platform/Vulkan/VulkanPipline.cpp

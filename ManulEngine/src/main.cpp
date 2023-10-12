@@ -4,7 +4,7 @@ int main(int argc, char *argv[])
 {
     ManulEngine::Application application;
 
-	application.Create(nullptr);
+	application.Create();
     while (!application.applicationExit)
     {
         application.Update();
