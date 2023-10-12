@@ -1,4 +1,4 @@
-#include "glad/glad.h"
+    #include "glad/glad.h"
 #include "OpenGLBackend.h"
 
 #include "iostream"
@@ -89,6 +89,10 @@ void OpenGLBackend::Render() {
     glUseProgram(shaderProgram);
     glBindVertexArray(VAO);
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+}
+
+void OpenGLBackend::DrawLine(Vector3 startPos, Vector3 endPos, Vector3Color color)
+{
 
 }
 

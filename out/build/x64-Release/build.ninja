@@ -51,7 +51,7 @@ build cmake_object_order_depends_target_glad: phony || CMakeFiles\glad.dir
 
 build CMakeFiles\glad.dir\external\glad\src\glad.c.obj: C_COMPILER__glad_unscanned_RelWithDebInfo C$:\DEV\C++\ManulEngine\external\glad\src\glad.c || cmake_object_order_depends_target_glad
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MD /Zi /O2 /Ob1 /DNDEBUG
-  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include
+  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include -IC:\DEV\C++\ManulEngine\external\stb-image
   OBJECT_DIR = CMakeFiles\glad.dir
   OBJECT_FILE_DIR = CMakeFiles\glad.dir\external\glad\src
   TARGET_COMPILE_PDB = CMakeFiles\glad.dir\glad.pdb
@@ -86,7 +86,7 @@ build cmake_object_order_depends_target_ManulEngine: phony || cmake_object_order
 
 build CMakeFiles\ManulEngine.dir\cmake_pch.cxx.obj: CXX_COMPILER__ManulEngine_unscanned_RelWithDebInfo C$:\DEV\C++\ManulEngine\out\build\x64-Release\CMakeFiles\ManulEngine.dir\cmake_pch.cxx | CMakeFiles\ManulEngine.dir\cmake_pch.hxx || cmake_object_order_depends_target_ManulEngine
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG -std:c++17 /YcC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx /FpC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/./cmake_pch.cxx.pch /FIC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
-  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include
+  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include -IC:\DEV\C++\ManulEngine\external\stb-image
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir
   TARGET_COMPILE_PDB = CMakeFiles\ManulEngine.dir\
@@ -100,7 +100,7 @@ build CMakeFiles\ManulEngine.dir\.\cmake_pch.cxx.pch: phony CMakeFiles\ManulEngi
 
 build CMakeFiles\ManulEngine.dir\ManulEngine\src\main.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_RelWithDebInfo C$:\DEV\C++\ManulEngine\ManulEngine\src\main.cpp | CMakeFiles\ManulEngine.dir\cmake_pch.hxx CMakeFiles\ManulEngine.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_ManulEngine
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG -std:c++17 /YuC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx /FpC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/./cmake_pch.cxx.pch /FIC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
-  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include
+  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include -IC:\DEV\C++\ManulEngine\external\stb-image
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src
   TARGET_COMPILE_PDB = CMakeFiles\ManulEngine.dir\
@@ -108,7 +108,7 @@ build CMakeFiles\ManulEngine.dir\ManulEngine\src\main.cpp.obj: CXX_COMPILER__Man
 
 build CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Core\Window.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_RelWithDebInfo C$:\DEV\C++\ManulEngine\ManulEngine\src\ManulEngine\Core\Window.cpp | CMakeFiles\ManulEngine.dir\cmake_pch.hxx CMakeFiles\ManulEngine.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_ManulEngine
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG -std:c++17 /YuC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx /FpC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/./cmake_pch.cxx.pch /FIC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
-  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include
+  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include -IC:\DEV\C++\ManulEngine\external\stb-image
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Core
   TARGET_COMPILE_PDB = CMakeFiles\ManulEngine.dir\
@@ -116,7 +116,7 @@ build CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Core\Window.cpp.obj
 
 build CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Renderer\Renderer.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_RelWithDebInfo C$:\DEV\C++\ManulEngine\ManulEngine\src\ManulEngine\Renderer\Renderer.cpp | CMakeFiles\ManulEngine.dir\cmake_pch.hxx CMakeFiles\ManulEngine.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_ManulEngine
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG -std:c++17 /YuC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx /FpC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/./cmake_pch.cxx.pch /FIC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
-  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include
+  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include -IC:\DEV\C++\ManulEngine\external\stb-image
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Renderer
   TARGET_COMPILE_PDB = CMakeFiles\ManulEngine.dir\
@@ -124,7 +124,7 @@ build CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Renderer\Renderer.c
 
 build CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Core\Logger.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_RelWithDebInfo C$:\DEV\C++\ManulEngine\ManulEngine\src\ManulEngine\Core\Logger.cpp | CMakeFiles\ManulEngine.dir\cmake_pch.hxx CMakeFiles\ManulEngine.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_ManulEngine
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG -std:c++17 /YuC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx /FpC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/./cmake_pch.cxx.pch /FIC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
-  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include
+  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include -IC:\DEV\C++\ManulEngine\external\stb-image
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Core
   TARGET_COMPILE_PDB = CMakeFiles\ManulEngine.dir\
@@ -132,7 +132,7 @@ build CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Core\Logger.cpp.obj
 
 build CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan\VulkanDebug.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_RelWithDebInfo C$:\DEV\C++\ManulEngine\ManulEngine\src\Platform\Vulkan\VulkanDebug.cpp | CMakeFiles\ManulEngine.dir\cmake_pch.hxx CMakeFiles\ManulEngine.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_ManulEngine
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG -std:c++17 /YuC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx /FpC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/./cmake_pch.cxx.pch /FIC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
-  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include
+  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include -IC:\DEV\C++\ManulEngine\external\stb-image
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan
   TARGET_COMPILE_PDB = CMakeFiles\ManulEngine.dir\
@@ -140,7 +140,7 @@ build CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan\VulkanDebug.cpp
 
 build CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan\VulkanDevice.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_RelWithDebInfo C$:\DEV\C++\ManulEngine\ManulEngine\src\Platform\Vulkan\VulkanDevice.cpp | CMakeFiles\ManulEngine.dir\cmake_pch.hxx CMakeFiles\ManulEngine.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_ManulEngine
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG -std:c++17 /YuC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx /FpC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/./cmake_pch.cxx.pch /FIC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
-  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include
+  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include -IC:\DEV\C++\ManulEngine\external\stb-image
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan
   TARGET_COMPILE_PDB = CMakeFiles\ManulEngine.dir\
@@ -148,7 +148,7 @@ build CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan\VulkanDevice.cp
 
 build CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan\VulkanBackend.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_RelWithDebInfo C$:\DEV\C++\ManulEngine\ManulEngine\src\Platform\Vulkan\VulkanBackend.cpp | CMakeFiles\ManulEngine.dir\cmake_pch.hxx CMakeFiles\ManulEngine.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_ManulEngine
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG -std:c++17 /YuC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx /FpC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/./cmake_pch.cxx.pch /FIC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
-  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include
+  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include -IC:\DEV\C++\ManulEngine\external\stb-image
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan
   TARGET_COMPILE_PDB = CMakeFiles\ManulEngine.dir\
@@ -156,7 +156,7 @@ build CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan\VulkanBackend.c
 
 build CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Windows\WindowsWindow.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_RelWithDebInfo C$:\DEV\C++\ManulEngine\ManulEngine\src\Platform\Windows\WindowsWindow.cpp | CMakeFiles\ManulEngine.dir\cmake_pch.hxx CMakeFiles\ManulEngine.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_ManulEngine
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG -std:c++17 /YuC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx /FpC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/./cmake_pch.cxx.pch /FIC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
-  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include
+  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include -IC:\DEV\C++\ManulEngine\external\stb-image
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Windows
   TARGET_COMPILE_PDB = CMakeFiles\ManulEngine.dir\
@@ -164,7 +164,7 @@ build CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Windows\WindowsWindow.
 
 build CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Core\Math\Math.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_RelWithDebInfo C$:\DEV\C++\ManulEngine\ManulEngine\src\ManulEngine\Core\Math\Math.cpp | CMakeFiles\ManulEngine.dir\cmake_pch.hxx CMakeFiles\ManulEngine.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_ManulEngine
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG -std:c++17 /YuC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx /FpC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/./cmake_pch.cxx.pch /FIC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
-  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include
+  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include -IC:\DEV\C++\ManulEngine\external\stb-image
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Core\Math
   TARGET_COMPILE_PDB = CMakeFiles\ManulEngine.dir\
@@ -172,7 +172,7 @@ build CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Core\Math\Math.cpp.
 
 build CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Physics\2D\Physics2D.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_RelWithDebInfo C$:\DEV\C++\ManulEngine\ManulEngine\src\ManulEngine\Physics\2D\Physics2D.cpp | CMakeFiles\ManulEngine.dir\cmake_pch.hxx CMakeFiles\ManulEngine.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_ManulEngine
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG -std:c++17 /YuC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx /FpC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/./cmake_pch.cxx.pch /FIC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
-  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include
+  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include -IC:\DEV\C++\ManulEngine\external\stb-image
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Physics\2D
   TARGET_COMPILE_PDB = CMakeFiles\ManulEngine.dir\
@@ -180,7 +180,7 @@ build CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Physics\2D\Physics2
 
 build CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Core\Application.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_RelWithDebInfo C$:\DEV\C++\ManulEngine\ManulEngine\src\ManulEngine\Core\Application.cpp | CMakeFiles\ManulEngine.dir\cmake_pch.hxx CMakeFiles\ManulEngine.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_ManulEngine
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG -std:c++17 /YuC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx /FpC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/./cmake_pch.cxx.pch /FIC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
-  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include
+  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include -IC:\DEV\C++\ManulEngine\external\stb-image
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Core
   TARGET_COMPILE_PDB = CMakeFiles\ManulEngine.dir\
@@ -188,7 +188,7 @@ build CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Core\Application.cp
 
 build CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan\VulkanSurface.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_RelWithDebInfo C$:\DEV\C++\ManulEngine\ManulEngine\src\Platform\Vulkan\VulkanSurface.cpp | CMakeFiles\ManulEngine.dir\cmake_pch.hxx CMakeFiles\ManulEngine.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_ManulEngine
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG -std:c++17 /YuC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx /FpC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/./cmake_pch.cxx.pch /FIC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
-  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include
+  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include -IC:\DEV\C++\ManulEngine\external\stb-image
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan
   TARGET_COMPILE_PDB = CMakeFiles\ManulEngine.dir\
@@ -196,7 +196,7 @@ build CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan\VulkanSurface.c
 
 build CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan\VulkanPipline.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_RelWithDebInfo C$:\DEV\C++\ManulEngine\ManulEngine\src\Platform\Vulkan\VulkanPipline.cpp | CMakeFiles\ManulEngine.dir\cmake_pch.hxx CMakeFiles\ManulEngine.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_ManulEngine
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG -std:c++17 /YuC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx /FpC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/./cmake_pch.cxx.pch /FIC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
-  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include
+  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include -IC:\DEV\C++\ManulEngine\external\stb-image
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan
   TARGET_COMPILE_PDB = CMakeFiles\ManulEngine.dir\
@@ -204,7 +204,7 @@ build CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan\VulkanPipline.c
 
 build CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\OpenGL\OpenGLBackend.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_RelWithDebInfo C$:\DEV\C++\ManulEngine\ManulEngine\src\Platform\OpenGL\OpenGLBackend.cpp | CMakeFiles\ManulEngine.dir\cmake_pch.hxx CMakeFiles\ManulEngine.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_ManulEngine
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG -std:c++17 /YuC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx /FpC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/./cmake_pch.cxx.pch /FIC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
-  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include
+  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include -IC:\DEV\C++\ManulEngine\external\stb-image
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\OpenGL
   TARGET_COMPILE_PDB = CMakeFiles\ManulEngine.dir\
@@ -212,7 +212,7 @@ build CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\OpenGL\OpenGLBackend.c
 
 build CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\ResourceManager\ResourcePacker.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_RelWithDebInfo C$:\DEV\C++\ManulEngine\ManulEngine\src\ManulEngine\ResourceManager\ResourcePacker.cpp | CMakeFiles\ManulEngine.dir\cmake_pch.hxx CMakeFiles\ManulEngine.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_ManulEngine
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG -std:c++17 /YuC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx /FpC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/./cmake_pch.cxx.pch /FIC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
-  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include
+  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include -IC:\DEV\C++\ManulEngine\external\stb-image
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\ResourceManager
   TARGET_COMPILE_PDB = CMakeFiles\ManulEngine.dir\
@@ -220,7 +220,7 @@ build CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\ResourceManager\Res
 
 build CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\ResourceManager\ResourceManager.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_RelWithDebInfo C$:\DEV\C++\ManulEngine\ManulEngine\src\ManulEngine\ResourceManager\ResourceManager.cpp | CMakeFiles\ManulEngine.dir\cmake_pch.hxx CMakeFiles\ManulEngine.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_ManulEngine
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG -std:c++17 /YuC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx /FpC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/./cmake_pch.cxx.pch /FIC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
-  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include
+  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include -IC:\DEV\C++\ManulEngine\external\stb-image
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\ResourceManager
   TARGET_COMPILE_PDB = CMakeFiles\ManulEngine.dir\
@@ -228,7 +228,7 @@ build CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\ResourceManager\Res
 
 build CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\ResourceManager\ResourceLoader.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_RelWithDebInfo C$:\DEV\C++\ManulEngine\ManulEngine\src\ManulEngine\ResourceManager\ResourceLoader.cpp | CMakeFiles\ManulEngine.dir\cmake_pch.hxx CMakeFiles\ManulEngine.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_ManulEngine
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG -std:c++17 /YuC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx /FpC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/./cmake_pch.cxx.pch /FIC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
-  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include
+  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include -IC:\DEV\C++\ManulEngine\external\stb-image
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\ResourceManager
   TARGET_COMPILE_PDB = CMakeFiles\ManulEngine.dir\
@@ -236,7 +236,7 @@ build CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\ResourceManager\Res
 
 build CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Renderer\Renderer2D.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_RelWithDebInfo C$:\DEV\C++\ManulEngine\ManulEngine\src\ManulEngine\Renderer\Renderer2D.cpp | CMakeFiles\ManulEngine.dir\cmake_pch.hxx CMakeFiles\ManulEngine.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_ManulEngine
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG -std:c++17 /YuC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx /FpC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/./cmake_pch.cxx.pch /FIC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
-  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include
+  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include -IC:\DEV\C++\ManulEngine\external\stb-image
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Renderer
   TARGET_COMPILE_PDB = CMakeFiles\ManulEngine.dir\
@@ -244,7 +244,7 @@ build CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Renderer\Renderer2D
 
 build CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Renderer\OrthographicCamera.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_RelWithDebInfo C$:\DEV\C++\ManulEngine\ManulEngine\src\ManulEngine\Renderer\OrthographicCamera.cpp | CMakeFiles\ManulEngine.dir\cmake_pch.hxx CMakeFiles\ManulEngine.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_ManulEngine
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG -std:c++17 /YuC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx /FpC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/./cmake_pch.cxx.pch /FIC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
-  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include
+  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include -IC:\DEV\C++\ManulEngine\external\stb-image
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Renderer
   TARGET_COMPILE_PDB = CMakeFiles\ManulEngine.dir\
@@ -252,7 +252,7 @@ build CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Renderer\Orthograph
 
 build CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Renderer\RendererBackend.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_RelWithDebInfo C$:\DEV\C++\ManulEngine\ManulEngine\src\ManulEngine\Renderer\RendererBackend.cpp | CMakeFiles\ManulEngine.dir\cmake_pch.hxx CMakeFiles\ManulEngine.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_ManulEngine
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG -std:c++17 /YuC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx /FpC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/./cmake_pch.cxx.pch /FIC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
-  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include
+  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include -IC:\DEV\C++\ManulEngine\external\stb-image
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Renderer
   TARGET_COMPILE_PDB = CMakeFiles\ManulEngine.dir\
@@ -260,9 +260,17 @@ build CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Renderer\RendererBa
 
 build CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Audio\AudioEngine.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_RelWithDebInfo C$:\DEV\C++\ManulEngine\ManulEngine\src\ManulEngine\Audio\AudioEngine.cpp | CMakeFiles\ManulEngine.dir\cmake_pch.hxx CMakeFiles\ManulEngine.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_ManulEngine
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG -std:c++17 /YuC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx /FpC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/./cmake_pch.cxx.pch /FIC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
-  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include
+  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include -IC:\DEV\C++\ManulEngine\external\stb-image
   OBJECT_DIR = CMakeFiles\ManulEngine.dir
   OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Audio
+  TARGET_COMPILE_PDB = CMakeFiles\ManulEngine.dir\
+  TARGET_PDB = ManulEngine.pdb
+
+build CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\OpenGL\OpenGLPrimitives.cpp.obj: CXX_COMPILER__ManulEngine_unscanned_RelWithDebInfo C$:\DEV\C++\ManulEngine\ManulEngine\src\Platform\OpenGL\OpenGLPrimitives.cpp | CMakeFiles\ManulEngine.dir\cmake_pch.hxx CMakeFiles\ManulEngine.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_ManulEngine
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG -std:c++17 /YuC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx /FpC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/./cmake_pch.cxx.pch /FIC:/DEV/C++/ManulEngine/out/build/x64-Release/CMakeFiles/ManulEngine.dir/cmake_pch.hxx
+  INCLUDES = -IC:\VulkanSDK\Include -IC:\DEV\C++\ManulEngine\ManulEngine\src -IC:\DEV\C++\ManulEngine\external\glad\include -IC:\DEV\C++\ManulEngine\external\zlib-1.3 -IC:\DEV\C++\ManulEngine\external\glfw\include -IC:\DEV\C++\ManulEngine\external\stb-image
+  OBJECT_DIR = CMakeFiles\ManulEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\OpenGL
   TARGET_COMPILE_PDB = CMakeFiles\ManulEngine.dir\
   TARGET_PDB = ManulEngine.pdb
 
@@ -274,7 +282,7 @@ build CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Audio\AudioEngine.c
 #############################################
 # Link the executable ManulEngine.exe
 
-build ManulEngine.exe: CXX_EXECUTABLE_LINKER__ManulEngine_RelWithDebInfo CMakeFiles\ManulEngine.dir\cmake_pch.cxx.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\main.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Core\Window.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Renderer\Renderer.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Core\Logger.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan\VulkanDebug.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan\VulkanDevice.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan\VulkanBackend.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Windows\WindowsWindow.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Core\Math\Math.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Physics\2D\Physics2D.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Core\Application.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan\VulkanSurface.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan\VulkanPipline.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\OpenGL\OpenGLBackend.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\ResourceManager\ResourcePacker.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\ResourceManager\ResourceManager.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\ResourceManager\ResourceLoader.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Renderer\Renderer2D.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Renderer\OrthographicCamera.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Renderer\RendererBackend.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Audio\AudioEngine.cpp.obj | glad.lib || glad.lib
+build ManulEngine.exe: CXX_EXECUTABLE_LINKER__ManulEngine_RelWithDebInfo CMakeFiles\ManulEngine.dir\cmake_pch.cxx.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\main.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Core\Window.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Renderer\Renderer.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Core\Logger.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan\VulkanDebug.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan\VulkanDevice.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan\VulkanBackend.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Windows\WindowsWindow.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Core\Math\Math.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Physics\2D\Physics2D.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Core\Application.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan\VulkanSurface.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\Vulkan\VulkanPipline.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\OpenGL\OpenGLBackend.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\ResourceManager\ResourcePacker.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\ResourceManager\ResourceManager.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\ResourceManager\ResourceLoader.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Renderer\Renderer2D.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Renderer\OrthographicCamera.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Renderer\RendererBackend.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\ManulEngine\Audio\AudioEngine.cpp.obj CMakeFiles\ManulEngine.dir\ManulEngine\src\Platform\OpenGL\OpenGLPrimitives.cpp.obj | glad.lib || glad.lib
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG
   LINK_FLAGS = /machine:x64 /ENTRY:mainCRTStartup /debug /INCREMENTAL /subsystem:windows
   LINK_LIBRARIES = vulkan-1.lib  glfw3.lib  glad.lib  zlib.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib

@@ -1,5 +1,5 @@
 #pragma once
-
+#include "ManulEngine/Core/Math/Math.h"
 #include "GLFW/glfw3.h"
 class OpenGLBackend {
 public:
@@ -14,6 +14,7 @@ public:
     void Init(uint32_t windowWidht, uint32_t windowHeight, GLFWwindow* window);
     void OnWindowResize(int windowWidht, int windowHeigth);
     void Render();
+    void DrawLine(Vector3 startPos, Vector3 endPos, Vector3Color color);
 private:
 
 };

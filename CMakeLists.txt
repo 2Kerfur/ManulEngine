@@ -27,6 +27,7 @@ include_directories("ManulEngine/src")
 include_directories("external/glad/include")
 include_directories("external/zlib-1.3")
 include_directories("external/glfw/include")
+include_directories("external/stb-image")
 
 add_executable(ManulEngine WIN32
 		ManulEngine/src/main.cpp
@@ -77,7 +78,9 @@ add_executable(ManulEngine WIN32
 		ManulEngine/src/ManulEngine/Renderer/RendererBackend.h
 		ManulEngine/src/ManulEngine/Audio/AudioEngine.cpp
 		ManulEngine/src/ManulEngine/Audio/AudioEngine.h
-)
+ "ManulEngine/src/Platform/OpenGL/OpenGLShader.h"   
+ "ManulEngine/src/Platform/OpenGL/OpenGLPrimitives.cpp" 
+ "ManulEngine/src/Platform/OpenGL/OpenGLPrimitives.h" )
 target_precompile_headers(ManulEngine PRIVATE ManulEngine/src/mapch.h)
 target_link_libraries(ManulEngine vulkan-1 glfw3 glad zlib)
 

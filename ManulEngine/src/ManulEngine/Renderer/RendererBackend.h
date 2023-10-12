@@ -1,5 +1,5 @@
-//#include "Platform/Vulkan/VulkanBackend.h"
 #pragma once
+//#include "Platform/Vulkan/VulkanBackend.h"
 #include "Platform/OpenGL/OpenGLBackend.h"
 
 class RendererBackend {
@@ -10,5 +10,4 @@ public:
     OpenGLBackend openGlBackend;
 private:
     //VulkanBackend vulkanBackend;
-
 };

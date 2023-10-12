@@ -12,7 +12,25 @@ struct Vector3Int
     int z;
 };
 
-struct Vector4
+struct Vector2
+{
+    float x;
+    float y;
+};
+struct Vector3
+{
+    float x;
+    float y;
+    float z;
+};
+
+struct Vector3Color
+{
+    int8_t r;
+    int8_t g;
+    int8_t b;
+};
+struct Vector4Color
 {
     int8_t r;
     int8_t g;
