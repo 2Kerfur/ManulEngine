@@ -1,10 +1,12 @@
 #include "OpenGLShader.h"
-int OpenGLShader::Compile(const char* vertexShaderSource)
+#include "glad/glad.h"
+int OpenGLShader::Compile(const char* vertexShaderSource, const char* fragmentShaderSource)
 {
 	vertexShader = glCreateShader(GL_VERTEX_SHADER);
 	glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);
 	glCompileShader(vertexShader);
-
+    int success;
+    char infoLog[512];
     glGetShaderiv(vertexShader, GL_COMPILE_STATUS, &success);
     if (!success)
     {
@@ -34,7 +36,7 @@ int OpenGLShader::Compile(const char* vertexShaderSource)
         glGetProgramInfoLog(shaderProgram, 512, NULL, infoLog);
         std::cout << "ERROR::SHADER::PROGRAM::LINKING_FAILED\n" << infoLog << std::endl;
         return false;
-    }
+    }   
 
     glDeleteShader(vertexShader);
     glDeleteShader(fragmentShader);

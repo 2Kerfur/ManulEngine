@@ -78,7 +78,8 @@ add_executable(ManulEngine WIN32
 		ManulEngine/src/ManulEngine/Renderer/RendererBackend.h
 		ManulEngine/src/ManulEngine/Audio/AudioEngine.cpp
 		ManulEngine/src/ManulEngine/Audio/AudioEngine.h
- "ManulEngine/src/Platform/OpenGL/OpenGLShader.h"   
+ "ManulEngine/src/Platform/OpenGL/OpenGLShader.h"
+ "ManulEngine/src/Platform/OpenGL/OpenGLShader.cpp"
  "ManulEngine/src/Platform/OpenGL/OpenGLPrimitives.cpp" 
  "ManulEngine/src/Platform/OpenGL/OpenGLPrimitives.h" )
 target_precompile_headers(ManulEngine PRIVATE ManulEngine/src/mapch.h)
