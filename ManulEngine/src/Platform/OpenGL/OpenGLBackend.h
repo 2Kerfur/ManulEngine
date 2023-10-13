@@ -6,7 +6,6 @@
 
 class OpenGLBackend {
 public:
-    void framebuffer_size_callback(GLFWwindow* window, int width, int height);
     void processInput(GLFWwindow *window);
 
     const unsigned int SCR_WIDTH = 800;
@@ -15,7 +14,7 @@ public:
     OpenGLShader shader;
     OpenGLBox box;
     void Init(uint32_t windowWidht, uint32_t windowHeight, GLFWwindow* window);
-    void OnWindowResize(int windowWidht, int windowHeigth);
+    void SetWindowSize(uint32_t windowWidht, uint32_t windowHeigth);
     void Render();
     void DrawLine(Vector3 startPos, Vector3 endPos, Vector3Color color);
 private:

@@ -28,6 +28,7 @@ include_directories("external/glad/include")
 include_directories("external/zlib-1.3")
 include_directories("external/glfw/include")
 include_directories("external/stb-image")
+include_directories("external/glm")
 
 add_executable(ManulEngine WIN32
 		ManulEngine/src/main.cpp

@@ -11,7 +11,7 @@ void OpenGLBox::Bind(uint32_t ebo, uint32_t vao)
     EBO = ebo;
     VAO = vao;
     float vertices[] = {
-            0.9f,  0.5f, 0.0f,  // top right
+            0.5f,  0.5f, 0.0f,  // top right
             0.5f, -0.5f, 0.0f,  // bottom right
             -0.5f, -0.5f, 0.0f,  // bottom left
             -0.5f,  0.5f, 0.0f   // top left
@@ -39,8 +39,6 @@ void OpenGLBox::Draw()
     glBindVertexArray(VAO);
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 }
-
-
 
 void OpenGLLine::Create(Vector3 pos, Vector2 size)
 {

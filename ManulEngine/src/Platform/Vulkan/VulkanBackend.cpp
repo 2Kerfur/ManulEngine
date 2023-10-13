@@ -26,11 +26,12 @@ void VulkanBackend::Init(int windowWidht, int windowHeight, GLFWwindow *window) 
 }
 
 
-void VulkanBackend::OnWindowResize(int windowWidht, int windowHeigth)
+
+void VulkanBackend::Render()
 {
 }
 
-void VulkanBackend::Render()
+void VulkanBackend::SetWindowSize(uint32_t windowWidht, uint32_t windowHeigth)
 {
 }
 

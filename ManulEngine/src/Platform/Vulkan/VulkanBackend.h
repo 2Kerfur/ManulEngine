@@ -10,7 +10,7 @@ class VulkanBackend
 public:
 	void Init(int windowWidht, int windowHeight, GLFWwindow* window);
     void Render();
-	void OnWindowResize(int windowWidht, int windowHeigth);
+	void SetWindowSize(uint32_t windowWidht, uint32_t windowHeigth);
 private:
     bool enableValidationLayers = true;
     const std::vector<const char*> validationLayers = {
