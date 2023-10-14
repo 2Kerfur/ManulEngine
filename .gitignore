@@ -8,6 +8,7 @@ cmake-build-minsizerel/
 cmake-build-minsizerel-visual-studio/
 cmake-build-release/
 cmake-build-release-visual-studio/
+out/
 
 *.tlog
 *.log

@@ -1,3 +1,4 @@
 #include <iostream>
 
-#define LOG_RENDERER_ERROR(Message) std::cout << Message << std::endl; 
+#define LOG_CORE(Message) std::cout << Message << std::endl;
+#define LOG(Message)

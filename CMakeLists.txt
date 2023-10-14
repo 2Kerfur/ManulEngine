@@ -2,33 +2,39 @@ cmake_minimum_required( VERSION 3.1)
 
 project(ManulEngine)
 
-#set( GLFW_BUILD_DOCS OFF CACHE BOOL  "GLFW lib only" )
-#set( GLFW_INSTALL OFF CACHE BOOL  "GLFW lib only" )
-#add_subdirectory( glfw )
-
 if( MSVC )
     SET( CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /ENTRY:mainCRTStartup" )
 endif()
 
-set(VULKAN_PATH "C:/VulkanSDK")
+find_package(Vulkan)
 
-if(${CMAKE_SYSTEM_NAME} MATCHES "Windows")
+if(NOT Vulkan_FOUND)
+	message(SEND_ERROR "Vulkan NOT found")
+endif()
+if (NOT ${Vulkan_INCLUDE_DIRS} STREQUAL "")
+	set(VULKAN_PATH ${Vulkan_INCLUDE_DIRS})	
+	STRING(REGEX REPLACE "/Include" "" VULKAN_PATH ${VULKAN_PATH})
+	message(STATUS "Vulkan path is: " ${VULKAN_PATH})
+
 	include_directories(AFTER ${VULKAN_PATH}/Include)
 	link_directories(${VULKAN_PATH}/Bin;${VULKAN_PATH}/Lib;)
+endif()
+
+if(${CMAKE_SYSTEM_NAME} MATCHES "Windows")
 	link_directories(external/zlib-1.3/MinSizeRel)
 	link_directories(external/glfw/bin/src/MinSizeRel)
 endif()
 
-add_library(glad STATIC external/glad/src/glad.c
-)
+add_library(glad STATIC external/glad/src/glad.c)
 
-include_directories("ManulEngine/src")
+include_directories("ManulEngine/src"
+					"external/glad/include"
+					"external/zlib-1.3"
+					"external/glfw/include"
+					"external/stb-image"
+					"external/glm")
 
-include_directories("external/glad/include")
-include_directories("external/zlib-1.3")
-include_directories("external/glfw/include")
-include_directories("external/stb-image")
-include_directories("external/glm")
+
 
 add_executable(ManulEngine WIN32
 		ManulEngine/src/main.cpp
@@ -79,12 +85,13 @@ add_executable(ManulEngine WIN32
 		ManulEngine/src/ManulEngine/Renderer/RendererBackend.h
 		ManulEngine/src/ManulEngine/Audio/AudioEngine.cpp
 		ManulEngine/src/ManulEngine/Audio/AudioEngine.h
- "ManulEngine/src/Platform/OpenGL/OpenGLShader.h"
- "ManulEngine/src/Platform/OpenGL/OpenGLShader.cpp"
- "ManulEngine/src/Platform/OpenGL/OpenGLPrimitives.cpp" 
- "ManulEngine/src/Platform/OpenGL/OpenGLPrimitives.h" )
+		"ManulEngine/src/Platform/OpenGL/OpenGLShader.h"
+		"ManulEngine/src/Platform/OpenGL/OpenGLShader.cpp"
+		"ManulEngine/src/Platform/OpenGL/OpenGLPrimitives.cpp" 
+		"ManulEngine/src/Platform/OpenGL/OpenGLPrimitives.h" )
+
 target_precompile_headers(ManulEngine PRIVATE ManulEngine/src/mapch.h)
-target_link_libraries(ManulEngine vulkan-1 glfw3 glad zlib)
+target_link_libraries(ManulEngine glfw3 glad zlib vulkan-1)
 
 set_target_properties(ManulEngine PROPERTIES LINKER_LANGUAGE CXX)
 target_compile_features(ManulEngine PRIVATE cxx_std_17)
