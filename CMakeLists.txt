@@ -67,14 +67,12 @@ add_executable(ManulEngine WIN32
 		ManulEngine/src/Platform/Vulkan/VulkanPipline.h
 		ManulEngine/src/Platform/OpenGL/OpenGLBackend.cpp
 		ManulEngine/src/Platform/OpenGL/OpenGLBackend.h
-		ManulEngine/src/ManulEngine/ResourceManager/ResourcePacker.cpp
-		ManulEngine/src/ManulEngine/ResourceManager/ResourcePacker.h
+		#ManulEngine/src/ManulEngine/ResourceManager/ResourcePacker.cpp
+		#ManulEngine/src/ManulEngine/ResourceManager/ResourcePacker.h
 		ManulEngine/src/ManulEngine/ResourceManager/ResourceManager.cpp
 		ManulEngine/src/ManulEngine/ResourceManager/ResourceManager.h
 		ManulEngine/src/ManulEngine/ResourceManager/ResourceLoader.cpp
 		ManulEngine/src/ManulEngine/ResourceManager/ResourceLoader.h
-		ManulEngine/src/ManulEngine/ResourceManager/ResourcePacker.cpp
-		ManulEngine/src/ManulEngine/ResourceManager/ResourcePacker.h
 		ManulEngine/src/ManulEngine/ResourceManager/Resource.h
 		ManulEngine/src/ManulEngine/Renderer/Renderer2D.cpp
 		ManulEngine/src/ManulEngine/Renderer/Renderer2D.h
@@ -91,7 +89,8 @@ add_executable(ManulEngine WIN32
 		"ManulEngine/src/Platform/OpenGL/OpenGLPrimitives.h" )
 
 target_precompile_headers(ManulEngine PRIVATE ManulEngine/src/mapch.h)
-target_link_libraries(ManulEngine glfw3 glad zlib vulkan-1)
+#target_link_libraries(ManulEngine glfw3 glad zlib vulkan-1)
+target_link_libraries(ManulEngine glfw3 glad vulkan-1)
 
 set_target_properties(ManulEngine PROPERTIES LINKER_LANGUAGE CXX)
 target_compile_features(ManulEngine PRIVATE cxx_std_17)
