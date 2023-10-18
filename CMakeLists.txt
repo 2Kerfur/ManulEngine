@@ -59,8 +59,6 @@ add_executable(ManulEngine WIN32
 		ManulEngine/src/ManulEngine/Physics/2D/Physics2D.h
 		ManulEngine/src/ManulEngine/Core/Application.cpp
 		ManulEngine/src/ManulEngine/Core/Application.h
-		
-		
 		ManulEngine/src/Platform/Vulkan/VulkanSurface.cpp
 		ManulEngine/src/Platform/Vulkan/VulkanSurface.h
 		ManulEngine/src/Platform/Vulkan/VulkanPipline.cpp
