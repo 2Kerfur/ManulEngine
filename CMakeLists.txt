@@ -32,7 +32,8 @@ include_directories("ManulEngine/src"
 					"external/zlib-1.3"
 					"external/glfw/include"
 					"external/stb-image"
-					"external/glm")
+					"external/glm"
+					"exteranl/spdlog/include")
 
 
 

@@ -4,9 +4,7 @@
 #include "ManulEngine/Core/Math/Math.h"
 
 namespace ManulEngine {
-
     class Application {
-
     public:
         struct ApplicationSpecification
         {
@@ -18,16 +16,18 @@ namespace ManulEngine {
             //Window Settings
             bool fullscreen;
             Vector2Int windowSize;
-            Vector2Int windowPos;
-            
+            Vector2Int windowPos;     
         };
 
+        virtual ~Application();
         Application();
-        ~Application();
-
+        
+        static Application& Get() { return *s_Instance; }
+        
         void Create();
+        void Destroy();
         void Update();
-
+        ApplicationSpecification* GetSpecification() { return &m_Specification; };
         bool applicationExit = false;
         
     private:
@@ -36,8 +36,10 @@ namespace ManulEngine {
         bool m_Minimized = false;
 
         static Application* s_Instance;
-
+        
+        void WriteSpecToConfigFile(std::vector<std::string> config);
         ApplicationSpecification m_Specification;
+        
         Window m_Window;
 
     };

@@ -1,5 +1,6 @@
 #include "OpenGLPrimitives.h"
 #include "glad/glad.h"
+#include "mapch.h"
 void OpenGLBox::Create(Vector3 pos, Vector2 size)
 {
 	shader.Compile(vertexShaderSource, fragmentShaderSource);
@@ -39,9 +40,14 @@ void OpenGLBox::Draw()
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 }
 
+
 void OpenGLLine::Create(Vector3 pos, Vector2 size)
 {
     
+}
+
+void OpenGLLine::Bind()
+{
 }
 
 void OpenGLLine::Draw()

@@ -9,6 +9,7 @@ int main(int argc, char *argv[])
     {
         application.Update();
     }
+    
     return 0;
 }
 
