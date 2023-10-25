@@ -28,12 +28,13 @@ endif()
 add_library(glad STATIC external/glad/src/glad.c)
 
 include_directories("ManulEngine/src"
+					"external/spdlog/include"
 					"external/glad/include"
 					"external/zlib-1.3"
 					"external/glfw/include"
 					"external/stb-image"
 					"external/glm"
-					"exteranl/spdlog/include")
+)
 
 
 
@@ -43,8 +44,8 @@ add_executable(ManulEngine WIN32
 		ManulEngine/src/ManulEngine/Core/Window.h
 		ManulEngine/src/ManulEngine/Renderer/Renderer.cpp
 		ManulEngine/src/ManulEngine/Renderer/Renderer.h
-		ManulEngine/src/ManulEngine/Core/Logger.cpp
-		ManulEngine/src/ManulEngine/Core/Logger.h
+		"ManulEngine/src/ManulEngine/Core/Log.cpp"
+		"ManulEngine/src/ManulEngine/Core/Log.h"
 		ManulEngine/src/Platform/Vulkan/VulkanDebug.cpp
 		ManulEngine/src/Platform/Vulkan/VulkanDebug.h
 		ManulEngine/src/Platform/Vulkan/VulkanDevice.h

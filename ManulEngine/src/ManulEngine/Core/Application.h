@@ -31,7 +31,7 @@ namespace ManulEngine {
         bool applicationExit = false;
         
     private:
-
+        void CreateConsoleWindow();
         bool m_Running = true;
         bool m_Minimized = false;
 

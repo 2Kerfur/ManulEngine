@@ -1,3 +1,5 @@
+#include "mapch.h"
+
 #include "Window.h"
 #include <windows.h>
 #include <iostream>
@@ -11,17 +13,14 @@ namespace ManulEngine {
     {
         glfwTerminate();
     }
-    void Window::CreateConsoleWindow()
+    
+    bool Window::Create(int width, int height, std::string title, bool fullscreen)
     {
-        AllocConsole();
-        freopen("conin$", "r", stdin);
-        freopen("conout$", "w", stdout);
-        freopen("conout$", "w", stderr);
-    }
-    int Window::Create(int width, int height, std::string title, bool fullscreen)
-    {
-        if (!glfwInit()) return -1;
-
+        if (!glfwInit())
+        {
+            M_CORE_ERROR("GLFW failed to initialize");
+            return false;
+        }
         //TODO: для vulkan api
         //glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
         //glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
@@ -32,17 +31,21 @@ namespace ManulEngine {
 
 
         windowInstance = glfwCreateWindow(width, height, title.c_str(), NULL, NULL);
-        glfwMakeContextCurrent(windowInstance);
-        CreateConsoleWindow();
-
-        render.Init(width, height, windowInstance);
         if (!windowInstance)
         {
+            M_CORE_ERROR("GLFW failed to create window");
             glfwTerminate();
-            return -1;
+            return false;
         }
-
-        return 0;
+        glfwMakeContextCurrent(windowInstance);
+        
+        if (!render.Init(width, height, windowInstance))
+        {
+            M_CORE_CRITICAL("Failed to initialize renderer");
+            return false;
+        }
+        M_CORE_INFO("Renderer initalized successfully");
+        return true;
     }
 
     void Window::SetSize(int width, int height, bool fullscreen)

@@ -11,8 +11,8 @@ namespace ManulEngine {
 		Window();
 		~Window();
 
-		int Create(int width, int height, std::string title, bool fullscreen);
-		void CreateConsoleWindow();
+		bool Create(int width, int height, std::string title, bool fullscreen);
+		
 		void SetSize(int width, int height, bool fullscreen);
 		void Update();
 

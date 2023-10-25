@@ -1,10 +1,12 @@
 #include "mapch.h"
 #include "Renderer.h"
 #include "ManulEngine/Core/Application.h"
+#include "ManulEngine/Core/Log.h"   
 namespace ManulEngine {
-    void Renderer::Init(uint32_t windowWidht, uint32_t windowHegiht, GLFWwindow* window)
+    bool Renderer::Init(uint32_t windowWidht, uint32_t windowHegiht, GLFWwindow* window)
     {
         renderer2D.Init(windowWidht, windowHegiht, window);
+        return true;
     }
     void Renderer::Render()
     {

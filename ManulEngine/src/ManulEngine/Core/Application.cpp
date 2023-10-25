@@ -21,8 +21,16 @@ namespace ManulEngine
     {
         s_Instance = this;
     }
-
+    void Application::CreateConsoleWindow()
+    {
+        AllocConsole();
+        //freopen("conin$", "r", stdin);
+        //freopen("conout$", "w", stdout);
+        //freopen("conout$", "w", stderr);
+    }
     void Application::Create() {
+        CreateConsoleWindow();
+        Log::Init();
         std::vector<std::string> config;
         if (ResourceManager::LoadConfig(config, ResourceManager::GetWorkingDirectory() + "/application.cfg"))
         {
@@ -50,7 +58,11 @@ namespace ManulEngine
             m_Specification.windowPos = { 100, 100 };
             WriteSpecToConfigFile(config);
         }
-        m_Window.Create(m_Specification.windowSize.x, m_Specification.windowSize.y, m_Specification.Name, m_Specification.fullscreen);
+        if (!m_Window.Create(m_Specification.windowSize.x, m_Specification.windowSize.y,
+            m_Specification.Name, m_Specification.fullscreen))
+        {
+            M_CORE_CRITICAL("Failed to initialize window");
+        }
     }
     void Application::WriteSpecToConfigFile(std::vector<std::string> config)
     {

@@ -6,7 +6,7 @@ namespace ManulEngine {
 	class Renderer
 	{
 	public:
-		void Init(uint32_t windowWidht, uint32_t windowHegiht, GLFWwindow* window);
+		bool Init(uint32_t windowWidht, uint32_t windowHegiht, GLFWwindow* window);
 		void Shutdown();
 		void Render();
 
