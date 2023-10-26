@@ -36,8 +36,6 @@ include_directories("ManulEngine/src"
 					"external/glm"
 )
 
-
-
 add_executable(ManulEngine WIN32
 		ManulEngine/src/main.cpp
 		ManulEngine/src/ManulEngine/Core/Window.cpp
@@ -94,5 +92,3 @@ target_link_libraries(ManulEngine glfw3 glad vulkan-1)
 
 set_target_properties(ManulEngine PROPERTIES LINKER_LANGUAGE CXX)
 target_compile_features(ManulEngine PRIVATE cxx_std_17)
-
-

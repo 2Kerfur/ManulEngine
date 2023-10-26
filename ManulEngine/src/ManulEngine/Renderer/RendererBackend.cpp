@@ -1,11 +1,9 @@
+#include "mapch.h"
 #include "RendererBackend.h"
+#include "Platform/OpenGL/OpenGLBackend.h"
 
-
-void RendererBackend::Init(uint32_t windowWidht, uint32_t windowHegiht, GLFWwindow* window) {
-    //vulkanBackend.Init(windowWidht, windowHegiht, window);
-    
-    openGlBackend.Init(windowWidht, windowHegiht, window);
-    //OpenGLBackend::Init(windowWidht, windowHegiht, window);
+void RendererBackend::Init(uint32_t windowWidht, uint32_t windowHegiht) {
+    OpenGLBackend::Init(windowWidht, windowHegiht);
 }
 
 void RendererBackend::Shutdown() {
@@ -13,5 +11,5 @@ void RendererBackend::Shutdown() {
 }
 
 void RendererBackend::Render() {
-    openGlBackend.Render();
+    OpenGLBackend::Render();
 }

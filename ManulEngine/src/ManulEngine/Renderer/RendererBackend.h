@@ -1,13 +1,10 @@
 #pragma once
-//#include "Platform/Vulkan/VulkanBackend.h"
-#include "Platform/OpenGL/OpenGLBackend.h"
 
 class RendererBackend {
 public:
-    void Init(uint32_t windowWidht, uint32_t windowHegiht, GLFWwindow* window);
-    void Shutdown();
-    void Render();
-    OpenGLBackend openGlBackend;
+    static void Init(uint32_t windowWidht, uint32_t windowHegiht);
+    static void Shutdown();
+    static void Render();
 private:
-    //VulkanBackend vulkanBackend;
+
 };

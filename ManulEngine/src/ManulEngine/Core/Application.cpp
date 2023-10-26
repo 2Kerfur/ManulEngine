@@ -7,9 +7,11 @@ namespace ManulEngine
     Application* Application::s_Instance = nullptr;
 
     void Application::Update() {
-        applicationExit = m_Window.windowShouldClose;
-        if (applicationExit) Destroy();
-        m_Window.Update();
+        applicationExit = m_Window->WindowShouldClose();
+        if (applicationExit) {
+            Destroy();
+        }
+        m_Window->Update();
     }
 
     Application::~Application()
@@ -19,7 +21,7 @@ namespace ManulEngine
 
     Application::Application()
     {
-        s_Instance = this;
+
     }
     void Application::CreateConsoleWindow()
     {
@@ -29,6 +31,7 @@ namespace ManulEngine
         //freopen("conout$", "w", stderr);
     }
     void Application::Create() {
+        m_Window = new Window();
         CreateConsoleWindow();
         Log::Init();
         std::vector<std::string> config;
@@ -58,7 +61,7 @@ namespace ManulEngine
             m_Specification.windowPos = { 100, 100 };
             WriteSpecToConfigFile(config);
         }
-        if (!m_Window.Create(m_Specification.windowSize.x, m_Specification.windowSize.y,
+        if (!m_Window->Create(m_Specification.windowSize.x, m_Specification.windowSize.y,
             m_Specification.Name, m_Specification.fullscreen))
         {
             M_CORE_CRITICAL("Failed to initialize window");
@@ -76,7 +79,9 @@ namespace ManulEngine
         config.push_back(std::to_string(m_Specification.windowSize.y));
         config.push_back(std::to_string(m_Specification.windowPos.x));
         config.push_back(std::to_string(m_Specification.windowPos.y));
-        ResourceManager::CreateConfig(config, ResourceManager::GetWorkingDirectory() + "/application.cfg");
+        std::string cfgPath(ResourceManager::GetWorkingDirectory());
+        cfgPath = cfgPath + "/application.cfg";
+        ResourceManager::CreateConfig(config, cfgPath);
     }
     void Application::Destroy()
     {

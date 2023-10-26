@@ -1,7 +1,5 @@
 #pragma once
-#include <string>
 #include "Window.h"
-#include "ManulEngine/Core/Math/Math.h"
 
 namespace ManulEngine {
     class Application {
@@ -36,11 +34,11 @@ namespace ManulEngine {
         bool m_Minimized = false;
 
         static Application* s_Instance;
-        
+        Window* m_Window;
         void WriteSpecToConfigFile(std::vector<std::string> config);
         ApplicationSpecification m_Specification;
         
-        Window m_Window;
+        
 
     };
 }

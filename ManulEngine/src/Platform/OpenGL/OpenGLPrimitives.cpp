@@ -4,7 +4,6 @@
 void OpenGLBox::Create(Vector3 pos, Vector2 size)
 {
 	shader.Compile(vertexShaderSource, fragmentShaderSource);
-
 }
 float vertices[] = {
         0.5f,  0.5f, 0.0f,  // top right

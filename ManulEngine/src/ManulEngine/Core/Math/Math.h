@@ -1,5 +1,5 @@
 #pragma once
-
+#include <cstdint>
 struct Vector2Int
 {
     int x;
@@ -26,14 +26,14 @@ struct Vector3
 
 struct Vector3Color
 {
-    int8_t r;
-    int8_t g;
-    int8_t b;
+    uint8_t r;
+    uint8_t g;
+    uint8_t b;
 };
 struct Vector4Color
 {
-    int8_t r;
-    int8_t g;
-    int8_t b;
-    int8_t a;
+    uint8_t r;
+    uint8_t g;
+    uint8_t b;
+    uint8_t a;
 };

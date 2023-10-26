@@ -1,12 +1,11 @@
 #include "mapch.h"
-
 #include "Window.h"
-#include <windows.h>
-#include <iostream>
 
 namespace ManulEngine {
+    GLFWwindow* Window::windowInstance = nullptr;
     Window::Window()
     {
+        windowShouldClose = false;
     }
 
     Window::~Window()
@@ -16,6 +15,7 @@ namespace ManulEngine {
     
     bool Window::Create(int width, int height, std::string title, bool fullscreen)
     {
+        windowShouldClose = false;
         if (!glfwInit())
         {
             M_CORE_ERROR("GLFW failed to initialize");
@@ -29,7 +29,7 @@ namespace ManulEngine {
         glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 0);
         glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-
+        
         windowInstance = glfwCreateWindow(width, height, title.c_str(), NULL, NULL);
         if (!windowInstance)
         {
@@ -39,24 +39,29 @@ namespace ManulEngine {
         }
         glfwMakeContextCurrent(windowInstance);
         
-        if (!render.Init(width, height, windowInstance))
+        if (!Renderer::Init(width, height))
         {
             M_CORE_CRITICAL("Failed to initialize renderer");
             return false;
         }
+        
         M_CORE_INFO("Renderer initalized successfully");
         return true;
     }
 
     void Window::SetSize(int width, int height, bool fullscreen)
     {
-
+        
     }
 
     void Window::Update()
     {
         windowShouldClose = glfwWindowShouldClose(windowInstance);
-        render.Render();
+        if (windowShouldClose)
+        {
+            M_CORE_INFO("IH");
+        }
+        Renderer::Render();
         glfwSwapBuffers(windowInstance);
         glfwPollEvents();
     }
