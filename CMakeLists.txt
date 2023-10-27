@@ -84,7 +84,8 @@ add_executable(ManulEngine WIN32
 		"ManulEngine/src/Platform/OpenGL/OpenGLShader.h"
 		"ManulEngine/src/Platform/OpenGL/OpenGLShader.cpp"
 		"ManulEngine/src/Platform/OpenGL/OpenGLPrimitives.cpp" 
-		"ManulEngine/src/Platform/OpenGL/OpenGLPrimitives.h" )
+		"ManulEngine/src/Platform/OpenGL/OpenGLPrimitives.h"
+		"external/stb-image/stb_image.h")
 
 target_precompile_headers(ManulEngine PRIVATE ManulEngine/src/mapch.h)
 #target_link_libraries(ManulEngine glfw3 glad zlib vulkan-1)

@@ -6,6 +6,11 @@ void RendererBackend::Init(uint32_t windowWidht, uint32_t windowHegiht) {
     OpenGLBackend::Init(windowWidht, windowHegiht);
 }
 
+void RendererBackend::DrawQuad()
+{
+    OpenGLBackend::DrawQuad();
+}
+
 void RendererBackend::Shutdown() {
 
 }

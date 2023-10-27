@@ -29,7 +29,10 @@ namespace ManulEngine {
         glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 0);
         glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-        
+#ifdef __APPLE__
+        glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
+#endif
+
         windowInstance = glfwCreateWindow(width, height, title.c_str(), NULL, NULL);
         if (!windowInstance)
         {

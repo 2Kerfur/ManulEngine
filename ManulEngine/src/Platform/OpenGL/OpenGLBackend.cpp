@@ -9,8 +9,12 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height)
     glViewport(0, 0, width, height); //TODO: Перенести в renderer
     
 }
-static OpenGLShader shader;
+
 static OpenGLBox box;
+void OpenGLBackend::DrawQuad()
+{
+
+}
 void OpenGLBackend::Init(uint32_t windowWidht, uint32_t windowHeight) {
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
     {
@@ -33,9 +37,8 @@ void OpenGLBackend::Init(uint32_t windowWidht, uint32_t windowHeight) {
     glGenBuffers(1, &VBO);
     glGenBuffers(1, &EBO);
     glBindVertexArray(VAO);
-    glBindBuffer(GL_ARRAY_BUFFER, VBO);
-
-    box.Bind(EBO, VAO);
+        
+    box.Bind(EBO, VAO, VBO);
 }
 
 void OpenGLBackend::SetWindowSize(uint32_t windowWidht, uint32_t windowHeigth)
@@ -46,7 +49,7 @@ void OpenGLBackend::SetWindowSize(uint32_t windowWidht, uint32_t windowHeigth)
 void OpenGLBackend::Render() {
     glClearColor(0.8f, 0.3f, 0.2f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
-
+    
     box.Draw();
 }
 

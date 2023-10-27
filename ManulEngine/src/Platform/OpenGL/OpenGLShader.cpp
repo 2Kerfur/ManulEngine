@@ -1,3 +1,4 @@
+#include "mapch.h"
 #include "OpenGLShader.h"
 #include "glad/glad.h"
 int OpenGLShader::Compile(const char* vertexShaderSource, const char* fragmentShaderSource)
@@ -10,8 +11,9 @@ int OpenGLShader::Compile(const char* vertexShaderSource, const char* fragmentSh
     glGetShaderiv(vertexShader, GL_COMPILE_STATUS, &success);
     if (!success)
     {
+        M_CORE_ERROR("Shader compilation failed");
         glGetShaderInfoLog(vertexShader, 512, NULL, infoLog);
-        std::cout << "ERROR::SHADER::VERTEX::COMPILATION_FAILED\n" << infoLog << std::endl;
+        M_CORE_ERROR(infoLog);
         return false;
     }
 
@@ -23,7 +25,8 @@ int OpenGLShader::Compile(const char* vertexShaderSource, const char* fragmentSh
     if (!success)
     {
         glGetShaderInfoLog(fragmentShader, 512, NULL, infoLog);
-        std::cout << "ERROR::SHADER::FRAGMENT::COMPILATION_FAILED\n" << infoLog << std::endl;
+        M_CORE_ERROR("Shader compilation failed");
+        M_CORE_ERROR(infoLog);
         return false;
     }
 
@@ -34,11 +37,18 @@ int OpenGLShader::Compile(const char* vertexShaderSource, const char* fragmentSh
     glGetProgramiv(shaderProgram, GL_LINK_STATUS, &success);
     if (!success) {
         glGetProgramInfoLog(shaderProgram, 512, NULL, infoLog);
-        std::cout << "ERROR::SHADER::PROGRAM::LINKING_FAILED\n" << infoLog << std::endl;
+        M_CORE_ERROR("Shader compilation failed");
+        M_CORE_ERROR(infoLog);
+        //std::cout << "ERROR::SHADER::PROGRAM::LINKING_FAILED\n" << infoLog << std::endl;
         return false;
     }   
 
     glDeleteShader(vertexShader);
     glDeleteShader(fragmentShader);
     return true;
+}
+
+void OpenGLShader::Use()
+{
+    glUseProgram(shaderProgram);
 }
