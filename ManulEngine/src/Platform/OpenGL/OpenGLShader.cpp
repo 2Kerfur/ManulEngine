@@ -39,7 +39,6 @@ int OpenGLShader::Compile(const char* vertexShaderSource, const char* fragmentSh
         glGetProgramInfoLog(shaderProgram, 512, NULL, infoLog);
         M_CORE_ERROR("Shader compilation failed");
         M_CORE_ERROR(infoLog);
-        //std::cout << "ERROR::SHADER::PROGRAM::LINKING_FAILED\n" << infoLog << std::endl;
         return false;
     }   
 

@@ -26,9 +26,9 @@ namespace ManulEngine
     void Application::CreateConsoleWindow()
     {
         AllocConsole();
-        //freopen("conin$", "r", stdin);
-        //freopen("conout$", "w", stdout);
-        //freopen("conout$", "w", stderr);
+        freopen("conin$", "r", stdin);
+        freopen("conout$", "w", stdout);
+        freopen("conout$", "w", stderr);
     }
     void Application::Create() {
         m_Window = new Window();

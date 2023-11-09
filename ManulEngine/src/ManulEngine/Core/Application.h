@@ -1,7 +1,7 @@
 #pragma once
 #include "Math/Math.h"
 #include "Window.h"
-
+#include <vector>
 namespace ManulEngine {
     class Application {
     public:
@@ -38,9 +38,6 @@ namespace ManulEngine {
         Window* m_Window;
         void WriteSpecToConfigFile(std::vector<std::string> config);
         ApplicationSpecification m_Specification;
-        
-        
-
     };
 }
 

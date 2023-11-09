@@ -72,8 +72,8 @@ add_executable(ManulEngine WIN32
 		ManulEngine/src/ManulEngine/ResourceManager/ResourceLoader.cpp
 		ManulEngine/src/ManulEngine/ResourceManager/ResourceLoader.h
 		ManulEngine/src/ManulEngine/ResourceManager/Resource.h
-		ManulEngine/src/ManulEngine/Renderer/Renderer2D.cpp
-		ManulEngine/src/ManulEngine/Renderer/Renderer2D.h
+		
+		
 		ManulEngine/src/ManulEngine/Renderer/Camera.h
 		ManulEngine/src/ManulEngine/Renderer/OrthographicCamera.cpp
 		ManulEngine/src/ManulEngine/Renderer/OrthographicCamera.h
@@ -85,7 +85,10 @@ add_executable(ManulEngine WIN32
 		"ManulEngine/src/Platform/OpenGL/OpenGLShader.cpp"
 		"ManulEngine/src/Platform/OpenGL/OpenGLPrimitives.cpp" 
 		"ManulEngine/src/Platform/OpenGL/OpenGLPrimitives.h"
-		"external/stb-image/stb_image.h")
+		"external/stb-image/stb_image.h" 
+		
+		
+ "ManulEngine/src/ManulEngine/Renderer/Shader.h" "ManulEngine/src/ManulEngine/Renderer/Shader.cpp" "ManulEngine/src/Platform/OpenGL/OpenGLTexture.h" "ManulEngine/src/Platform/OpenGL/OpenGLTexture.cpp")
 
 target_precompile_headers(ManulEngine PRIVATE ManulEngine/src/mapch.h)
 #target_link_libraries(ManulEngine glfw3 glad zlib vulkan-1)
