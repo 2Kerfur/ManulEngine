@@ -1,16 +1,13 @@
 #include "mapch.h"
 #include "Application.h"
 #include "ManulEngine/ResourceManager/ResourceManager.h"
-
 namespace ManulEngine
 {
     Application* Application::s_Instance = nullptr;
 
     void Application::Update() {
         applicationExit = m_Window->WindowShouldClose();
-        if (applicationExit) {
-            Destroy();
-        }
+        if (applicationExit) Destroy();
         m_Window->Update();
     }
 
@@ -21,20 +18,17 @@ namespace ManulEngine
 
     Application::Application()
     {
-
     }
     void Application::CreateConsoleWindow()
     {
+#ifdef _WIN32
         AllocConsole();
-        freopen("conin$", "r", stdin);
-        freopen("conout$", "w", stdout);
-        freopen("conout$", "w", stderr);
+#endif
     }
     void Application::Create() {
-        m_Window = new Window();
         CreateConsoleWindow();
         Log::Init();
-        std::vector<std::string> config;
+        m_Window = new Window();
         if (ResourceManager::LoadConfig(config, ResourceManager::GetWorkingDirectory() + "/application.cfg"))
         {
             m_Specification.readFromFile = std::stoi(config[0]);
@@ -48,8 +42,6 @@ namespace ManulEngine
             m_Specification.windowPos = { std::stoi(config[8]), std::stoi(config[9]) };
         }   
         else {
-            //Использовать настройки по умолчанию
-            //TODO: Много навалил надо переделать
             m_Specification.readFromFile = false;
             m_Specification.Name = "Default Name";
             m_Specification.Vendor = "Default Vendor";
@@ -79,13 +71,11 @@ namespace ManulEngine
         config.push_back(std::to_string(m_Specification.windowSize.y));
         config.push_back(std::to_string(m_Specification.windowPos.x));
         config.push_back(std::to_string(m_Specification.windowPos.y));
-        std::string cfgPath(ResourceManager::GetWorkingDirectory());
-        cfgPath = cfgPath + "/application.cfg";
+        std::string cfgPath(ResourceManager::GetWorkingDirectory() + "/application.cfg");
         ResourceManager::CreateConfig(config, cfgPath);
     }
     void Application::Destroy()
     {
-        std::vector<std::string> config;
         WriteSpecToConfigFile(config);
     }
 

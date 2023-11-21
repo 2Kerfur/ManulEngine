@@ -1,16 +1,11 @@
 #include "ResourceManager.h"
+#include "mapch.h"
 #include <fstream>
 #include <iterator>
 #include <sstream>
-inline bool ResourceManager::FileExists(const std::string& name) {
-    if (FILE* file = fopen(name.c_str(), "r")) {
-        fclose(file);
-        return true;
-    }
-    else {
-        return false;
-    }
-    return true;
+inline bool ResourceManager::FileExists(const std::string& path) {
+    if (std::filesystem::exists(path)) return true;
+    else return false;
 }
 std::string ResourceManager::GetWorkingDirectory()
 {
@@ -21,7 +16,7 @@ bool ResourceManager::LoadConfig(std::vector<std::string>& config, std::string p
 {
     std::ifstream file_in(path);
     if (!file_in) {
-        std::cout << "file not found: Path: " << path;
+        M_CORE_ERROR("Log file not found, path: ", path);
         return false;
     }
 
@@ -31,13 +26,12 @@ bool ResourceManager::LoadConfig(std::vector<std::string>& config, std::string p
     
     return true;
 }
-
 bool ResourceManager::CreateConfig(std::vector<std::string>& config, std::string& path)
 {
     std::ofstream outfile(path);
 
-    for (int i = 0; i < config.size(); i++)
-        outfile << config[i] << std::endl;
+    for (std::string var : config)
+        outfile << var << std::endl;
         
     outfile.close();
     return true;

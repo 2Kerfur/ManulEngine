@@ -12,7 +12,6 @@ namespace ManulEngine {
             std::string Version;
             std::string Vendor;
             std::string WorkingDirectory;
-            //Window Settings
             bool fullscreen;
             Vector2Int windowSize;
             Vector2Int windowPos;     
@@ -33,7 +32,7 @@ namespace ManulEngine {
         void CreateConsoleWindow();
         bool m_Running = true;
         bool m_Minimized = false;
-
+        std::vector<std::string> config;
         static Application* s_Instance;
         Window* m_Window;
         void WriteSpecToConfigFile(std::vector<std::string> config);
