@@ -60,7 +60,7 @@ void OpenGLBackend::Render() {
     glClear(GL_COLOR_BUFFER_BIT);
    //line.Bind(EBO, VAO, VBO);
     //line.Draw();
-    //box.Bind(EBO, VAO, VBO);
+    box.Bind(EBO, VAO, VBO);
     box.Draw();
 }
 

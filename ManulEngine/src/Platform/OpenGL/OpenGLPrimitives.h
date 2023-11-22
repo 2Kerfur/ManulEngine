@@ -11,7 +11,7 @@ public:
 	void Create(Vector3 pos, Vector2 size);
     void Bind(uint32_t ebo, uint32_t vao, uint32_t vbo);
 	void Draw(); 
-    const char* vertexShaderSource = "#version 330 core\n"
+    const char* vertexShaderSource1 = "#version 330 core\n"
         "layout(location = 0) in vec3 aPos;\n"
         "layout(location = 1) in vec3 aColor;\n"
         "layout(location = 2) in vec2 aTexCoord;\n"
@@ -23,7 +23,21 @@ public:
         "   ourColor = aColor;\n"
         "   TexCoord = vec2(aTexCoord.x, aTexCoord.y);\n"
         "}\0";
-
+    const char* vertexShaderSource = "#version 330 core\n"
+        "layout(location = 0) in vec3 aPos;\n"
+        "layout(location = 1) in vec3 aColor;\n"
+        "layout(location = 2) in vec2 aTexCoord;\n"
+        "out vec3 ourColor;\n"
+        "out vec2 TexCoord;\n"
+        "uniform mat4 model;\n"
+        "uniform mat4 view;\n"
+        "uniform mat4 projection;\n"
+        "void main()\n"
+        "{\n"
+        "   gl_Position = projection * view * model * vec4(aPos, 1.0f);\n"
+        "   ourColor = aColor;\n"
+        "   TexCoord = vec2(aTexCoord.x, aTexCoord.y);\n"
+        "}\0";
     const char* fragmentShaderSource = "#version 330 core\n"
         "out vec4 FragColor;\n"
         "in vec3 ourColor;\n"

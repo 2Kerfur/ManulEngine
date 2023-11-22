@@ -2,6 +2,10 @@
 #include "OpenGLPrimitives.h"
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
+
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
 #include "glad/glad.h"
 #include "ManulEngine/ResourceManager/ResourceManager.h"
 void OpenGLBox::Create(Vector3 pos, Vector2 size)
@@ -49,6 +53,8 @@ void OpenGLBox::Draw()
     texture.Bind();
         
     shader.Use();
+    glm::mat4 projection = glm::perspective(glm::radians(fov), (float)800 / (float)600, 0.1f, 100.0f);
+    shader.setMat4("projection", projection);
     glBindVertexArray(VAO);
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 }
