@@ -3,6 +3,8 @@
 #include "ManulEngine/Core/Log.h"
 #include "ManulEngine/Core/Application.h"
 #include "ManulEngine/Core/Window.h"
+
+#include "ManulEngine/Renderer/Camera.h"
 #include "iostream"
 void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {

@@ -2,26 +2,28 @@
 #include "OpenGLPrimitives.h"
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
-
+#include "glad/glad.h"
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
-#include "glad/glad.h"
 #include "ManulEngine/ResourceManager/ResourceManager.h"
 void OpenGLBox::Create(Vector3 pos, Vector2 size)
 {
 	shader.Compile(vertexShaderSource, fragmentShaderSource);
+    Camera cameraObj(glm::vec3(0.0f, 0.0f, 3.0f));
+    camera = &cameraObj;
     texture.Create("path");
 }
 float vertices[] = {
-     0.5f,  0.5f, 0.0f,   1.0f, 0.0f, 0.0f,   1.0f, 1.0f, // top right
-     0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 0.0f,   1.0f, 0.0f, // bottom right
-    -0.5f, -0.5f, 0.0f,   0.0f, 0.0f, 1.0f,   0.0f, 0.0f, // bottom left
-    -0.5f,  0.5f, 0.0f,   1.0f, 1.0f, 0.0f,   0.0f, 1.0f  // top left 
+    //pos                //texture pos
+     0.5f,  0.5f, 0.0f,  1.0f, 1.0f, 
+     0.5f, -0.5f, 0.0f,  1.0f, 0.0f, 
+    -0.5f, -0.5f, 0.0f,  0.0f, 0.0f, 
+    -0.5f,  0.5f, 0.0f,  0.0f, 1.0f  
 };
-unsigned int indices[] = {  // note that we start from 0!
-        0, 1, 3,  // first Triangle
-        1, 2, 3   // second Triangle
+unsigned int indices[] = {
+        0, 1, 3,
+        1, 2, 3
 };
 void OpenGLBox::Bind(uint32_t ebo, uint32_t vao, uint32_t vbo)
 {
@@ -35,14 +37,11 @@ void OpenGLBox::Bind(uint32_t ebo, uint32_t vao, uint32_t vbo)
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
 
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)0);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
-    // color attribute
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(3 * sizeof(float)));
-    glEnableVertexAttribArray(1);
     // texture coord attribute
-    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(6 * sizeof(float)));
-    glEnableVertexAttribArray(2);
+    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
+    glEnableVertexAttribArray(1);
 
     texture.Bind();
 }
@@ -53,10 +52,22 @@ void OpenGLBox::Draw()
     texture.Bind();
         
     shader.Use();
-    glm::mat4 projection = glm::perspective(glm::radians(fov), (float)800 / (float)600, 0.1f, 100.0f);
+    glm::mat4 projection = glm::perspective(glm::radians(camera->Zoom), (float)800 / (float)600, 0.1f, 100.0f);
     shader.setMat4("projection", projection);
+
+    glm::mat4 view = camera->GetViewMatrix();
+    shader.setMat4("view", view);
+
     glBindVertexArray(VAO);
-    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+
+    glm::mat4 model = glm::mat4(1.0f);
+    model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
+    float angle = 20.0f;
+    model = glm::rotate(model, glm::radians(angle), glm::vec3(1.0f, 0.3f, 0.5f));
+    shader.setMat4("model", model);
+
+    glDrawArrays(GL_TRIANGLES, 0, 2);
+    //glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 }
 
 void OpenGLLine::Create(Vector3 pos, Vector2 size)
