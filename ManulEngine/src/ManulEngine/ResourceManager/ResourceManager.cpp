@@ -23,13 +23,15 @@ bool ResourceManager::LoadConfig(std::vector<std::string>& config, std::string p
     std::string line;
     while (std::getline(file_in, line))
         config.push_back(line);
-    
+
+    file_in.close();
     return true;
 }
 bool ResourceManager::CreateConfig(std::vector<std::string>& config, std::string& path)
 {
+    std::remove(path.c_str());
     std::ofstream outfile(path);
-
+    
     for (std::string var : config)
         outfile << var << std::endl;
         

@@ -32,6 +32,7 @@ public:
         "void main()\n"
         "{\n"
         "   gl_Position = projection * view * model * vec4(aPos, 1.0f);\n"
+        //"   gl_Position = projection * view * model * vec4(aPos, 1.0f);\n"
         "   TexCoord = vec2(aTexCoord.x, aTexCoord.y);\n"
         "}\0";
     const char* fragmentShaderSource = "#version 330 core\n"
@@ -42,6 +43,7 @@ public:
         "{\n"
         "   FragColor = texture(m_Texture, TexCoord);\n"
         "}\n\0";
+    
     uint32_t EBO, VAO, VBO;
     Camera* camera;
 	OpenGLShader shader;

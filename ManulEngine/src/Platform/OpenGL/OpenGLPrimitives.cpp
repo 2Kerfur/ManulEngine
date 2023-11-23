@@ -7,12 +7,16 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 #include "ManulEngine/ResourceManager/ResourceManager.h"
-void OpenGLBox::Create(Vector3 pos, Vector2 size)
+#include "GLFW/glfw3.h"
+#include "ManulEngine/Core/Window.h"
+GLFWwindow* window;
+void OpenGLBox::Create(Vector3 pos, Vector2 size) //TODO: Change box to quad
 {
+    texture.Create("path");
 	shader.Compile(vertexShaderSource, fragmentShaderSource);
     Camera cameraObj(glm::vec3(0.0f, 0.0f, 3.0f));
     camera = &cameraObj;
-    texture.Create("path");
+    window = &ManulEngine::Window::GetInstatnce();
 }
 float vertices[] = {
     //pos                //texture pos
@@ -21,10 +25,8 @@ float vertices[] = {
     -0.5f, -0.5f, 0.0f,  0.0f, 0.0f, 
     -0.5f,  0.5f, 0.0f,  0.0f, 1.0f  
 };
-unsigned int indices[] = {
-        0, 1, 3,
-        1, 2, 3
-};
+
+
 void OpenGLBox::Bind(uint32_t ebo, uint32_t vao, uint32_t vbo)
 {
     EBO = ebo;
@@ -34,21 +36,39 @@ void OpenGLBox::Bind(uint32_t ebo, uint32_t vao, uint32_t vbo)
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
 
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
+    //glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+    //glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
 
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
     // texture coord attribute
+
     glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
     glEnableVertexAttribArray(1);
 
     texture.Bind();
 }
-
+float deltaTime = 0;
+float lastFrame = 0.0f;
 void OpenGLBox::Draw()
 {
-    glActiveTexture(GL_TEXTURE0);
+
+    if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
+        glfwSetWindowShouldClose(window, true);
+    float currentFrame = static_cast<float>(glfwGetTime());
+    deltaTime = currentFrame - lastFrame;
+    lastFrame = currentFrame;
+
+    if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
+        camera->ProcessKeyboard(FORWARD, deltaTime);
+    if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
+        camera->ProcessKeyboard(BACKWARD, deltaTime);
+    if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
+        camera->ProcessKeyboard(LEFT, deltaTime);
+    if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
+        camera->ProcessKeyboard(RIGHT, deltaTime);
+
+    //glActiveTexture(GL_TEXTURE0);
     texture.Bind();
         
     shader.Use();
@@ -62,12 +82,12 @@ void OpenGLBox::Draw()
 
     glm::mat4 model = glm::mat4(1.0f);
     model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
-    float angle = 20.0f;
+    float angle = 0.0f;
     model = glm::rotate(model, glm::radians(angle), glm::vec3(1.0f, 0.3f, 0.5f));
     shader.setMat4("model", model);
 
-    glDrawArrays(GL_TRIANGLES, 0, 2);
-    //glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+    glDrawArrays(GL_TRIANGLES, 0, 4);
+    //glDrawElements(GL_TRIANGLES, 2, GL_UNSIGNED_INT, 0);
 }
 
 void OpenGLLine::Create(Vector3 pos, Vector2 size)

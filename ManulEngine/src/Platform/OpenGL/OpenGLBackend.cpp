@@ -40,6 +40,7 @@ void OpenGLBackend::Init(uint32_t windowWidht, uint32_t windowHeight) {
     glGenBuffers(1, &VBO);
     glGenBuffers(1, &EBO);
     glBindVertexArray(VAO);
+    glEnable(GL_DEPTH_TEST);
 
     //Create everythig in scene
     box.Create({ 0, 0, 0 }, { 3, 3 });
