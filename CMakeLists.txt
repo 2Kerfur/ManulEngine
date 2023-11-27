@@ -14,7 +14,6 @@ endif()
 #	set(VULKAN_PATH ${Vulkan_INCLUDE_DIRS})	
 #	STRING(REGEX REPLACE "/Include" "" VULKAN_PATH ${VULKAN_PATH})
 #	message(STATUS "Vulkan path is: " ${VULKAN_PATH})
-#
 #	include_directories(AFTER ${VULKAN_PATH}/Include)
 #	link_directories(${VULKAN_PATH}/Bin;${VULKAN_PATH}/Lib;)
 #endif()
@@ -35,11 +34,11 @@ include_directories("ManulEngine/src"
 )
 
 add_executable(ManulEngine WIN32
-		ManulEngine/src/main.cpp
-		ManulEngine/src/ManulEngine/Core/Window.cpp
-		ManulEngine/src/ManulEngine/Core/Window.h
-		ManulEngine/src/ManulEngine/Renderer/Renderer.cpp
-		ManulEngine/src/ManulEngine/Renderer/Renderer.h
+		"ManulEngine/src/main.cpp"
+		"ManulEngine/src/ManulEngine/Core/Window.cpp"
+		"ManulEngine/src/ManulEngine/Core/Window.h"
+		"ManulEngine/src/ManulEngine/Renderer/Renderer.cpp"
+		"ManulEngine/src/ManulEngine/Renderer/Renderer.h"
 		"ManulEngine/src/ManulEngine/Core/Log.cpp"
 		"ManulEngine/src/ManulEngine/Core/Log.h"
 		#ManulEngine/src/Platform/Vulkan/VulkanDebug.cpp
@@ -52,29 +51,29 @@ add_executable(ManulEngine WIN32
 		#ManulEngine/src/Platform/Vulkan/VulkanSurface.h
 		#ManulEngine/src/Platform/Vulkan/VulkanPipline.cpp
 		#ManulEngine/src/Platform/Vulkan/VulkanPipline.h
-		ManulEngine/src/ManulEngine.h
-		ManulEngine/src/Platform/Windows/WindowsWindow.cpp
-		ManulEngine/src/Platform/Windows/WindowsWindow.h
-		ManulEngine/src/ManulEngine/Core/Math/Math.cpp
-		ManulEngine/src/ManulEngine/Core/Math/Math.h
-		ManulEngine/src/ManulEngine/Physics/2D/Physics2D.cpp
-		ManulEngine/src/ManulEngine/Physics/2D/Physics2D.h
-		ManulEngine/src/ManulEngine/Core/Application.cpp
-		ManulEngine/src/ManulEngine/Core/Application.h
-		ManulEngine/src/Platform/OpenGL/OpenGLBackend.cpp
-		ManulEngine/src/Platform/OpenGL/OpenGLBackend.h
+		"ManulEngine/src/ManulEngine.h"
+		"ManulEngine/src/Platform/Windows/WindowsWindow.cpp"
+		"ManulEngine/src/Platform/Windows/WindowsWindow.h"
+		"ManulEngine/src/ManulEngine/Core/Math/Math.cpp"
+		"ManulEngine/src/ManulEngine/Core/Math/Math.h"
+		"ManulEngine/src/ManulEngine/Physics/2D/Physics2D.cpp"
+		"ManulEngine/src/ManulEngine/Physics/2D/Physics2D.h"
+		"ManulEngine/src/ManulEngine/Core/Application.cpp"
+		"ManulEngine/src/ManulEngine/Core/Application.h"
+		"ManulEngine/src/Platform/OpenGL/OpenGLBackend.cpp"
+		"ManulEngine/src/Platform/OpenGL/OpenGLBackend.h"
 		#ManulEngine/src/ManulEngine/ResourceManager/ResourcePacker.cpp
 		#ManulEngine/src/ManulEngine/ResourceManager/ResourcePacker.h
-		ManulEngine/src/ManulEngine/ResourceManager/ResourceManager.cpp
-		ManulEngine/src/ManulEngine/ResourceManager/ResourceManager.h
-		ManulEngine/src/ManulEngine/ResourceManager/Resource.h
-		ManulEngine/src/ManulEngine/Renderer/Camera.h
-		ManulEngine/src/ManulEngine/Renderer/OrthographicCamera.cpp
-		ManulEngine/src/ManulEngine/Renderer/OrthographicCamera.h
-		ManulEngine/src/ManulEngine/Renderer/RendererBackend.cpp
-		ManulEngine/src/ManulEngine/Renderer/RendererBackend.h
-		ManulEngine/src/ManulEngine/Audio/AudioEngine.cpp
-		ManulEngine/src/ManulEngine/Audio/AudioEngine.h
+		"ManulEngine/src/ManulEngine/ResourceManager/ResourceManager.cpp"
+		"ManulEngine/src/ManulEngine/ResourceManager/ResourceManager.h"
+		"ManulEngine/src/ManulEngine/ResourceManager/Resource.h"
+		"ManulEngine/src/ManulEngine/Renderer/Camera.h"
+		"ManulEngine/src/ManulEngine/Renderer/OrthographicCamera.cpp"
+		"ManulEngine/src/ManulEngine/Renderer/OrthographicCamera.h"
+		
+		"ManulEngine/src/ManulEngine/Renderer/RendererBackend.h"
+		"ManulEngine/src/ManulEngine/Audio/AudioEngine.cpp"
+		"ManulEngine/src/ManulEngine/Audio/AudioEngine.h"
 		"ManulEngine/src/Platform/OpenGL/OpenGLShader.h"
 		"ManulEngine/src/Platform/OpenGL/OpenGLShader.cpp"
 		"ManulEngine/src/Platform/OpenGL/OpenGLPrimitives.cpp" 

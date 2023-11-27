@@ -68,7 +68,7 @@ void OpenGLBox::Draw()
     if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
         camera->ProcessKeyboard(RIGHT, deltaTime);
 
-    //glActiveTexture(GL_TEXTURE0);
+    glActiveTexture(GL_TEXTURE0);
     texture.Bind();
         
     shader.Use();

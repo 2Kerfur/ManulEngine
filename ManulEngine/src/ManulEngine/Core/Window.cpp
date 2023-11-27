@@ -42,7 +42,7 @@ namespace ManulEngine {
         }
         glfwMakeContextCurrent(windowInstance);
         
-        if (!Renderer::Init(width, height))
+        if (!Renderer::Init(width, height, Renderer::OpenGL))
         {
             M_CORE_CRITICAL("Failed to initialize renderer");
             return false;
