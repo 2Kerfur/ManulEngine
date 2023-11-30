@@ -22,6 +22,25 @@ set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 add_subdirectory(external/glfw)
 
+add_library(
+        imgui STATIC
+        "external/imgui/include/imconfig.h"
+        "external/imgui/include/imgui.cpp"
+        "external/imgui/include/imgui.h"
+        "external/imgui/include/imgui_demo.cpp"
+        "external/imgui/include/imgui_draw.cpp"
+        "external/imgui/backends/imgui_impl_opengl3.cpp"
+        "external/imgui/backends/imgui_impl_opengl3.h"
+        "external/imgui/backends/imgui_impl_glfw.h"
+        "external/imgui/backends/imgui_impl_glfw.cpp"
+        "external/imgui/backends/imgui_internal.h"
+
+        "external/imgui/include/imstb_textedit.h"
+        "external/imgui/include/imstb_truetype.h"
+        "external/imgui/include/imstb_rectpack.h"
+        "external/imgui/include/imgui_widgets.cpp"
+        "external/imgui/include/imgui_tables.cpp"
+        )
 add_library(glad STATIC external/glad/src/glad.c)
 
 include_directories("ManulEngine/src"
@@ -31,6 +50,8 @@ include_directories("ManulEngine/src"
 					"external/glfw/include"
 					"external/stb-image"
 					"external/glm"
+					"external/imgui/include"
+					"external/imgui/backends"
 )
 
 add_executable(ManulEngine WIN32
@@ -83,12 +104,21 @@ add_executable(ManulEngine WIN32
 		"ManulEngine/src/ManulEngine/Renderer/Shader.cpp" 
 		"ManulEngine/src/Platform/OpenGL/OpenGLTexture.h" 
 		"ManulEngine/src/Platform/OpenGL/OpenGLTexture.cpp" 
-		"ManulEngine/src/ManulEngine/Renderer/Camera.cpp")
+		"ManulEngine/src/ManulEngine/Renderer/Camera.cpp"
+
+		"external/imgui/backends/imgui_impl_opengl3.cpp"
+		"external/imgui/backends/imgui_impl_opengl3.h"
+		"external/imgui/backends/imgui_impl_glfw.cpp"
+		"external/imgui/backends/imgui_impl_glfw.h"
+		"external/imgui/include/imgui.cpp"
+		"external/imgui/include/imgui.h"
+		"external/imgui/include/imgui_draw.cpp"
+)
 
 target_precompile_headers(ManulEngine PRIVATE ManulEngine/src/mapch.h)
 #target_link_libraries(ManulEngine glfw3 glad zlib vulkan-1)
 #target_link_libraries(ManulEngine glfw3 glad vulkan-1)
-target_link_libraries(ManulEngine glfw glad)
+target_link_libraries(ManulEngine glfw glad imgui)
 
 set_target_properties(ManulEngine PROPERTIES LINKER_LANGUAGE CXX)
 target_compile_features(ManulEngine PRIVATE cxx_std_17)

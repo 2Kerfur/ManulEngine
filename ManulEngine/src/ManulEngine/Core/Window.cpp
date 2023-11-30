@@ -59,6 +59,7 @@ namespace ManulEngine {
 
     void Window::Update()
     {
+        glfwPollEvents();
         windowShouldClose = glfwWindowShouldClose(windowInstance);
         if (windowShouldClose)
         {
@@ -66,6 +67,6 @@ namespace ManulEngine {
         }
         Renderer::Render();
         glfwSwapBuffers(windowInstance);
-        glfwPollEvents();
+        
     }
 }
