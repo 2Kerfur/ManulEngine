@@ -8,6 +8,11 @@ namespace ManulEngine {
         windowShouldClose = false;
     }
 
+    //void Window::window_size_callback(GLFWwindow* window, int width, int height)
+    //{
+    //    Renderer::SetWindowSize(width, height);
+    //}
+
     Window::~Window()
     {
         glfwTerminate();
@@ -29,7 +34,7 @@ namespace ManulEngine {
         glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 0);
         glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-#ifdef __APPLE__
+#ifdef __APPLE__ //Пусть будет
         glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 #endif
 
@@ -41,7 +46,8 @@ namespace ManulEngine {
             return false;
         }
         glfwMakeContextCurrent(windowInstance);
-        
+        //glfwSetWindowSizeCallback(windowInstance, window_size_callback);
+
         if (!Renderer::Init(width, height, Renderer::OpenGL))
         {
             M_CORE_CRITICAL("Failed to initialize renderer");
@@ -54,7 +60,7 @@ namespace ManulEngine {
 
     void Window::SetSize(int width, int height, bool fullscreen)
     {
-        
+        glfwSetWindowSize(windowInstance, width, height); //TODO: поддержка fullscreen
     }
 
     void Window::Update()

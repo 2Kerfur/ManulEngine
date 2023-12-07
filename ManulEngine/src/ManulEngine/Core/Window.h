@@ -15,6 +15,7 @@ namespace ManulEngine {
 		void Update();
 
 		static GLFWwindow& GetInstatnce() { return *windowInstance; }
+		static void window_size_callback(GLFWwindow* window, int width, int height);
 
 		bool WindowShouldClose() { return windowShouldClose; }
 	private:

@@ -13,11 +13,6 @@
 
 
 namespace ManulEngine {
-    //void framebuffer_size_callback(GLFWwindow* window, int width, int height)
-    //{
-    //    glViewport(0, 0, width, height); //TODO: Перенести в renderer   
-    //}
-
     static OpenGLBox box;
     static OpenGLLine line;
     static OpenGLModel model;
@@ -54,6 +49,11 @@ namespace ManulEngine {
         //line.Bind(EBO, VAO, VBO);
         //box.Bind(EBO, VAO, VBO);
         return true;
+    }
+
+    void OpenGLBackend::SetWindowSize(uint32_t windowWidht, uint32_t windowHeight)
+    {
+        glViewport(0, 0, windowWidht, windowHeight);
     }
    
     void OpenGLBackend::Render() {

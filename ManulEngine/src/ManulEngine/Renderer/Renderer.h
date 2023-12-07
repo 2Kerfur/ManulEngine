@@ -20,6 +20,7 @@ namespace ManulEngine {
 			DirectX
 		};
 		static bool Init(uint32_t windowWidht, uint32_t windowHegiht, GraphicsAPI api);
+		static void SetWindowSize(uint32_t windowWidht, uint32_t windowHegiht);
 		static void Shutdown();
 		static void Render();
 

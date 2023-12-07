@@ -103,16 +103,16 @@ public:
         "out vec4 FragColor;\n"
         "in vec2 TexCoord;\n"
         "uniform sampler2D texture1;\n"
-        "uniform sampler2D texture2;\n"
         "void main()\n"
         "{\n"
-        "   FragColor = mix(texture(texture1, TexCoord), texture(texture2, TexCoord), 0.2);\n"
+        "   FragColor = texture(texture1, TexCoord);\n"
         "}\n\0";
 
     void Create();
     void Bind(uint32_t ebo, uint32_t vao, uint32_t vbo);
     void Draw();
-    unsigned int texture1, texture2;
     uint32_t EBO, VAO, VBO;
     OpenGLShader shader;
+    OpenGLTexture texture;
 };
+

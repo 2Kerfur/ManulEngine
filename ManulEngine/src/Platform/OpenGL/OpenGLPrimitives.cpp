@@ -52,7 +52,6 @@ float deltaTime = 0;
 float lastFrame = 0.0f;
 void OpenGLBox::Draw()
 {
-
     if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
         glfwSetWindowShouldClose(window, true);
     float currentFrame = static_cast<float>(glfwGetTime());
@@ -135,7 +134,6 @@ void OpenGLLine::Draw()
     glDrawArrays(GL_LINES, 0, 2);
 }
 
-
 float cube_vertices[] = {
         -0.5f, -0.5f, -0.5f,  0.0f, 0.0f,
          0.5f, -0.5f, -0.5f,  1.0f, 0.0f,
@@ -194,6 +192,7 @@ glm::vec3 cubePositions[] = {
 
 void OpenGLModel::Create()
 {
+    
     glGenVertexArrays(1, &VAO);
     glGenBuffers(1, &VBO);
 
@@ -210,52 +209,10 @@ void OpenGLModel::Create()
 
     shader.Compile(vertexShaderSource, fragmentShaderSource);
     
+    texture.Create("image.jpg");
 
-    glGenTextures(1, &texture1);
-    glBindTexture(GL_TEXTURE_2D, texture1);
-
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-    int width, height, nrChannels;
-    stbi_set_flip_vertically_on_load(true); 
-    unsigned char* data = stbi_load("C:/DEV/C++/ManulEngine/out/build/x64-Release/amogus.jpg", &width, &height, &nrChannels, 0);
-    if (data)
-    {
-        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
-        glGenerateMipmap(GL_TEXTURE_2D);
-    }
-    else
-    {
-        M_CORE_ERROR("Failed to load texture");
-    }
-    stbi_image_free(data);
-
-    glGenTextures(1, &texture2);
-    glBindTexture(GL_TEXTURE_2D, texture2);
-
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-    data = stbi_load("C:/DEV/C++/ManulEngine/out/build/x64-Release/amogus.jpg", &width, &height, &nrChannels, 0);
-    if (data)
-    {
-        
-        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
-        glGenerateMipmap(GL_TEXTURE_2D);
-    }
-    else
-    {
-        std::cout << "Failed to load texture" << std::endl;
-    }
-    stbi_image_free(data);
     shader.Use();
     shader.setInt("texture1", 0);
-    shader.setInt("texture2", 1);
 }
 
 void OpenGLModel::Bind(uint32_t ebo, uint32_t vao, uint32_t vbo)
@@ -276,9 +233,7 @@ void OpenGLModel::Draw()
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
     glActiveTexture(GL_TEXTURE0);
-    glBindTexture(GL_TEXTURE_2D, texture1);
-    glActiveTexture(GL_TEXTURE1);
-    glBindTexture(GL_TEXTURE_2D, texture2);
+    texture.Bind();
 
     shader.Use();
 
@@ -288,7 +243,7 @@ void OpenGLModel::Draw()
     glm::mat4 view = glm::lookAt(cameraPos, cameraPos + cameraFront, cameraUp);
     shader.setMat4("view", view);
 
-    // render boxes
+    
     glBindVertexArray(VAO);
     for (unsigned int i = 0; i < 10; i++)
     {

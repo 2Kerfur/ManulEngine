@@ -35,6 +35,7 @@ bool ResourceManager::CreateConfig(std::vector<std::string>& config, std::string
     for (std::string var : config)
         outfile << var << std::endl;
         
+
     outfile.close();
     return true;
 }
