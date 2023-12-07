@@ -33,22 +33,17 @@ namespace ManulEngine {
         const char* graphicsCard = reinterpret_cast<const char*>(glad_glGetString(GL_RENDERER));
         M_CORE_INFO("Graphics card: {}", graphicsCard);
 
-        //IMGUI_CHECKVERSION();
-        //ImGui::CreateContext();
-        //ImGuiIO& io = ImGui::GetIO(); (void)io;
-        //io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;       // Enable Keyboard Controls
-        //io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;           // Enable Docking
-        //
-        //ImGui::StyleColorsDark();
-        //ImGui_ImplGlfw_InitForOpenGL(&Window::GetInstatnce(), true);
-        //ImGui_ImplOpenGL3_Init("#version 330");
+        IMGUI_CHECKVERSION();
+        ImGui::CreateContext();
+        ImGuiIO& io = ImGui::GetIO(); (void)io;
+        io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;       // Enable Keyboard Controls
+        io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;           // Enable Docking
+        
+        ImGui::StyleColorsDark();
+        ImGui_ImplGlfw_InitForOpenGL(&Window::GetInstatnce(), true);
+        ImGui_ImplOpenGL3_Init("#version 330");
 
-        //glGenVertexArrays(1, &VAO);
-        //glGenBuffers(1, &VBO);
-        //glGenBuffers(1, &EBO);
-        //glBindVertexArray(VAO);
-        //glEnable(GL_DEPTH_TEST);
-        //glEnable(GL_DEPTH_TEST);
+        glEnable(GL_DEPTH_TEST);
 
         //Create everythig in scene
         //box.Create({ 0, 0, 0 }, { 3, 3 });
@@ -64,41 +59,41 @@ namespace ManulEngine {
     void OpenGLBackend::Render() {
         glClearColor(0.8f, 0.3f, 0.2f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
-        //ImGui_ImplOpenGL3_NewFrame();
-        //ImGui_ImplGlfw_NewFrame();
-        //ImGui::NewFrame();
-        //
-        ////ImGui::DockSpaceOverViewport(ImGui::GetMainViewport());
-        ////ImGui::ShowDemoWindow();
-        //ImGuiIO& io = ImGui::GetIO();
-        //    
-        //ImGui::Begin("Stats");
-        //ImGui::Text("Application average %.3f ms/frame (%.1f FPS)", 1000.0f / io.Framerate, io.Framerate);
-        //ImGui::End();
-        //
-        //ImGui::Begin("Console");
-        //if (ImGui::SmallButton("Add Debug Error")) {
-        //    logs.push_back("[ERROR] Debug log");
-        //}
-        //ImGui::SameLine();
-        //if (ImGui::SmallButton("Clear")) { 
-        //    logs.clear();
-        //}
-        //for (std::string log : logs)
-        //{
-        //    ImGui::TextUnformatted(log.c_str());
-        //}
-        //
-        //
-        //ImGui::End();
-        //
-        //ImGui::Render();
+        ImGui_ImplOpenGL3_NewFrame();
+        ImGui_ImplGlfw_NewFrame();
+        ImGui::NewFrame();
+        
+        //ImGui::DockSpaceOverViewport(ImGui::GetMainViewport());
+        //ImGui::ShowDemoWindow();
+        ImGuiIO& io = ImGui::GetIO();
+            
+        ImGui::Begin("Stats");
+        ImGui::Text("Application average %.3f ms/frame (%.1f FPS)", 1000.0f / io.Framerate, io.Framerate);
+        ImGui::End();
+        
+        ImGui::Begin("Console");
+        if (ImGui::SmallButton("Add Debug Error")) {
+            logs.push_back("[ERROR] Debug log");
+        }
+        ImGui::SameLine();
+        if (ImGui::SmallButton("Clear")) { 
+            logs.clear();
+        }
+        for (std::string log : logs)
+        {
+            ImGui::TextUnformatted(log.c_str());
+        }
+        
+        
+        ImGui::End();
+        
+        ImGui::Render();
 
         //line.Bind(EBO, VAO, VBO);
         //line.Draw();
         model.Draw();
         
-        //ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
+        ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
 
         
         //box.Bind(EBO, VAO, VBO);
