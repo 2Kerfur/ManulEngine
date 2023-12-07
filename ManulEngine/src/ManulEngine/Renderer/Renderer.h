@@ -5,6 +5,14 @@ namespace ManulEngine {
 	class Renderer
 	{
 	public:
+		enum GpuCrashReason
+		{
+			None,				// Gpu didn't crash
+			PageFault,			// VA Page Fault (invalid memory access)
+			Hang,				// Hang (long-running shader/operation)
+			OutOfMemory,		// Not enough memory for something
+			Unknown,			// Gpu crashed for unknown reason
+		};
 		enum GraphicsAPI
 		{
 			OpenGL,

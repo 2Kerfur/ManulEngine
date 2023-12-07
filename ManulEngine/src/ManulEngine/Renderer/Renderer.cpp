@@ -13,7 +13,9 @@ namespace ManulEngine {
         {
         case Renderer::OpenGL:
             backend = dynamic_cast<RendererBackend*>(new OpenGLBackend());
-            if (backend->Init(windowWidht, windowHegiht)) return true;
+            if (backend->Init(windowWidht, windowHegiht)) 
+            
+            return true;
         case Renderer::Vulkan:
             M_CORE_CRITICAL("Vulkan not supported");
             break;

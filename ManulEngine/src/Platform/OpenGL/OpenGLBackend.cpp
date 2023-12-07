@@ -18,9 +18,9 @@ namespace ManulEngine {
     //    glViewport(0, 0, width, height); //TODO: Перенести в renderer   
     //}
 
-    //static OpenGLBox box;
-    //static OpenGLLine line;
-
+    static OpenGLBox box;
+    static OpenGLLine line;
+    static OpenGLModel model;
     
     bool OpenGLBackend::Init(uint32_t windowWidht, uint32_t windowHeight) {
         if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
@@ -33,57 +33,74 @@ namespace ManulEngine {
         const char* graphicsCard = reinterpret_cast<const char*>(glad_glGetString(GL_RENDERER));
         M_CORE_INFO("Graphics card: {}", graphicsCard);
 
-        IMGUI_CHECKVERSION();
-        ImGui::CreateContext();
-        ImGuiIO& io = ImGui::GetIO(); (void)io;
-        io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;       // Enable Keyboard Controls
-        //io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;      // Enable Gamepad Controls
-        io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;           // Enable Docking
-        io.ConfigFlags |= ImGuiConfigFlags_ViewportsEnable;         // Enable Multi-Viewport / Platform Windows
-        
-        ImGui::StyleColorsDark();
-        ImGui_ImplGlfw_InitForOpenGL(&Window::GetInstatnce(), true);
-        ImGui_ImplOpenGL3_Init("#version 330");
+        //IMGUI_CHECKVERSION();
+        //ImGui::CreateContext();
+        //ImGuiIO& io = ImGui::GetIO(); (void)io;
+        //io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;       // Enable Keyboard Controls
+        //io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;           // Enable Docking
+        //
+        //ImGui::StyleColorsDark();
+        //ImGui_ImplGlfw_InitForOpenGL(&Window::GetInstatnce(), true);
+        //ImGui_ImplOpenGL3_Init("#version 330");
 
-        glGenVertexArrays(1, &VAO);
-        glGenBuffers(1, &VBO);
-        glGenBuffers(1, &EBO);
-        glBindVertexArray(VAO);
-        glEnable(GL_DEPTH_TEST);
+        //glGenVertexArrays(1, &VAO);
+        //glGenBuffers(1, &VBO);
+        //glGenBuffers(1, &EBO);
+        //glBindVertexArray(VAO);
+        //glEnable(GL_DEPTH_TEST);
+        //glEnable(GL_DEPTH_TEST);
 
         //Create everythig in scene
         //box.Create({ 0, 0, 0 }, { 3, 3 });
         //line.Create({ 0, 0, 0 }, { 3, 3 });
-
+        model.Create();
 
 
         //line.Bind(EBO, VAO, VBO);
         //box.Bind(EBO, VAO, VBO);
         return true;
     }
-
+   
     void OpenGLBackend::Render() {
-        ImGui_ImplOpenGL3_NewFrame();
-        ImGui_ImplGlfw_NewFrame();
-        ImGui::NewFrame();
-        ImGuiIO& io = ImGui::GetIO();
-        ImGui::Begin("Stats");                          // Create a window called "Hello, world!" and append into it. 
-        ImGui::Text("Application average %.3f ms/frame (%.1f FPS)", 1000.0f / io.Framerate, io.Framerate);
-        ImGui::End();
-
-        ImGui::Render();
         glClearColor(0.8f, 0.3f, 0.2f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
-        ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
-        //ImGui::UpdatePlatformWindows();
-        //ImGui::RenderPlatformWindowsDefault();
+        //ImGui_ImplOpenGL3_NewFrame();
+        //ImGui_ImplGlfw_NewFrame();
+        //ImGui::NewFrame();
+        //
+        ////ImGui::DockSpaceOverViewport(ImGui::GetMainViewport());
+        ////ImGui::ShowDemoWindow();
+        //ImGuiIO& io = ImGui::GetIO();
+        //    
+        //ImGui::Begin("Stats");
+        //ImGui::Text("Application average %.3f ms/frame (%.1f FPS)", 1000.0f / io.Framerate, io.Framerate);
+        //ImGui::End();
+        //
+        //ImGui::Begin("Console");
+        //if (ImGui::SmallButton("Add Debug Error")) {
+        //    logs.push_back("[ERROR] Debug log");
+        //}
+        //ImGui::SameLine();
+        //if (ImGui::SmallButton("Clear")) { 
+        //    logs.clear();
+        //}
+        //for (std::string log : logs)
+        //{
+        //    ImGui::TextUnformatted(log.c_str());
+        //}
+        //
+        //
+        //ImGui::End();
+        //
+        //ImGui::Render();
 
-
-
-        //ImGui::UpdatePlatformWindows();
-        //ImGui::RenderPlatformWindowsDefault();
         //line.Bind(EBO, VAO, VBO);
-         //line.Draw();
+        //line.Draw();
+        model.Draw();
+        
+        //ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
+
+        
         //box.Bind(EBO, VAO, VBO);
         //box.Draw();
     }
@@ -92,6 +109,5 @@ namespace ManulEngine {
         ImGui_ImplOpenGL3_Shutdown();
         ImGui_ImplGlfw_Shutdown();
         ImGui::DestroyContext();
-
     }
 }

@@ -34,7 +34,6 @@ add_library(
         "external/imgui/backends/imgui_impl_glfw.h"
         "external/imgui/backends/imgui_impl_glfw.cpp"
         "external/imgui/backends/imgui_internal.h"
-
         "external/imgui/include/imstb_textedit.h"
         "external/imgui/include/imstb_truetype.h"
         "external/imgui/include/imstb_rectpack.h"
@@ -113,7 +112,7 @@ add_executable(ManulEngine WIN32
 		"external/imgui/include/imgui.cpp"
 		"external/imgui/include/imgui.h"
 		"external/imgui/include/imgui_draw.cpp"
-)
+ "ManulEngine/src/ManulEngine/Renderer/ImguiLayer.cpp" "ManulEngine/src/ManulEngine/Renderer/ImguiLayer.h")
 
 target_precompile_headers(ManulEngine PRIVATE ManulEngine/src/mapch.h)
 #target_link_libraries(ManulEngine glfw3 glad zlib vulkan-1)

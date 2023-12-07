@@ -30,7 +30,6 @@ int OpenGLShader::Compile(const char* vertexShaderSource, const char* fragmentSh
         M_CORE_ERROR(infoLog);
         return false;
     }
-
     shaderProgram = glCreateProgram();
     glAttachShader(shaderProgram, vertexShader);
     glAttachShader(shaderProgram, fragmentShader);

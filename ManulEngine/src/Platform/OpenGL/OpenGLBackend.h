@@ -3,6 +3,7 @@
 #include "ManulEngine/Renderer/RendererBackend.h"
 #include "GLFW/glfw3.h"
 #include "OpenGLPrimitives.h"
+#include <string>
 
 namespace ManulEngine
 {
@@ -12,6 +13,7 @@ namespace ManulEngine
         virtual void Render() override;
         virtual void Shutdown() override;
     private:
+        std::vector<std::string> logs;
         uint32_t EBO, VAO, VBO;
     };
 }
