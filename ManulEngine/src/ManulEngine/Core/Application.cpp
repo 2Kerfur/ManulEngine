@@ -61,16 +61,18 @@ namespace ManulEngine
     }
     void Application::WriteSpecToConfigFile(std::vector<std::string> config)
     {
-        //config.push_back(std::to_string(m_Specification.readFromFile));
-        //config.push_back(m_Specification.Name);
-        //config.push_back(m_Specification.Vendor);
-        //config.push_back(m_Specification.Version);
-        //config.push_back(m_Specification.WorkingDirectory);
-        //config.push_back(std::to_string(m_Specification.fullscreen));
-        //config.push_back(std::to_string(m_Specification.windowSize.x));
-        //config.push_back(std::to_string(m_Specification.windowSize.y));
-        //config.push_back(std::to_string(m_Specification.windowPos.x));
-        //config.push_back(std::to_string(m_Specification.windowPos.y));
+        if (config.size() == 0) {
+            config.push_back(std::to_string(m_Specification.readFromFile));
+            config.push_back(m_Specification.Name);
+            config.push_back(m_Specification.Vendor);
+            config.push_back(m_Specification.Version);
+            config.push_back(m_Specification.WorkingDirectory);
+            config.push_back(std::to_string(m_Specification.fullscreen));
+            config.push_back(std::to_string(m_Specification.windowSize.x));
+            config.push_back(std::to_string(m_Specification.windowSize.y));
+            config.push_back(std::to_string(m_Specification.windowPos.x));
+            config.push_back(std::to_string(m_Specification.windowPos.y));
+        }
         std::string cfgPath(ResourceManager::GetWorkingDirectory() + "/application.cfg");
         ResourceManager::CreateConfig(config, cfgPath);
     }
