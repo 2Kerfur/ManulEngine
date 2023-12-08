@@ -5,13 +5,24 @@ struct Vector2Int
     int x;
     int y;
 };
+
 struct Vector3Int
 {
     int x;
     int y;
     int z;
 };
-
+struct Vector2Uint
+{
+    uint32_t x;
+    uint32_t y;
+};
+struct Vector3Uint
+{
+    uint32_t x;
+    uint32_t y;
+    uint32_t z;
+};
 struct Vector2
 {
     float x;

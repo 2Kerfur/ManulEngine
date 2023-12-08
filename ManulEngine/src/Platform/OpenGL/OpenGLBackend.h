@@ -9,8 +9,8 @@ namespace ManulEngine
 {
     class OpenGLBackend : public RendererBackend {
     public:
-        virtual bool Init(uint32_t windowWidht, uint32_t windowHeight) override;
-        virtual void SetWindowSize(uint32_t windowWidht, uint32_t windowHeight) override;
+        virtual bool Init(Vector2Uint windowSize) override;
+        virtual void SetWindowSize(Vector2Uint windowSize) override;
         virtual void Render() override;
         virtual void Shutdown() override;
     private:

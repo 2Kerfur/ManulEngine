@@ -13,8 +13,8 @@ namespace ManulEngine {
             std::string Vendor;
             std::string WorkingDirectory;
             bool fullscreen;
-            Vector2Int windowSize;
-            Vector2Int windowPos;     
+            Vector2Uint windowSize;
+            Vector2Uint windowPos;     
         };
 
         virtual ~Application();

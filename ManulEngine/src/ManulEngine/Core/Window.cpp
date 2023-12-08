@@ -3,23 +3,28 @@
 
 namespace ManulEngine {
     GLFWwindow* Window::windowInstance = nullptr;
+    static Vector2Uint windowSize;
     Window::Window()
     {
         windowShouldClose = false;
     }
 
-    //void Window::window_size_callback(GLFWwindow* window, int width, int height)
-    //{
-    //    Renderer::SetWindowSize(width, height);
-    //}
+    void Window::WindowSizeCallback(GLFWwindow* window, int width, int height)
+    {
+        
+        windowSize = { unsigned(width), unsigned(height) };
+        Renderer::SetWindowSize({windowSize.x, windowSize.y});
+    }
 
     Window::~Window()
     {
         glfwTerminate();
     }
     
-    bool Window::Create(int width, int height, std::string title, bool fullscreen)
+    bool Window::Create(Vector2Uint size, std::string title, bool fullscreen)
     {
+        
+        windowSize = size;
         windowShouldClose = false;
         if (!glfwInit())
         {
@@ -38,7 +43,7 @@ namespace ManulEngine {
         glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 #endif
 
-        windowInstance = glfwCreateWindow(width, height, title.c_str(), NULL, NULL);
+        windowInstance = glfwCreateWindow(size.x, size.y, title.c_str(), NULL, NULL);
         if (!windowInstance)
         {
             M_CORE_ERROR("GLFW failed to create window");
@@ -46,9 +51,9 @@ namespace ManulEngine {
             return false;
         }
         glfwMakeContextCurrent(windowInstance);
-        //glfwSetWindowSizeCallback(windowInstance, window_size_callback);
+        glfwSetWindowSizeCallback(windowInstance, WindowSizeCallback);
 
-        if (!Renderer::Init(width, height, Renderer::OpenGL))
+        if (!Renderer::Init(size, Renderer::OpenGL))
         {
             M_CORE_CRITICAL("Failed to initialize renderer");
             return false;
@@ -67,12 +72,16 @@ namespace ManulEngine {
     {
         glfwPollEvents();
         windowShouldClose = glfwWindowShouldClose(windowInstance);
-        if (windowShouldClose)
-        {
-            M_CORE_INFO("IH");
-        }
         Renderer::Render();
         glfwSwapBuffers(windowInstance);
         
+    }
+    inline Vector2Uint Window::GetWindowSize()
+    {
+        return windowSize;
+    }
+    inline void Window::SetWindowSize(Vector2Uint size)
+    {
+        windowSize = size;
     }
 }

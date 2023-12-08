@@ -38,8 +38,8 @@ namespace ManulEngine
             m_Specification.WorkingDirectory = config[4];
 
             m_Specification.fullscreen = std::stoi(config[5]);
-            m_Specification.windowSize = { std::stoi(config[6]), std::stoi(config[7])};
-            m_Specification.windowPos = { std::stoi(config[8]), std::stoi(config[9]) };
+            m_Specification.windowSize = { unsigned(std::stoi(config[6])), unsigned(std::stoi(config[7])) };
+            m_Specification.windowPos = { unsigned(std::stoi(config[8])), unsigned(std::stoi(config[9])) };
         }   
         else {
             m_Specification.readFromFile = false;
@@ -53,7 +53,7 @@ namespace ManulEngine
             m_Specification.windowPos = { 100, 100 };
             WriteSpecToConfigFile(config);
         }
-        if (!m_Window->Create(m_Specification.windowSize.x, m_Specification.windowSize.y,
+        if (!m_Window->Create(m_Specification.windowSize,
             m_Specification.Name, m_Specification.fullscreen))
         {
             M_CORE_CRITICAL("Failed to initialize window");

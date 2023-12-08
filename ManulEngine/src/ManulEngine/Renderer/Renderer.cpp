@@ -7,14 +7,13 @@
 #include "ManulEngine/Core/Log.h"
 namespace ManulEngine {
     RendererBackend* Renderer::backend = nullptr;
-    bool Renderer::Init(uint32_t windowWidht, uint32_t windowHegiht, GraphicsAPI api)
+    bool Renderer::Init(Vector2Uint windowSize, GraphicsAPI api)
     {
         switch (api)
         {
         case Renderer::OpenGL:
             backend = dynamic_cast<RendererBackend*>(new OpenGLBackend());
-            if (backend->Init(windowWidht, windowHegiht)) 
-            
+            if (backend->Init(windowSize))
             return true;
         case Renderer::Vulkan:
             M_CORE_CRITICAL("Vulkan not supported");
@@ -23,10 +22,14 @@ namespace ManulEngine {
             M_CORE_CRITICAL("DirectX not supported");
             break;
         default:
-            M_CORE_ERROR("No graphics api selected");
+            M_CORE_ERROR("Graphics api not supported");
             break;
         }
         return false;
+    }
+    void Renderer::SetWindowSize(Vector2Uint windowSize)
+    {
+        backend->SetWindowSize(windowSize);
     }
     void Renderer::Render()
     {
@@ -36,9 +39,5 @@ namespace ManulEngine {
     void Renderer::Shutdown()
     {
         backend->Shutdown();
-    }
-
-    void Renderer::OnWindowResize(uint32_t width, uint32_t height) {
-
     }
 }

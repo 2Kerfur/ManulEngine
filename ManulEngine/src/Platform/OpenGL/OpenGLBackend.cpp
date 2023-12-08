@@ -17,7 +17,7 @@ namespace ManulEngine {
     static OpenGLLine line;
     static OpenGLModel model;
     
-    bool OpenGLBackend::Init(uint32_t windowWidht, uint32_t windowHeight) {
+    bool OpenGLBackend::Init(Vector2Uint windowSize) {
         if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
         {
             std::cout << "Failed to initialize GLAD" << std::endl;
@@ -51,9 +51,9 @@ namespace ManulEngine {
         return true;
     }
 
-    void OpenGLBackend::SetWindowSize(uint32_t windowWidht, uint32_t windowHeight)
+    void OpenGLBackend::SetWindowSize(Vector2Uint windowSize)
     {
-        glViewport(0, 0, windowWidht, windowHeight);
+        glViewport(0, 0, windowSize.x, windowSize.y);
     }
    
     void OpenGLBackend::Render() {

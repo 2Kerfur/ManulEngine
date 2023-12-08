@@ -1,5 +1,6 @@
 #pragma once
 #include "RendererBackend.h"
+#include "ManulEngine/Core/Math/Math.h"
 namespace ManulEngine {
 	
 	class Renderer
@@ -19,12 +20,10 @@ namespace ManulEngine {
 			Vulkan,
 			DirectX
 		};
-		static bool Init(uint32_t windowWidht, uint32_t windowHegiht, GraphicsAPI api);
-		static void SetWindowSize(uint32_t windowWidht, uint32_t windowHegiht);
+		static bool Init(Vector2Uint windowSize, GraphicsAPI api);
+		static void SetWindowSize(Vector2Uint windowSize);
 		static void Shutdown();
 		static void Render();
-
-		static void OnWindowResize(uint32_t width, uint32_t height);
 	private:
 		static RendererBackend* backend;
 	};
