@@ -9,6 +9,9 @@
 #include "ManulEngine/ResourceManager/ResourceManager.h"
 #include "GLFW/glfw3.h"
 #include "ManulEngine/Core/Window.h"
+
+#include "ManulEngine/Core/Input.h"
+
 GLFWwindow* window;
 void OpenGLBox::Create(Vector3 pos, Vector2 size) //TODO: Change box to quad
 {
@@ -233,6 +236,15 @@ void OpenGLModel::Draw()
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
     glActiveTexture(GL_TEXTURE0);
+    if (ManulEngine::Input::IsKeyPressed(ManulEngine::Key::A))
+        cameraPos.x -= 0.01f;
+    if (ManulEngine::Input::IsKeyPressed(ManulEngine::Key::W))
+        cameraPos.y += 0.01f;
+    if (ManulEngine::Input::IsKeyPressed(ManulEngine::Key::S))
+        cameraPos.y -= 0.01f;
+    if (ManulEngine::Input::IsKeyPressed(ManulEngine::Key::D))
+        cameraPos.x += 0.01f;
+
     texture.Bind();
 
     shader.Use();

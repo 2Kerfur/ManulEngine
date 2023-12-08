@@ -112,7 +112,12 @@ add_executable(ManulEngine WIN32
 		"external/imgui/include/imgui.cpp"
 		"external/imgui/include/imgui.h"
 		"external/imgui/include/imgui_draw.cpp"
- "ManulEngine/src/ManulEngine/Renderer/ImguiLayer.cpp" "ManulEngine/src/ManulEngine/Renderer/ImguiLayer.h")
+ "ManulEngine/src/ManulEngine/Renderer/ImguiLayer.cpp" 
+ "ManulEngine/src/ManulEngine/Renderer/ImguiLayer.h" 
+ "ManulEngine/src/ManulEngine/Core/Input.cpp" 
+ "ManulEngine/src/ManulEngine/Core/Input.h" 
+ "ManulEngine/src/ManulEngine/Core/MouseCodes.h"
+ "ManulEngine/src/ManulEngine/Core/KeyCodes.h")
 
 target_precompile_headers(ManulEngine PRIVATE ManulEngine/src/mapch.h)
 #target_link_libraries(ManulEngine glfw3 glad zlib vulkan-1)

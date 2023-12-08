@@ -74,7 +74,6 @@ namespace ManulEngine {
         windowShouldClose = glfwWindowShouldClose(windowInstance);
         Renderer::Render();
         glfwSwapBuffers(windowInstance);
-        
     }
     inline Vector2Uint Window::GetWindowSize()
     {
