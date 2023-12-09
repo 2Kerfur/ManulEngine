@@ -5,6 +5,8 @@
 
 #include "Platform/OpenGL/OpenGLBackend.h"
 #include "ManulEngine/Core/Log.h"
+#include "ImguiLayer.h"
+
 namespace ManulEngine {
     RendererBackend* Renderer::backend = nullptr;
     bool Renderer::Init(Vector2Uint windowSize, GraphicsAPI api)
@@ -13,19 +15,20 @@ namespace ManulEngine {
         {
         case Renderer::OpenGL:
             backend = dynamic_cast<RendererBackend*>(new OpenGLBackend());
-            if (backend->Init(windowSize))
-            return true;
+            if (!backend->Init(windowSize)) return false;
+            ImguiLayer::Init(Renderer::OpenGL);
+            break;
         case Renderer::Vulkan:
             M_CORE_CRITICAL("Vulkan not supported");
-            break;
+            return false;
         case Renderer::DirectX:
             M_CORE_CRITICAL("DirectX not supported");
-            break;
+            return false;
         default:
             M_CORE_ERROR("Graphics api not supported");
-            break;
+            return false;
         }
-        return false;
+        return true;
     }
     void Renderer::SetWindowSize(Vector2Uint windowSize)
     {
@@ -34,10 +37,12 @@ namespace ManulEngine {
     void Renderer::Render()
     {
         backend->Render();
+        ImguiLayer::Render();
     }
 
     void Renderer::Shutdown()
     {
         backend->Shutdown();
+        ImguiLayer::Shutdown();
     }
 }

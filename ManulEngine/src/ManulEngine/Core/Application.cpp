@@ -18,6 +18,7 @@ namespace ManulEngine
 
     Application::Application()
     {
+        s_Instance = this;
     }
     void Application::CreateConsoleWindow()
     {

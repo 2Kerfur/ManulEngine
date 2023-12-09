@@ -1,14 +1,9 @@
-//
-// Created by user on 9/28/2023.
-//
-
-#ifndef MANULENGINE_AUDIOENGINE_H
-#define MANULENGINE_AUDIOENGINE_H
-
+#pragma once
+#include "ManulEngine/Core/Math/Math.h"
 
 class AudioEngine {
-
+public:
+	void PlayAudioFile(std::string file, Vector3 position);
 };
 
 
-#endif //MANULENGINE_AUDIOENGINE_H

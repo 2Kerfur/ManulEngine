@@ -3,7 +3,8 @@
 
 namespace ManulEngine {
     GLFWwindow* Window::windowInstance = nullptr;
-    static Vector2Uint windowSize;
+    Window* Window::s_Instance = nullptr;
+    static Vector2Uint windowSize = { 0, 0 };
     Window::Window()
     {
         windowShouldClose = false;
@@ -68,6 +69,11 @@ namespace ManulEngine {
         glfwSetWindowSize(windowInstance, width, height); //TODO: поддержка fullscreen
     }
 
+    Vector2Uint Window::GetSize()
+    {
+        return windowSize;
+    }
+
     void Window::Update()
     {
         glfwPollEvents();
@@ -75,12 +81,12 @@ namespace ManulEngine {
         Renderer::Render();
         glfwSwapBuffers(windowInstance);
     }
-    inline Vector2Uint Window::GetWindowSize()
-    {
-        return windowSize;
-    }
-    inline void Window::SetWindowSize(Vector2Uint size)
-    {
-        windowSize = size;
-    }
+    //Vector2Uint Window::GetWindowSize()
+    //{
+    //    return windowSize;
+    //}
+    //inline void Window::SetWindowSize(Vector2Uint size)
+    //{
+    //    windowSize = size;
+    //}
 }

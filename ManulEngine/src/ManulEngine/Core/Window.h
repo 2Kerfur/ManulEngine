@@ -14,16 +14,15 @@ namespace ManulEngine {
 		bool Create(Vector2Uint size, std::string title, bool fullscreen);
 		
 		void SetSize(int width, int height, bool fullscreen);
+		Vector2Uint GetSize();
 		void Update();
 
+		static Window& Get() { return *s_Instance; }
 		static GLFWwindow& GetInstatnce() { return *windowInstance; }
-
-		static inline Vector2Uint GetWindowSize();
-		static inline void SetWindowSize(Vector2Uint size);
-
+		
 		bool WindowShouldClose() { return windowShouldClose; }
 	private:
-		
+		static Window* s_Instance;
 		static void WindowSizeCallback(GLFWwindow* window, int width, int height);
 		bool windowShouldClose = false;
 		static GLFWwindow* windowInstance;
