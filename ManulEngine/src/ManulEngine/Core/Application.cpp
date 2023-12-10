@@ -1,10 +1,11 @@
 #include "mapch.h"
 #include "Application.h"
 #include "ManulEngine/ResourceManager/ResourceManager.h"
+#include "ManulEngine/Audio/AudioEngine.h"
 namespace ManulEngine
 {
     Application* Application::s_Instance = nullptr;
-
+    AudioEngine audioEngine;
     void Application::Update() {
         applicationExit = m_Window->WindowShouldClose();
         if (applicationExit) Destroy();
@@ -30,6 +31,8 @@ namespace ManulEngine
         CreateConsoleWindow();
         Log::Init();
         m_Window = new Window();
+        audioEngine.Init(AudioBackendAPI::OpenAL);
+        audioEngine.PlayAudioFile("filePath", {0, 0, 0});
         if (ResourceManager::LoadConfig(config, ResourceManager::GetWorkingDirectory() + "/application.cfg"))
         {
             m_Specification.readFromFile = std::stoi(config[0]);

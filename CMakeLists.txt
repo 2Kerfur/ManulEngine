@@ -22,6 +22,8 @@ set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 add_subdirectory(external/glfw)
 
+add_subdirectory(external/openal-soft)
+
 add_library(
         imgui STATIC
         "external/imgui/include/imconfig.h"
@@ -51,6 +53,7 @@ include_directories("ManulEngine/src"
 					"external/glm"
 					"external/imgui/include"
 					"external/imgui/backends"
+					"external/openal-soft/include"
 )
 
 add_executable(ManulEngine WIN32
@@ -117,12 +120,16 @@ add_executable(ManulEngine WIN32
  "ManulEngine/src/ManulEngine/Core/Input.cpp" 
  "ManulEngine/src/ManulEngine/Core/Input.h" 
  "ManulEngine/src/ManulEngine/Core/MouseCodes.h"
- "ManulEngine/src/ManulEngine/Core/KeyCodes.h")
+ "ManulEngine/src/ManulEngine/Core/KeyCodes.h"
+"ManulEngine/src/ManulEngine/Audio/AudioBackend.h" 
+"ManulEngine/src/ManulEngine/Audio/OpenAL/OpenALBackend.cpp" 
+"ManulEngine/src/ManulEngine/Audio/OpenAL/OpenALBackend.h")
 
+target_link_directories(ManulEngine PUBLIC "external/openal-soft/MinSizeRel")
 target_precompile_headers(ManulEngine PRIVATE ManulEngine/src/mapch.h)
 #target_link_libraries(ManulEngine glfw3 glad zlib vulkan-1)
 #target_link_libraries(ManulEngine glfw3 glad vulkan-1)
-target_link_libraries(ManulEngine glfw glad imgui)
+target_link_libraries(ManulEngine glfw glad imgui winmm OpenAL32)
 
 set_target_properties(ManulEngine PROPERTIES LINKER_LANGUAGE CXX)
-target_compile_features(ManulEngine PRIVATE cxx_std_17)
+target_compile_features(ManulEngine PRIVATE cxx_std_20)

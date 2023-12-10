@@ -1,0 +1,1596 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:65 (project)"
+    message: |
+      The system is: Windows - 10.0.19044 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:65 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
+      Сборка начата 10.12.2023 16:05:48.
+      
+      Проект "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\3.27.7\\CompilerIdC\\CompilerIdC.vcxproj" в узле 1 (целевые объекты по умолчанию).
+      PrepareForBuild:
+        Создание каталога "Debug\\".
+        Создание каталога "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        Создание "Debug\\CompilerIdC.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+        Обращение к "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\3.27.7\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Файл "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" удаляется.
+        Обращение к "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      Сборка проекта "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\3.27.7\\CompilerIdC\\CompilerIdC.vcxproj" завершена (целевые объекты по умолчанию).
+      
+      Сборка успешно завершена.
+          Предупреждений: 0
+          Ошибок: 0
+      
+      Прошло времени 00:00:01.60
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/3.27.7/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:65 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
+      Сборка начата 10.12.2023 16:05:50.
+      
+      Проект "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\3.27.7\\CompilerIdCXX\\CompilerIdCXX.vcxproj" в узле 1 (целевые объекты по умолчанию).
+      PrepareForBuild:
+        Создание каталога "Debug\\".
+        Создание каталога "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Создание "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+        Обращение к "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\3.27.7\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Файл "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" удаляется.
+        Обращение к "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Сборка проекта "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\3.27.7\\CompilerIdCXX\\CompilerIdCXX.vcxproj" завершена (целевые объекты по умолчанию).
+      
+      Сборка успешно завершена.
+          Предупреждений: 0
+          Ошибок: 0
+      
+      Прошло времени 00:00:01.08
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/3.27.7/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:65 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-5q6gy1"
+      binary: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-5q6gy1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-5q6gy1'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e4c31.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
+        Сборка начата 10.12.2023 16:05:51.
+        
+        Проект "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-5q6gy1\\cmTC_e4c31.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_e4c31.dir\\Debug\\".
+          Создание каталога "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-5q6gy1\\Debug\\".
+          Создание каталога "cmTC_e4c31.dir\\Debug\\cmTC_e4c31.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_e4c31.dir\\Debug\\cmTC_e4c31.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Обращение к "cmTC_e4c31.dir\\Debug\\cmTC_e4c31.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e4c31.dir\\Debug\\\\" /Fd"cmTC_e4c31.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.37.32824 для x64
+          CMakeCCompilerABI.c
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e4c31.dir\\Debug\\\\" /Fd"cmTC_e4c31.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-5q6gy1\\Debug\\cmTC_e4c31.exe" /INCREMENTAL /ILK:"cmTC_e4c31.dir\\Debug\\cmTC_e4c31.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-5q6gy1/Debug/cmTC_e4c31.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-5q6gy1/Debug/cmTC_e4c31.lib" /MACHINE:X64  /machine:x64 cmTC_e4c31.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_e4c31.vcxproj -> C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-5q6gy1\\Debug\\cmTC_e4c31.exe
+        FinalizeBuildStatus:
+          Файл "cmTC_e4c31.dir\\Debug\\cmTC_e4c31.tlog\\unsuccessfulbuild" удаляется.
+          Обращение к "cmTC_e4c31.dir\\Debug\\cmTC_e4c31.tlog\\cmTC_e4c31.lastbuildstate".
+        Сборка проекта "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-5q6gy1\\cmTC_e4c31.vcxproj" завершена (целевые объекты по умолчанию).
+        
+        Сборка успешно завершена.
+            Предупреждений: 0
+            Ошибок: 0
+        
+        Прошло времени 00:00:00.84
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:65 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-ql9khd"
+      binary: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-ql9khd"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-ql9khd'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_28c32.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
+        Сборка начата 10.12.2023 16:05:52.
+        
+        Проект "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-ql9khd\\cmTC_28c32.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_28c32.dir\\Debug\\".
+          Создание каталога "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-ql9khd\\Debug\\".
+          Создание каталога "cmTC_28c32.dir\\Debug\\cmTC_28c32.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_28c32.dir\\Debug\\cmTC_28c32.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Обращение к "cmTC_28c32.dir\\Debug\\cmTC_28c32.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_28c32.dir\\Debug\\\\" /Fd"cmTC_28c32.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.37.32824 для x64
+          CMakeCXXCompilerABI.cpp
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_28c32.dir\\Debug\\\\" /Fd"cmTC_28c32.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-ql9khd\\Debug\\cmTC_28c32.exe" /INCREMENTAL /ILK:"cmTC_28c32.dir\\Debug\\cmTC_28c32.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-ql9khd/Debug/cmTC_28c32.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-ql9khd/Debug/cmTC_28c32.lib" /MACHINE:X64  /machine:x64 cmTC_28c32.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_28c32.vcxproj -> C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-ql9khd\\Debug\\cmTC_28c32.exe
+        FinalizeBuildStatus:
+          Файл "cmTC_28c32.dir\\Debug\\cmTC_28c32.tlog\\unsuccessfulbuild" удаляется.
+          Обращение к "cmTC_28c32.dir\\Debug\\cmTC_28c32.tlog\\cmTC_28c32.lastbuildstate".
+        Сборка проекта "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-ql9khd\\cmTC_28c32.vcxproj" завершена (целевые объекты по умолчанию).
+        
+        Сборка успешно завершена.
+            Предупреждений: 0
+            Ошибок: 0
+        
+        Прошло времени 00:00:00.92
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:194 (check_cxx_source_compiles)"
+    checks:
+      - "Performing Test HAVE_STDC_FORMAT_MACROS"
+    directories:
+      source: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-63z1f3"
+      binary: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-63z1f3"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/DEV/C++/ManulEngine/external/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_STDC_FORMAT_MACROS"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-63z1f3'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d8788.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
+        Сборка начата 10.12.2023 16:05:54.
+        
+        Проект "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-63z1f3\\cmTC_d8788.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_d8788.dir\\Debug\\".
+          Создание каталога "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-63z1f3\\Debug\\".
+          Создание каталога "cmTC_d8788.dir\\Debug\\cmTC_d8788.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_d8788.dir\\Debug\\cmTC_d8788.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Обращение к "cmTC_d8788.dir\\Debug\\cmTC_d8788.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_STDC_FORMAT_MACROS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d8788.dir\\Debug\\\\" /Fd"cmTC_d8788.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-63z1f3\\src.cxx"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.37.32824 для x64
+          src.cxx
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_STDC_FORMAT_MACROS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d8788.dir\\Debug\\\\" /Fd"cmTC_d8788.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-63z1f3\\src.cxx"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-63z1f3\\Debug\\cmTC_d8788.exe" /INCREMENTAL /ILK:"cmTC_d8788.dir\\Debug\\cmTC_d8788.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-63z1f3/Debug/cmTC_d8788.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-63z1f3/Debug/cmTC_d8788.lib" /MACHINE:X64  /machine:x64 cmTC_d8788.dir\\Debug\\src.obj
+          cmTC_d8788.vcxproj -> C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-63z1f3\\Debug\\cmTC_d8788.exe
+        FinalizeBuildStatus:
+          Файл "cmTC_d8788.dir\\Debug\\cmTC_d8788.tlog\\unsuccessfulbuild" удаляется.
+          Обращение к "cmTC_d8788.dir\\Debug\\cmTC_d8788.tlog\\cmTC_d8788.lastbuildstate".
+        Сборка проекта "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-63z1f3\\cmTC_d8788.vcxproj" завершена (целевые объекты по умолчанию).
+        
+        Сборка успешно завершена.
+            Предупреждений: 0
+            Ошибок: 0
+        
+        Прошло времени 00:00:00.76
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:223 (check_cxx_source_compiles)"
+    checks:
+      - "Performing Test HAVE___RESTRICT"
+    directories:
+      source: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-ya9sy9"
+      binary: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-ya9sy9"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/DEV/C++/ManulEngine/external/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE___RESTRICT"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-ya9sy9'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_9ce5d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
+        Сборка начата 10.12.2023 16:05:55.
+        
+        Проект "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-ya9sy9\\cmTC_9ce5d.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_9ce5d.dir\\Debug\\".
+          Создание каталога "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-ya9sy9\\Debug\\".
+          Создание каталога "cmTC_9ce5d.dir\\Debug\\cmTC_9ce5d.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_9ce5d.dir\\Debug\\cmTC_9ce5d.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Обращение к "cmTC_9ce5d.dir\\Debug\\cmTC_9ce5d.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE___RESTRICT /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9ce5d.dir\\Debug\\\\" /Fd"cmTC_9ce5d.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-ya9sy9\\src.cxx"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.37.32824 для x64
+          src.cxx
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE___RESTRICT /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9ce5d.dir\\Debug\\\\" /Fd"cmTC_9ce5d.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-ya9sy9\\src.cxx"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-ya9sy9\\Debug\\cmTC_9ce5d.exe" /INCREMENTAL /ILK:"cmTC_9ce5d.dir\\Debug\\cmTC_9ce5d.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-ya9sy9/Debug/cmTC_9ce5d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-ya9sy9/Debug/cmTC_9ce5d.lib" /MACHINE:X64  /machine:x64 cmTC_9ce5d.dir\\Debug\\src.obj
+          cmTC_9ce5d.vcxproj -> C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-ya9sy9\\Debug\\cmTC_9ce5d.exe
+        FinalizeBuildStatus:
+          Файл "cmTC_9ce5d.dir\\Debug\\cmTC_9ce5d.tlog\\unsuccessfulbuild" удаляется.
+          Обращение к "cmTC_9ce5d.dir\\Debug\\cmTC_9ce5d.tlog\\cmTC_9ce5d.lastbuildstate".
+        Сборка проекта "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-ya9sy9\\cmTC_9ce5d.vcxproj" завершена (целевые объекты по умолчанию).
+        
+        Сборка успешно завершена.
+            Предупреждений: 0
+            Ошибок: 0
+        
+        Прошло времени 00:00:00.71
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:234 (check_cxx_source_compiles)"
+    checks:
+      - "Performing Test HAVE_LIBATOMIC"
+    directories:
+      source: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-frmfk0"
+      binary: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-frmfk0"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/DEV/C++/ManulEngine/external/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_LIBATOMIC"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-frmfk0'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_fdfc6.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
+        Сборка начата 10.12.2023 16:05:56.
+        
+        Проект "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-frmfk0\\cmTC_fdfc6.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_fdfc6.dir\\Debug\\".
+          Создание каталога "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-frmfk0\\Debug\\".
+          Создание каталога "cmTC_fdfc6.dir\\Debug\\cmTC_fdfc6.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_fdfc6.dir\\Debug\\cmTC_fdfc6.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Обращение к "cmTC_fdfc6.dir\\Debug\\cmTC_fdfc6.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_LIBATOMIC /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_fdfc6.dir\\Debug\\\\" /Fd"cmTC_fdfc6.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-frmfk0\\src.cxx"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.37.32824 для x64
+          src.cxx
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_LIBATOMIC /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_fdfc6.dir\\Debug\\\\" /Fd"cmTC_fdfc6.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-frmfk0\\src.cxx"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-frmfk0\\Debug\\cmTC_fdfc6.exe" /INCREMENTAL /ILK:"cmTC_fdfc6.dir\\Debug\\cmTC_fdfc6.ilk" /NOLOGO atomic.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-frmfk0/Debug/cmTC_fdfc6.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-frmfk0/Debug/cmTC_fdfc6.lib" /MACHINE:X64  /machine:x64 cmTC_fdfc6.dir\\Debug\\src.obj
+        LINK : fatal error LNK1104: не удается открыть файл "atomic.lib" [C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-frmfk0\\cmTC_fdfc6.vcxproj]
+        Сборка проекта "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-frmfk0\\cmTC_fdfc6.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
+        
+        Ошибка сборки.
+        
+        "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-frmfk0\\cmTC_fdfc6.vcxproj" (целевой объект по умолчанию) (1) ->
+        (Целевой объект Link) -> 
+          LINK : fatal error LNK1104: не удается открыть файл "atomic.lib" [C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-frmfk0\\cmTC_fdfc6.vcxproj]
+        
+            Предупреждений: 0
+            Ошибок: 1
+        
+        Прошло времени 00:00:00.59
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:256 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_PERMISSIVE_SWITCH"
+    directories:
+      source: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-eg8fzt"
+      binary: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-eg8fzt"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/DEV/C++/ManulEngine/external/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_PERMISSIVE_SWITCH"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-eg8fzt'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_87f49.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
+        Сборка начата 10.12.2023 16:05:56.
+        
+        Проект "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-eg8fzt\\cmTC_87f49.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_87f49.dir\\Debug\\".
+          Создание каталога "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-eg8fzt\\Debug\\".
+          Создание каталога "cmTC_87f49.dir\\Debug\\cmTC_87f49.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_87f49.dir\\Debug\\cmTC_87f49.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Обращение к "cmTC_87f49.dir\\Debug\\cmTC_87f49.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_PERMISSIVE_SWITCH /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Fo"cmTC_87f49.dir\\Debug\\\\" /Fd"cmTC_87f49.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-eg8fzt\\src.cxx"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.37.32824 для x64
+          src.cxx
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_PERMISSIVE_SWITCH /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Fo"cmTC_87f49.dir\\Debug\\\\" /Fd"cmTC_87f49.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-eg8fzt\\src.cxx"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-eg8fzt\\Debug\\cmTC_87f49.exe" /INCREMENTAL /ILK:"cmTC_87f49.dir\\Debug\\cmTC_87f49.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-eg8fzt/Debug/cmTC_87f49.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-eg8fzt/Debug/cmTC_87f49.lib" /MACHINE:X64  /machine:x64 cmTC_87f49.dir\\Debug\\src.obj
+          cmTC_87f49.vcxproj -> C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-eg8fzt\\Debug\\cmTC_87f49.exe
+        FinalizeBuildStatus:
+          Файл "cmTC_87f49.dir\\Debug\\cmTC_87f49.tlog\\unsuccessfulbuild" удаляется.
+          Обращение к "cmTC_87f49.dir\\Debug\\cmTC_87f49.tlog\\cmTC_87f49.lastbuildstate".
+        Сборка проекта "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-eg8fzt\\cmTC_87f49.vcxproj" завершена (целевые объекты по умолчанию).
+        
+        Сборка успешно завершена.
+            Предупреждений: 0
+            Ошибок: 0
+        
+        Прошло времени 00:00:00.75
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:404 (check_include_file)"
+    checks:
+      - "Looking for xmmintrin.h"
+    directories:
+      source: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-o2ufdd"
+      binary: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-o2ufdd"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/DEV/C++/ManulEngine/external/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_XMMINTRIN_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-o2ufdd'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_076da.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
+        Сборка начата 10.12.2023 16:05:57.
+        
+        Проект "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-o2ufdd\\cmTC_076da.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_076da.dir\\Debug\\".
+          Создание каталога "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-o2ufdd\\Debug\\".
+          Создание каталога "cmTC_076da.dir\\Debug\\cmTC_076da.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_076da.dir\\Debug\\cmTC_076da.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Обращение к "cmTC_076da.dir\\Debug\\cmTC_076da.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_076da.dir\\Debug\\\\" /Fd"cmTC_076da.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-o2ufdd\\CheckIncludeFile.c"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.37.32824 для x64
+          CheckIncludeFile.c
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_076da.dir\\Debug\\\\" /Fd"cmTC_076da.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-o2ufdd\\CheckIncludeFile.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-o2ufdd\\Debug\\cmTC_076da.exe" /INCREMENTAL /ILK:"cmTC_076da.dir\\Debug\\cmTC_076da.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-o2ufdd/Debug/cmTC_076da.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-o2ufdd/Debug/cmTC_076da.lib" /MACHINE:X64  /machine:x64 cmTC_076da.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_076da.vcxproj -> C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-o2ufdd\\Debug\\cmTC_076da.exe
+        FinalizeBuildStatus:
+          Файл "cmTC_076da.dir\\Debug\\cmTC_076da.tlog\\unsuccessfulbuild" удаляется.
+          Обращение к "cmTC_076da.dir\\Debug\\cmTC_076da.tlog\\cmTC_076da.lastbuildstate".
+        Сборка проекта "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-o2ufdd\\cmTC_076da.vcxproj" завершена (целевые объекты по умолчанию).
+        
+        Сборка успешно завершена.
+            Предупреждений: 0
+            Ошибок: 0
+        
+        Прошло времени 00:00:00.70
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:405 (check_include_file)"
+    checks:
+      - "Looking for emmintrin.h"
+    directories:
+      source: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-5uplyl"
+      binary: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-5uplyl"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/DEV/C++/ManulEngine/external/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_EMMINTRIN_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-5uplyl'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_3544a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
+        Сборка начата 10.12.2023 16:05:59.
+        
+        Проект "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-5uplyl\\cmTC_3544a.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_3544a.dir\\Debug\\".
+          Создание каталога "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-5uplyl\\Debug\\".
+          Создание каталога "cmTC_3544a.dir\\Debug\\cmTC_3544a.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_3544a.dir\\Debug\\cmTC_3544a.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Обращение к "cmTC_3544a.dir\\Debug\\cmTC_3544a.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3544a.dir\\Debug\\\\" /Fd"cmTC_3544a.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-5uplyl\\CheckIncludeFile.c"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.37.32824 для x64
+          CheckIncludeFile.c
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3544a.dir\\Debug\\\\" /Fd"cmTC_3544a.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-5uplyl\\CheckIncludeFile.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-5uplyl\\Debug\\cmTC_3544a.exe" /INCREMENTAL /ILK:"cmTC_3544a.dir\\Debug\\cmTC_3544a.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-5uplyl/Debug/cmTC_3544a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-5uplyl/Debug/cmTC_3544a.lib" /MACHINE:X64  /machine:x64 cmTC_3544a.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_3544a.vcxproj -> C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-5uplyl\\Debug\\cmTC_3544a.exe
+        FinalizeBuildStatus:
+          Файл "cmTC_3544a.dir\\Debug\\cmTC_3544a.tlog\\unsuccessfulbuild" удаляется.
+          Обращение к "cmTC_3544a.dir\\Debug\\cmTC_3544a.tlog\\cmTC_3544a.lastbuildstate".
+        Сборка проекта "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-5uplyl\\cmTC_3544a.vcxproj" завершена (целевые объекты по умолчанию).
+        
+        Сборка успешно завершена.
+            Предупреждений: 0
+            Ошибок: 0
+        
+        Прошло времени 00:00:00.99
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:406 (check_include_file)"
+    checks:
+      - "Looking for pmmintrin.h"
+    directories:
+      source: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-wnzblg"
+      binary: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-wnzblg"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/DEV/C++/ManulEngine/external/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_PMMINTRIN_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-wnzblg'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a3b24.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
+        Сборка начата 10.12.2023 16:06:00.
+        
+        Проект "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-wnzblg\\cmTC_a3b24.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_a3b24.dir\\Debug\\".
+          Создание каталога "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-wnzblg\\Debug\\".
+          Создание каталога "cmTC_a3b24.dir\\Debug\\cmTC_a3b24.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_a3b24.dir\\Debug\\cmTC_a3b24.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Обращение к "cmTC_a3b24.dir\\Debug\\cmTC_a3b24.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a3b24.dir\\Debug\\\\" /Fd"cmTC_a3b24.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-wnzblg\\CheckIncludeFile.c"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.37.32824 для x64
+          CheckIncludeFile.c
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a3b24.dir\\Debug\\\\" /Fd"cmTC_a3b24.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-wnzblg\\CheckIncludeFile.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-wnzblg\\Debug\\cmTC_a3b24.exe" /INCREMENTAL /ILK:"cmTC_a3b24.dir\\Debug\\cmTC_a3b24.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-wnzblg/Debug/cmTC_a3b24.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-wnzblg/Debug/cmTC_a3b24.lib" /MACHINE:X64  /machine:x64 cmTC_a3b24.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_a3b24.vcxproj -> C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-wnzblg\\Debug\\cmTC_a3b24.exe
+        FinalizeBuildStatus:
+          Файл "cmTC_a3b24.dir\\Debug\\cmTC_a3b24.tlog\\unsuccessfulbuild" удаляется.
+          Обращение к "cmTC_a3b24.dir\\Debug\\cmTC_a3b24.tlog\\cmTC_a3b24.lastbuildstate".
+        Сборка проекта "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-wnzblg\\cmTC_a3b24.vcxproj" завершена (целевые объекты по умолчанию).
+        
+        Сборка успешно завершена.
+            Предупреждений: 0
+            Ошибок: 0
+        
+        Прошло времени 00:00:00.69
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:407 (check_include_file)"
+    checks:
+      - "Looking for smmintrin.h"
+    directories:
+      source: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-8q7w0n"
+      binary: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-8q7w0n"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/DEV/C++/ManulEngine/external/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_SMMINTRIN_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-8q7w0n'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d945f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
+        Сборка начата 10.12.2023 16:06:01.
+        
+        Проект "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-8q7w0n\\cmTC_d945f.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_d945f.dir\\Debug\\".
+          Создание каталога "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-8q7w0n\\Debug\\".
+          Создание каталога "cmTC_d945f.dir\\Debug\\cmTC_d945f.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_d945f.dir\\Debug\\cmTC_d945f.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Обращение к "cmTC_d945f.dir\\Debug\\cmTC_d945f.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d945f.dir\\Debug\\\\" /Fd"cmTC_d945f.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-8q7w0n\\CheckIncludeFile.c"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.37.32824 для x64
+          CheckIncludeFile.c
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d945f.dir\\Debug\\\\" /Fd"cmTC_d945f.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-8q7w0n\\CheckIncludeFile.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-8q7w0n\\Debug\\cmTC_d945f.exe" /INCREMENTAL /ILK:"cmTC_d945f.dir\\Debug\\cmTC_d945f.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-8q7w0n/Debug/cmTC_d945f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-8q7w0n/Debug/cmTC_d945f.lib" /MACHINE:X64  /machine:x64 cmTC_d945f.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_d945f.vcxproj -> C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-8q7w0n\\Debug\\cmTC_d945f.exe
+        FinalizeBuildStatus:
+          Файл "cmTC_d945f.dir\\Debug\\cmTC_d945f.tlog\\unsuccessfulbuild" удаляется.
+          Обращение к "cmTC_d945f.dir\\Debug\\cmTC_d945f.tlog\\cmTC_d945f.lastbuildstate".
+        Сборка проекта "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-8q7w0n\\cmTC_d945f.vcxproj" завершена (целевые объекты по умолчанию).
+        
+        Сборка успешно завершена.
+            Предупреждений: 0
+            Ошибок: 0
+        
+        Прошло времени 00:00:00.70
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:408 (check_include_file)"
+    checks:
+      - "Looking for arm_neon.h"
+    directories:
+      source: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-hk6r5u"
+      binary: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-hk6r5u"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/DEV/C++/ManulEngine/external/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_ARM_NEON_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-hk6r5u'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_14eec.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
+        Сборка начата 10.12.2023 16:06:02.
+        
+        Проект "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-hk6r5u\\cmTC_14eec.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_14eec.dir\\Debug\\".
+          Создание каталога "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-hk6r5u\\Debug\\".
+          Создание каталога "cmTC_14eec.dir\\Debug\\cmTC_14eec.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_14eec.dir\\Debug\\cmTC_14eec.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Обращение к "cmTC_14eec.dir\\Debug\\cmTC_14eec.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_14eec.dir\\Debug\\\\" /Fd"cmTC_14eec.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-hk6r5u\\CheckIncludeFile.c"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.37.32824 для x64
+          CheckIncludeFile.c
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_14eec.dir\\Debug\\\\" /Fd"cmTC_14eec.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-hk6r5u\\CheckIncludeFile.c"
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\include\\arm_neon.h(21,1): fatal  error C1189: #error:  This header is specific to ARM targets [C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-hk6r5u\\cmTC_14eec.vcxproj]
+        Сборка проекта "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-hk6r5u\\cmTC_14eec.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
+        
+        Ошибка сборки.
+        
+        "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-hk6r5u\\cmTC_14eec.vcxproj" (целевой объект по умолчанию) (1) ->
+        (Целевой объект ClCompile) -> 
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\include\\arm_neon.h(21,1): fatal  error C1189: #error:  This header is specific to ARM targets [C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-hk6r5u\\cmTC_14eec.vcxproj]
+        
+            Предупреждений: 0
+            Ошибок: 1
+        
+        Прошло времени 00:00:00.42
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:508 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_SSE_INTRINSICS"
+    directories:
+      source: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-p5ymvr"
+      binary: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-p5ymvr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/DEV/C++/ManulEngine/external/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_SSE_INTRINSICS"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-p5ymvr'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_82e3f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
+        Сборка начата 10.12.2023 16:06:02.
+        
+        Проект "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-p5ymvr\\cmTC_82e3f.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_82e3f.dir\\Debug\\".
+          Создание каталога "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-p5ymvr\\Debug\\".
+          Создание каталога "cmTC_82e3f.dir\\Debug\\cmTC_82e3f.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_82e3f.dir\\Debug\\cmTC_82e3f.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Обращение к "cmTC_82e3f.dir\\Debug\\cmTC_82e3f.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_SSE_INTRINSICS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_82e3f.dir\\Debug\\\\" /Fd"cmTC_82e3f.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-p5ymvr\\src.c"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.37.32824 для x64
+          src.c
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_SSE_INTRINSICS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_82e3f.dir\\Debug\\\\" /Fd"cmTC_82e3f.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-p5ymvr\\src.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-p5ymvr\\Debug\\cmTC_82e3f.exe" /INCREMENTAL /ILK:"cmTC_82e3f.dir\\Debug\\cmTC_82e3f.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-p5ymvr/Debug/cmTC_82e3f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-p5ymvr/Debug/cmTC_82e3f.lib" /MACHINE:X64  /machine:x64 cmTC_82e3f.dir\\Debug\\src.obj
+          cmTC_82e3f.vcxproj -> C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-p5ymvr\\Debug\\cmTC_82e3f.exe
+        FinalizeBuildStatus:
+          Файл "cmTC_82e3f.dir\\Debug\\cmTC_82e3f.tlog\\unsuccessfulbuild" удаляется.
+          Обращение к "cmTC_82e3f.dir\\Debug\\cmTC_82e3f.tlog\\cmTC_82e3f.lastbuildstate".
+        Сборка проекта "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-p5ymvr\\cmTC_82e3f.vcxproj" завершена (целевые объекты по умолчанию).
+        
+        Сборка успешно завершена.
+            Предупреждений: 0
+            Ошибок: 0
+        
+        Прошло времени 00:00:00.81
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:515 (check_include_file)"
+    checks:
+      - "Looking for malloc.h"
+    directories:
+      source: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-zvdpqy"
+      binary: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-zvdpqy"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/DEV/C++/ManulEngine/external/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_MALLOC_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-zvdpqy'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_54794.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
+        Сборка начата 10.12.2023 16:06:03.
+        
+        Проект "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-zvdpqy\\cmTC_54794.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_54794.dir\\Debug\\".
+          Создание каталога "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-zvdpqy\\Debug\\".
+          Создание каталога "cmTC_54794.dir\\Debug\\cmTC_54794.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_54794.dir\\Debug\\cmTC_54794.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Обращение к "cmTC_54794.dir\\Debug\\cmTC_54794.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_54794.dir\\Debug\\\\" /Fd"cmTC_54794.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-zvdpqy\\CheckIncludeFile.c"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.37.32824 для x64
+          CheckIncludeFile.c
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_54794.dir\\Debug\\\\" /Fd"cmTC_54794.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-zvdpqy\\CheckIncludeFile.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-zvdpqy\\Debug\\cmTC_54794.exe" /INCREMENTAL /ILK:"cmTC_54794.dir\\Debug\\cmTC_54794.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-zvdpqy/Debug/cmTC_54794.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-zvdpqy/Debug/cmTC_54794.lib" /MACHINE:X64  /machine:x64 cmTC_54794.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_54794.vcxproj -> C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-zvdpqy\\Debug\\cmTC_54794.exe
+        FinalizeBuildStatus:
+          Файл "cmTC_54794.dir\\Debug\\cmTC_54794.tlog\\unsuccessfulbuild" удаляется.
+          Обращение к "cmTC_54794.dir\\Debug\\cmTC_54794.tlog\\cmTC_54794.lastbuildstate".
+        Сборка проекта "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-zvdpqy\\cmTC_54794.vcxproj" завершена (целевые объекты по умолчанию).
+        
+        Сборка успешно завершена.
+            Предупреждений: 0
+            Ошибок: 0
+        
+        Прошло времени 00:00:01.39
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:516 (check_include_file)"
+    checks:
+      - "Looking for cpuid.h"
+    directories:
+      source: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-2jakzj"
+      binary: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-2jakzj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/DEV/C++/ManulEngine/external/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_CPUID_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-2jakzj'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_7aaf6.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
+        Сборка начата 10.12.2023 16:06:05.
+        
+        Проект "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-2jakzj\\cmTC_7aaf6.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_7aaf6.dir\\Debug\\".
+          Создание каталога "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-2jakzj\\Debug\\".
+          Создание каталога "cmTC_7aaf6.dir\\Debug\\cmTC_7aaf6.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_7aaf6.dir\\Debug\\cmTC_7aaf6.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Обращение к "cmTC_7aaf6.dir\\Debug\\cmTC_7aaf6.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7aaf6.dir\\Debug\\\\" /Fd"cmTC_7aaf6.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-2jakzj\\CheckIncludeFile.c"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.37.32824 для x64
+          CheckIncludeFile.c
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7aaf6.dir\\Debug\\\\" /Fd"cmTC_7aaf6.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-2jakzj\\CheckIncludeFile.c"
+        C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-2jakzj\\CheckIncludeFile.c(1,10): fatal  error C1083: Не удается открыть файл включение: cpuid.h: No such file or directory, [C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-2jakzj\\cmTC_7aaf6.vcxproj]
+        Сборка проекта "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-2jakzj\\cmTC_7aaf6.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
+        
+        Ошибка сборки.
+        
+        "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-2jakzj\\cmTC_7aaf6.vcxproj" (целевой объект по умолчанию) (1) ->
+        (Целевой объект ClCompile) -> 
+          C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-2jakzj\\CheckIncludeFile.c(1,10): fatal  error C1083: Не удается открыть файл включение: cpuid.h: No such file or directory, [C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-2jakzj\\cmTC_7aaf6.vcxproj]
+        
+            Предупреждений: 0
+            Ошибок: 1
+        
+        Прошло времени 00:00:00.43
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:517 (check_include_file)"
+    checks:
+      - "Looking for intrin.h"
+    directories:
+      source: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-p91lyj"
+      binary: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-p91lyj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/DEV/C++/ManulEngine/external/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_INTRIN_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-p91lyj'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_87ffe.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
+        Сборка начата 10.12.2023 16:06:06.
+        
+        Проект "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-p91lyj\\cmTC_87ffe.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_87ffe.dir\\Debug\\".
+          Создание каталога "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-p91lyj\\Debug\\".
+          Создание каталога "cmTC_87ffe.dir\\Debug\\cmTC_87ffe.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_87ffe.dir\\Debug\\cmTC_87ffe.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Обращение к "cmTC_87ffe.dir\\Debug\\cmTC_87ffe.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_87ffe.dir\\Debug\\\\" /Fd"cmTC_87ffe.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-p91lyj\\CheckIncludeFile.c"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.37.32824 для x64
+          CheckIncludeFile.c
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_87ffe.dir\\Debug\\\\" /Fd"cmTC_87ffe.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-p91lyj\\CheckIncludeFile.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-p91lyj\\Debug\\cmTC_87ffe.exe" /INCREMENTAL /ILK:"cmTC_87ffe.dir\\Debug\\cmTC_87ffe.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-p91lyj/Debug/cmTC_87ffe.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-p91lyj/Debug/cmTC_87ffe.lib" /MACHINE:X64  /machine:x64 cmTC_87ffe.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_87ffe.vcxproj -> C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-p91lyj\\Debug\\cmTC_87ffe.exe
+        FinalizeBuildStatus:
+          Файл "cmTC_87ffe.dir\\Debug\\cmTC_87ffe.tlog\\unsuccessfulbuild" удаляется.
+          Обращение к "cmTC_87ffe.dir\\Debug\\cmTC_87ffe.tlog\\cmTC_87ffe.lastbuildstate".
+        Сборка проекта "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-p91lyj\\cmTC_87ffe.vcxproj" завершена (целевые объекты по умолчанию).
+        
+        Сборка успешно завершена.
+            Предупреждений: 0
+            Ошибок: 0
+        
+        Прошло времени 00:00:00.71
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:518 (check_include_file)"
+    checks:
+      - "Looking for guiddef.h"
+    directories:
+      source: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-ciqopz"
+      binary: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-ciqopz"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/DEV/C++/ManulEngine/external/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_GUIDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-ciqopz'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_f4cba.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
+        Сборка начата 10.12.2023 16:06:07.
+        
+        Проект "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-ciqopz\\cmTC_f4cba.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_f4cba.dir\\Debug\\".
+          Создание каталога "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-ciqopz\\Debug\\".
+          Создание каталога "cmTC_f4cba.dir\\Debug\\cmTC_f4cba.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_f4cba.dir\\Debug\\cmTC_f4cba.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Обращение к "cmTC_f4cba.dir\\Debug\\cmTC_f4cba.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f4cba.dir\\Debug\\\\" /Fd"cmTC_f4cba.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-ciqopz\\CheckIncludeFile.c"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.37.32824 для x64
+          CheckIncludeFile.c
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f4cba.dir\\Debug\\\\" /Fd"cmTC_f4cba.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-ciqopz\\CheckIncludeFile.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-ciqopz\\Debug\\cmTC_f4cba.exe" /INCREMENTAL /ILK:"cmTC_f4cba.dir\\Debug\\cmTC_f4cba.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-ciqopz/Debug/cmTC_f4cba.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-ciqopz/Debug/cmTC_f4cba.lib" /MACHINE:X64  /machine:x64 cmTC_f4cba.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_f4cba.vcxproj -> C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-ciqopz\\Debug\\cmTC_f4cba.exe
+        FinalizeBuildStatus:
+          Файл "cmTC_f4cba.dir\\Debug\\cmTC_f4cba.tlog\\unsuccessfulbuild" удаляется.
+          Обращение к "cmTC_f4cba.dir\\Debug\\cmTC_f4cba.tlog\\cmTC_f4cba.lastbuildstate".
+        Сборка проекта "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-ciqopz\\cmTC_f4cba.vcxproj" завершена (целевые объекты по умолчанию).
+        
+        Сборка успешно завершена.
+            Предупреждений: 0
+            Ошибок: 0
+        
+        Прошло времени 00:00:00.72
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "CMakeLists.txt:525 (check_library_exists)"
+    checks:
+      - "Looking for pow in m"
+    directories:
+      source: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-avtyxv"
+      binary: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-avtyxv"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/DEV/C++/ManulEngine/external/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_LIBM"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-avtyxv'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_189fe.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
+        Сборка начата 10.12.2023 16:06:08.
+        
+        Проект "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-avtyxv\\cmTC_189fe.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_189fe.dir\\Debug\\".
+          Создание каталога "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-avtyxv\\Debug\\".
+          Создание каталога "cmTC_189fe.dir\\Debug\\cmTC_189fe.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_189fe.dir\\Debug\\cmTC_189fe.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Обращение к "cmTC_189fe.dir\\Debug\\cmTC_189fe.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pow /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_189fe.dir\\Debug\\\\" /Fd"cmTC_189fe.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-avtyxv\\CheckFunctionExists.c"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.37.32824 для x64
+          CheckFunctionExists.c
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pow /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_189fe.dir\\Debug\\\\" /Fd"cmTC_189fe.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-avtyxv\\CheckFunctionExists.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-avtyxv\\Debug\\cmTC_189fe.exe" /INCREMENTAL /ILK:"cmTC_189fe.dir\\Debug\\cmTC_189fe.ilk" /NOLOGO m.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-avtyxv/Debug/cmTC_189fe.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-avtyxv/Debug/cmTC_189fe.lib" /MACHINE:X64  /machine:x64 cmTC_189fe.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: не удается открыть файл "m.lib" [C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-avtyxv\\cmTC_189fe.vcxproj]
+        Сборка проекта "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-avtyxv\\cmTC_189fe.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
+        
+        Ошибка сборки.
+        
+        "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-avtyxv\\cmTC_189fe.vcxproj" (целевой объект по умолчанию) (1) ->
+        (Целевой объект Link) -> 
+          LINK : fatal error LNK1104: не удается открыть файл "m.lib" [C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-avtyxv\\cmTC_189fe.vcxproj]
+        
+            Предупреждений: 0
+            Ошибок: 1
+        
+        Прошло времени 00:00:00.69
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "CMakeLists.txt:534 (check_library_exists)"
+    checks:
+      - "Looking for clock_gettime in rt"
+    directories:
+      source: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-xv6njq"
+      binary: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-xv6njq"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/DEV/C++/ManulEngine/external/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_LIBRT"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-xv6njq'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_09f05.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
+        Сборка начата 10.12.2023 16:06:09.
+        
+        Проект "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-xv6njq\\cmTC_09f05.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_09f05.dir\\Debug\\".
+          Создание каталога "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-xv6njq\\Debug\\".
+          Создание каталога "cmTC_09f05.dir\\Debug\\cmTC_09f05.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_09f05.dir\\Debug\\cmTC_09f05.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Обращение к "cmTC_09f05.dir\\Debug\\cmTC_09f05.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=clock_gettime /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_09f05.dir\\Debug\\\\" /Fd"cmTC_09f05.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-xv6njq\\CheckFunctionExists.c"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.37.32824 для x64
+          CheckFunctionExists.c
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=clock_gettime /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_09f05.dir\\Debug\\\\" /Fd"cmTC_09f05.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-xv6njq\\CheckFunctionExists.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-xv6njq\\Debug\\cmTC_09f05.exe" /INCREMENTAL /ILK:"cmTC_09f05.dir\\Debug\\cmTC_09f05.ilk" /NOLOGO rt.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-xv6njq/Debug/cmTC_09f05.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-xv6njq/Debug/cmTC_09f05.lib" /MACHINE:X64  /machine:x64 cmTC_09f05.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: не удается открыть файл "rt.lib" [C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-xv6njq\\cmTC_09f05.vcxproj]
+        Сборка проекта "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-xv6njq\\cmTC_09f05.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
+        
+        Ошибка сборки.
+        
+        "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-xv6njq\\cmTC_09f05.vcxproj" (целевой объект по умолчанию) (1) ->
+        (Целевой объект Link) -> 
+          LINK : fatal error LNK1104: не удается открыть файл "rt.lib" [C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-xv6njq\\cmTC_09f05.vcxproj]
+        
+            Предупреждений: 0
+            Ошибок: 1
+        
+        Прошло времени 00:00:00.75
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:541 (check_include_file)"
+    checks:
+      - "Looking for dlfcn.h"
+    directories:
+      source: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-g60yqk"
+      binary: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-g60yqk"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/DEV/C++/ManulEngine/external/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_DLFCN_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-g60yqk'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a2e1d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
+        Сборка начата 10.12.2023 16:06:10.
+        
+        Проект "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-g60yqk\\cmTC_a2e1d.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_a2e1d.dir\\Debug\\".
+          Создание каталога "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-g60yqk\\Debug\\".
+          Создание каталога "cmTC_a2e1d.dir\\Debug\\cmTC_a2e1d.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_a2e1d.dir\\Debug\\cmTC_a2e1d.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Обращение к "cmTC_a2e1d.dir\\Debug\\cmTC_a2e1d.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a2e1d.dir\\Debug\\\\" /Fd"cmTC_a2e1d.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-g60yqk\\CheckIncludeFile.c"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.37.32824 для x64
+          CheckIncludeFile.c
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a2e1d.dir\\Debug\\\\" /Fd"cmTC_a2e1d.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-g60yqk\\CheckIncludeFile.c"
+        C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-g60yqk\\CheckIncludeFile.c(1,10): fatal  error C1083: Не удается открыть файл включение: dlfcn.h: No such file or directory, [C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-g60yqk\\cmTC_a2e1d.vcxproj]
+        Сборка проекта "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-g60yqk\\cmTC_a2e1d.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
+        
+        Ошибка сборки.
+        
+        "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-g60yqk\\cmTC_a2e1d.vcxproj" (целевой объект по умолчанию) (1) ->
+        (Целевой объект ClCompile) -> 
+          C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-g60yqk\\CheckIncludeFile.c(1,10): fatal  error C1083: Не удается открыть файл включение: dlfcn.h: No such file or directory, [C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-g60yqk\\cmTC_a2e1d.vcxproj]
+        
+            Предупреждений: 0
+            Ошибок: 1
+        
+        Прошло времени 00:00:00.42
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "CMakeLists.txt:542 (check_library_exists)"
+    checks:
+      - "Looking for dlopen in dl"
+    directories:
+      source: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-a0xsav"
+      binary: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-a0xsav"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/DEV/C++/ManulEngine/external/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_LIBDL"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-a0xsav'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_6c0b9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
+        Сборка начата 10.12.2023 16:06:11.
+        
+        Проект "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-a0xsav\\cmTC_6c0b9.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_6c0b9.dir\\Debug\\".
+          Создание каталога "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-a0xsav\\Debug\\".
+          Создание каталога "cmTC_6c0b9.dir\\Debug\\cmTC_6c0b9.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_6c0b9.dir\\Debug\\cmTC_6c0b9.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Обращение к "cmTC_6c0b9.dir\\Debug\\cmTC_6c0b9.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=dlopen /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6c0b9.dir\\Debug\\\\" /Fd"cmTC_6c0b9.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-a0xsav\\CheckFunctionExists.c"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.37.32824 для x64
+          CheckFunctionExists.c
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=dlopen /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6c0b9.dir\\Debug\\\\" /Fd"cmTC_6c0b9.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-a0xsav\\CheckFunctionExists.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-a0xsav\\Debug\\cmTC_6c0b9.exe" /INCREMENTAL /ILK:"cmTC_6c0b9.dir\\Debug\\cmTC_6c0b9.ilk" /NOLOGO dl.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-a0xsav/Debug/cmTC_6c0b9.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-a0xsav/Debug/cmTC_6c0b9.lib" /MACHINE:X64  /machine:x64 cmTC_6c0b9.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: не удается открыть файл "dl.lib" [C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-a0xsav\\cmTC_6c0b9.vcxproj]
+        Сборка проекта "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-a0xsav\\cmTC_6c0b9.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
+        
+        Ошибка сборки.
+        
+        "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-a0xsav\\cmTC_6c0b9.vcxproj" (целевой объект по умолчанию) (1) ->
+        (Целевой объект Link) -> 
+          LINK : fatal error LNK1104: не удается открыть файл "dl.lib" [C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-a0xsav\\cmTC_6c0b9.vcxproj]
+        
+            Предупреждений: 0
+            Ошибок: 1
+        
+        Прошло времени 00:00:00.53
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:559 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_CPUID_INTRINSIC"
+    directories:
+      source: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-m85ak0"
+      binary: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-m85ak0"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/DEV/C++/ManulEngine/external/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_CPUID_INTRINSIC"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-m85ak0'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_3d14e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
+        Сборка начата 10.12.2023 16:06:11.
+        
+        Проект "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-m85ak0\\cmTC_3d14e.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_3d14e.dir\\Debug\\".
+          Создание каталога "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-m85ak0\\Debug\\".
+          Создание каталога "cmTC_3d14e.dir\\Debug\\cmTC_3d14e.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_3d14e.dir\\Debug\\cmTC_3d14e.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Обращение к "cmTC_3d14e.dir\\Debug\\cmTC_3d14e.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_CPUID_INTRINSIC /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3d14e.dir\\Debug\\\\" /Fd"cmTC_3d14e.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-m85ak0\\src.c"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.37.32824 для x64
+          src.c
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_CPUID_INTRINSIC /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3d14e.dir\\Debug\\\\" /Fd"cmTC_3d14e.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-m85ak0\\src.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-m85ak0\\Debug\\cmTC_3d14e.exe" /INCREMENTAL /ILK:"cmTC_3d14e.dir\\Debug\\cmTC_3d14e.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-m85ak0/Debug/cmTC_3d14e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-m85ak0/Debug/cmTC_3d14e.lib" /MACHINE:X64  /machine:x64 cmTC_3d14e.dir\\Debug\\src.obj
+          cmTC_3d14e.vcxproj -> C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-m85ak0\\Debug\\cmTC_3d14e.exe
+        FinalizeBuildStatus:
+          Файл "cmTC_3d14e.dir\\Debug\\cmTC_3d14e.tlog\\unsuccessfulbuild" удаляется.
+          Обращение к "cmTC_3d14e.dir\\Debug\\cmTC_3d14e.tlog\\cmTC_3d14e.lastbuildstate".
+        Сборка проекта "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-m85ak0\\cmTC_3d14e.vcxproj" завершена (целевые объекты по умолчанию).
+        
+        Сборка успешно завершена.
+            Предупреждений: 0
+            Ошибок: 0
+        
+        Прошло времени 00:00:00.84
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:568 (check_symbol_exists)"
+    checks:
+      - "Looking for posix_memalign"
+    directories:
+      source: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-rshw3e"
+      binary: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-rshw3e"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/DEV/C++/ManulEngine/external/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_POSIX_MEMALIGN"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-rshw3e'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_4f33e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
+        Сборка начата 10.12.2023 16:06:12.
+        
+        Проект "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-rshw3e\\cmTC_4f33e.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_4f33e.dir\\Debug\\".
+          Создание каталога "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-rshw3e\\Debug\\".
+          Создание каталога "cmTC_4f33e.dir\\Debug\\cmTC_4f33e.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_4f33e.dir\\Debug\\cmTC_4f33e.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Обращение к "cmTC_4f33e.dir\\Debug\\cmTC_4f33e.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4f33e.dir\\Debug\\\\" /Fd"cmTC_4f33e.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-rshw3e\\CheckSymbolExists.c"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.37.32824 для x64
+          CheckSymbolExists.c
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4f33e.dir\\Debug\\\\" /Fd"cmTC_4f33e.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-rshw3e\\CheckSymbolExists.c"
+        C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-rshw3e\\CheckSymbolExists.c(8,33): error C2065: posix_memalign: необъявленный идентификатор [C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-rshw3e\\cmTC_4f33e.vcxproj]
+        Сборка проекта "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-rshw3e\\cmTC_4f33e.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
+        
+        Ошибка сборки.
+        
+        "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-rshw3e\\cmTC_4f33e.vcxproj" (целевой объект по умолчанию) (1) ->
+        (Целевой объект ClCompile) -> 
+          C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-rshw3e\\CheckSymbolExists.c(8,33): error C2065: posix_memalign: необъявленный идентификатор [C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-rshw3e\\cmTC_4f33e.vcxproj]
+        
+            Предупреждений: 0
+            Ошибок: 1
+        
+        Прошло времени 00:00:00.41
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:569 (check_symbol_exists)"
+    checks:
+      - "Looking for _aligned_malloc"
+    directories:
+      source: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-3i7jaa"
+      binary: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-3i7jaa"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/DEV/C++/ManulEngine/external/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE__ALIGNED_MALLOC"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-3i7jaa'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_21ed8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
+        Сборка начата 10.12.2023 16:06:13.
+        
+        Проект "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-3i7jaa\\cmTC_21ed8.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_21ed8.dir\\Debug\\".
+          Создание каталога "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-3i7jaa\\Debug\\".
+          Создание каталога "cmTC_21ed8.dir\\Debug\\cmTC_21ed8.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_21ed8.dir\\Debug\\cmTC_21ed8.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Обращение к "cmTC_21ed8.dir\\Debug\\cmTC_21ed8.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_21ed8.dir\\Debug\\\\" /Fd"cmTC_21ed8.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-3i7jaa\\CheckSymbolExists.c"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.37.32824 для x64
+          CheckSymbolExists.c
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_21ed8.dir\\Debug\\\\" /Fd"cmTC_21ed8.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-3i7jaa\\CheckSymbolExists.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-3i7jaa\\Debug\\cmTC_21ed8.exe" /INCREMENTAL /ILK:"cmTC_21ed8.dir\\Debug\\cmTC_21ed8.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-3i7jaa/Debug/cmTC_21ed8.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-3i7jaa/Debug/cmTC_21ed8.lib" /MACHINE:X64  /machine:x64 cmTC_21ed8.dir\\Debug\\CheckSymbolExists.obj
+          cmTC_21ed8.vcxproj -> C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-3i7jaa\\Debug\\cmTC_21ed8.exe
+        FinalizeBuildStatus:
+          Файл "cmTC_21ed8.dir\\Debug\\cmTC_21ed8.tlog\\unsuccessfulbuild" удаляется.
+          Обращение к "cmTC_21ed8.dir\\Debug\\cmTC_21ed8.tlog\\cmTC_21ed8.lastbuildstate".
+        Сборка проекта "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-3i7jaa\\cmTC_21ed8.vcxproj" завершена (целевые объекты по умолчанию).
+        
+        Сборка успешно завершена.
+            Предупреждений: 0
+            Ошибок: 0
+        
+        Прошло времени 00:00:00.75
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:570 (check_symbol_exists)"
+    checks:
+      - "Looking for proc_pidpath"
+    directories:
+      source: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-t33ab2"
+      binary: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-t33ab2"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/DEV/C++/ManulEngine/external/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_PROC_PIDPATH"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-t33ab2'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_bef6f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
+        Сборка начата 10.12.2023 16:06:14.
+        
+        Проект "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-t33ab2\\cmTC_bef6f.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_bef6f.dir\\Debug\\".
+          Создание каталога "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-t33ab2\\Debug\\".
+          Создание каталога "cmTC_bef6f.dir\\Debug\\cmTC_bef6f.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_bef6f.dir\\Debug\\cmTC_bef6f.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Обращение к "cmTC_bef6f.dir\\Debug\\cmTC_bef6f.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_bef6f.dir\\Debug\\\\" /Fd"cmTC_bef6f.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-t33ab2\\CheckSymbolExists.c"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.37.32824 для x64
+          CheckSymbolExists.c
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_bef6f.dir\\Debug\\\\" /Fd"cmTC_bef6f.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-t33ab2\\CheckSymbolExists.c"
+        C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-t33ab2\\CheckSymbolExists.c(2,10): fatal  error C1083: Не удается открыть файл включение: libproc.h: No such file or directory, [C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-t33ab2\\cmTC_bef6f.vcxproj]
+        Сборка проекта "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-t33ab2\\cmTC_bef6f.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
+        
+        Ошибка сборки.
+        
+        "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-t33ab2\\cmTC_bef6f.vcxproj" (целевой объект по умолчанию) (1) ->
+        (Целевой объект ClCompile) -> 
+          C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-t33ab2\\CheckSymbolExists.c(2,10): fatal  error C1083: Не удается открыть файл включение: libproc.h: No such file or directory, [C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-t33ab2\\cmTC_bef6f.vcxproj]
+        
+            Предупреждений: 0
+            Ошибок: 1
+        
+        Прошло времени 00:00:00.63
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:604 (check_symbol_exists)"
+    checks:
+      - "Looking for getopt"
+    directories:
+      source: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-giuecr"
+      binary: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-giuecr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/DEV/C++/ManulEngine/external/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_GETOPT"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-giuecr'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_05d8a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
+        Сборка начата 10.12.2023 16:06:15.
+        
+        Проект "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-giuecr\\cmTC_05d8a.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_05d8a.dir\\Debug\\".
+          Создание каталога "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-giuecr\\Debug\\".
+          Создание каталога "cmTC_05d8a.dir\\Debug\\cmTC_05d8a.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_05d8a.dir\\Debug\\cmTC_05d8a.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Обращение к "cmTC_05d8a.dir\\Debug\\cmTC_05d8a.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_05d8a.dir\\Debug\\\\" /Fd"cmTC_05d8a.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-giuecr\\CheckSymbolExists.c"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.37.32824 для x64
+          CheckSymbolExists.c
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_05d8a.dir\\Debug\\\\" /Fd"cmTC_05d8a.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-giuecr\\CheckSymbolExists.c"
+        C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-giuecr\\CheckSymbolExists.c(2,10): fatal  error C1083: Не удается открыть файл включение: unistd.h: No such file or directory, [C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-giuecr\\cmTC_05d8a.vcxproj]
+        Сборка проекта "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-giuecr\\cmTC_05d8a.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
+        
+        Ошибка сборки.
+        
+        "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-giuecr\\cmTC_05d8a.vcxproj" (целевой объект по умолчанию) (1) ->
+        (Целевой объект ClCompile) -> 
+          C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-giuecr\\CheckSymbolExists.c(2,10): fatal  error C1083: Не удается открыть файл включение: unistd.h: No such file or directory, [C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-giuecr\\cmTC_05d8a.vcxproj]
+        
+            Предупреждений: 0
+            Ошибок: 1
+        
+        Прошло времени 00:00:00.48
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:1039 (check_include_file)"
+    checks:
+      - "Looking for dsound.h"
+    directories:
+      source: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-x2l4q8"
+      binary: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-x2l4q8"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/DEV/C++/ManulEngine/external/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_DSOUND_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-x2l4q8'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_dccbb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
+        Сборка начата 10.12.2023 16:06:16.
+        
+        Проект "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-x2l4q8\\cmTC_dccbb.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_dccbb.dir\\Debug\\".
+          Создание каталога "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-x2l4q8\\Debug\\".
+          Создание каталога "cmTC_dccbb.dir\\Debug\\cmTC_dccbb.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_dccbb.dir\\Debug\\cmTC_dccbb.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Обращение к "cmTC_dccbb.dir\\Debug\\cmTC_dccbb.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_dccbb.dir\\Debug\\\\" /Fd"cmTC_dccbb.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-x2l4q8\\CheckIncludeFile.c"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.37.32824 для x64
+          CheckIncludeFile.c
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_dccbb.dir\\Debug\\\\" /Fd"cmTC_dccbb.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-x2l4q8\\CheckIncludeFile.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-x2l4q8\\Debug\\cmTC_dccbb.exe" /INCREMENTAL /ILK:"cmTC_dccbb.dir\\Debug\\cmTC_dccbb.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-x2l4q8/Debug/cmTC_dccbb.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-x2l4q8/Debug/cmTC_dccbb.lib" /MACHINE:X64  /machine:x64 cmTC_dccbb.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_dccbb.vcxproj -> C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-x2l4q8\\Debug\\cmTC_dccbb.exe
+        FinalizeBuildStatus:
+          Файл "cmTC_dccbb.dir\\Debug\\cmTC_dccbb.tlog\\unsuccessfulbuild" удаляется.
+          Обращение к "cmTC_dccbb.dir\\Debug\\cmTC_dccbb.tlog\\cmTC_dccbb.lastbuildstate".
+        Сборка проекта "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-x2l4q8\\cmTC_dccbb.vcxproj" завершена (целевые объекты по умолчанию).
+        
+        Сборка успешно завершена.
+            Предупреждений: 0
+            Ошибок: 0
+        
+        Прошло времени 00:00:00.97
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:1061 (check_include_file)"
+    checks:
+      - "Looking for mmdeviceapi.h"
+    directories:
+      source: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-mdf93y"
+      binary: "C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-mdf93y"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/DEV/C++/ManulEngine/external/openal-soft/cmake"
+    buildResult:
+      variable: "HAVE_MMDEVICEAPI_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-mdf93y'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_790f8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
+        Сборка начата 10.12.2023 16:06:17.
+        
+        Проект "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-mdf93y\\cmTC_790f8.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_790f8.dir\\Debug\\".
+          Создание каталога "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-mdf93y\\Debug\\".
+          Создание каталога "cmTC_790f8.dir\\Debug\\cmTC_790f8.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_790f8.dir\\Debug\\cmTC_790f8.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Обращение к "cmTC_790f8.dir\\Debug\\cmTC_790f8.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_790f8.dir\\Debug\\\\" /Fd"cmTC_790f8.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-mdf93y\\CheckIncludeFile.c"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.37.32824 для x64
+          CheckIncludeFile.c
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_790f8.dir\\Debug\\\\" /Fd"cmTC_790f8.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-mdf93y\\CheckIncludeFile.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-mdf93y\\Debug\\cmTC_790f8.exe" /INCREMENTAL /ILK:"cmTC_790f8.dir\\Debug\\cmTC_790f8.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-mdf93y/Debug/cmTC_790f8.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/DEV/C++/ManulEngine/external/openal-soft/CMakeFiles/CMakeScratch/TryCompile-mdf93y/Debug/cmTC_790f8.lib" /MACHINE:X64  /machine:x64 cmTC_790f8.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_790f8.vcxproj -> C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-mdf93y\\Debug\\cmTC_790f8.exe
+        FinalizeBuildStatus:
+          Файл "cmTC_790f8.dir\\Debug\\cmTC_790f8.tlog\\unsuccessfulbuild" удаляется.
+          Обращение к "cmTC_790f8.dir\\Debug\\cmTC_790f8.tlog\\cmTC_790f8.lastbuildstate".
+        Сборка проекта "C:\\DEV\\C++\\ManulEngine\\external\\openal-soft\\CMakeFiles\\CMakeScratch\\TryCompile-mdf93y\\cmTC_790f8.vcxproj" завершена (целевые объекты по умолчанию).
+        
+        Сборка успешно завершена.
+            Предупреждений: 0
+            Ошибок: 0
+        
+        Прошло времени 00:00:00.94
+        
+      exitCode: 0
+...
