@@ -123,13 +123,15 @@ add_executable(ManulEngine WIN32
  "ManulEngine/src/ManulEngine/Core/KeyCodes.h"
 "ManulEngine/src/ManulEngine/Audio/AudioBackend.h" 
 "ManulEngine/src/ManulEngine/Audio/OpenAL/OpenALBackend.cpp" 
-"ManulEngine/src/ManulEngine/Audio/OpenAL/OpenALBackend.h")
+"ManulEngine/src/ManulEngine/Audio/OpenAL/OpenALBackend.h"
+"ManulEngine/src/ManulEngine/Audio/FMOD/FMODBackend.cpp"
+"ManulEngine/src/ManulEngine/Audio/FMOD/FMODBackend.h")
 
-target_link_directories(ManulEngine PUBLIC "external/openal-soft/MinSizeRel")
+#target_link_directories(ManulEngine PUBLIC "external/openal-soft/MinSizeRel")
 target_precompile_headers(ManulEngine PRIVATE ManulEngine/src/mapch.h)
 #target_link_libraries(ManulEngine glfw3 glad zlib vulkan-1)
 #target_link_libraries(ManulEngine glfw3 glad vulkan-1)
-target_link_libraries(ManulEngine glfw glad imgui winmm OpenAL32)
-
+#target_link_libraries(ManulEngine glfw glad imgui winmm OpenAL32) #я "точно" добалю поддержку openAL
+target_link_libraries(ManulEngine glfw glad imgui)
 set_target_properties(ManulEngine PROPERTIES LINKER_LANGUAGE CXX)
 target_compile_features(ManulEngine PRIVATE cxx_std_20)

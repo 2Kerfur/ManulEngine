@@ -31,8 +31,8 @@ namespace ManulEngine
         CreateConsoleWindow();
         Log::Init();
         m_Window = new Window();
-        audioEngine.Init(AudioBackendAPI::OpenAL);
-        audioEngine.PlayAudioFile("filePath", {0, 0, 0});
+        audioEngine.Init(AudioBackendAPI::FMOD);
+        audioEngine.PlayAudioFile("sound.wav", {0, 0, 0});
         if (ResourceManager::LoadConfig(config, ResourceManager::GetWorkingDirectory() + "/application.cfg"))
         {
             m_Specification.readFromFile = std::stoi(config[0]);
