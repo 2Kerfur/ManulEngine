@@ -3,7 +3,6 @@
 #include "GLFW/glfw3.h"
 
 class VulkanSurface {
-
 public:
     void createSurface(VkInstance instance, GLFWwindow* window);
     VkSurfaceKHR getSurface() {return surface;}

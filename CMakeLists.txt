@@ -6,23 +6,23 @@ if( MSVC )
     SET( CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /ENTRY:mainCRTStartup" )
 endif()
 
-#find_package(Vulkan)
-#if(NOT Vulkan_FOUND)
-#	message(SEND_ERROR "Vulkan NOT found")
-#endif()
-#if (NOT ${Vulkan_INCLUDE_DIRS} STREQUAL "")
-#	set(VULKAN_PATH ${Vulkan_INCLUDE_DIRS})	
-#	STRING(REGEX REPLACE "/Include" "" VULKAN_PATH ${VULKAN_PATH})
-#	message(STATUS "Vulkan path is: " ${VULKAN_PATH})
-#	include_directories(AFTER ${VULKAN_PATH}/Include)
-#	link_directories(${VULKAN_PATH}/Bin;${VULKAN_PATH}/Lib;)
-#endif()
+find_package(Vulkan)
+if(NOT Vulkan_FOUND)
+	message(SEND_ERROR "Vulkan NOT found")
+endif()
+if (NOT ${Vulkan_INCLUDE_DIRS} STREQUAL "")
+	set(VULKAN_PATH ${Vulkan_INCLUDE_DIRS})	
+	STRING(REGEX REPLACE "/Include" "" VULKAN_PATH ${VULKAN_PATH})
+	message(STATUS "Vulkan path is: " ${VULKAN_PATH})
+	include_directories(AFTER ${VULKAN_PATH}/Include)
+	link_directories(${VULKAN_PATH}/Bin;${VULKAN_PATH}/Lib;)
+endif()
 set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 add_subdirectory(external/glfw)
 
-add_subdirectory(external/openal-soft)
+#add_subdirectory(external/openal-soft)
 
 add_library(
         imgui STATIC
@@ -53,7 +53,7 @@ include_directories("ManulEngine/src"
 					"external/glm"
 					"external/imgui/include"
 					"external/imgui/backends"
-					"external/openal-soft/include"
+					#"external/openal-soft/include"
 )
 
 add_executable(ManulEngine WIN32
@@ -64,16 +64,16 @@ add_executable(ManulEngine WIN32
 		"ManulEngine/src/ManulEngine/Renderer/Renderer.h"
 		"ManulEngine/src/ManulEngine/Core/Log.cpp"
 		"ManulEngine/src/ManulEngine/Core/Log.h"
-		#ManulEngine/src/Platform/Vulkan/VulkanDebug.cpp
-		#ManulEngine/src/Platform/Vulkan/VulkanDebug.h
-		#ManulEngine/src/Platform/Vulkan/VulkanDevice.h
-		#ManulEngine/src/Platform/Vulkan/VulkanDevice.cpp
-		#ManulEngine/src/Platform/Vulkan/VulkanBackend.cpp
-		#ManulEngine/src/Platform/Vulkan/VulkanBackend.h
-		#ManulEngine/src/Platform/Vulkan/VulkanSurface.cpp
-		#ManulEngine/src/Platform/Vulkan/VulkanSurface.h
-		#ManulEngine/src/Platform/Vulkan/VulkanPipline.cpp
-		#ManulEngine/src/Platform/Vulkan/VulkanPipline.h
+		"ManulEngine/src/Platform/Vulkan/VulkanDebug.cpp"
+		"ManulEngine/src/Platform/Vulkan/VulkanDebug.h"
+		"ManulEngine/src/Platform/Vulkan/VulkanDevice.h"
+		"ManulEngine/src/Platform/Vulkan/VulkanDevice.cpp"
+		"ManulEngine/src/Platform/Vulkan/VulkanBackend.cpp"
+		"ManulEngine/src/Platform/Vulkan/VulkanBackend.h"
+		"ManulEngine/src/Platform/Vulkan/VulkanSurface.cpp"
+		"ManulEngine/src/Platform/Vulkan/VulkanSurface.h"
+		"ManulEngine/src/Platform/Vulkan/VulkanPipline.cpp"
+		"ManulEngine/src/Platform/Vulkan/VulkanPipline.h"
 		"ManulEngine/src/ManulEngine.h"
 		"ManulEngine/src/Platform/Windows/WindowsWindow.cpp"
 		"ManulEngine/src/Platform/Windows/WindowsWindow.h"
@@ -115,23 +115,24 @@ add_executable(ManulEngine WIN32
 		"external/imgui/include/imgui.cpp"
 		"external/imgui/include/imgui.h"
 		"external/imgui/include/imgui_draw.cpp"
- "ManulEngine/src/ManulEngine/Renderer/ImguiLayer.cpp" 
- "ManulEngine/src/ManulEngine/Renderer/ImguiLayer.h" 
- "ManulEngine/src/ManulEngine/Core/Input.cpp" 
- "ManulEngine/src/ManulEngine/Core/Input.h" 
- "ManulEngine/src/ManulEngine/Core/MouseCodes.h"
- "ManulEngine/src/ManulEngine/Core/KeyCodes.h"
-"ManulEngine/src/ManulEngine/Audio/AudioBackend.h" 
-"ManulEngine/src/ManulEngine/Audio/OpenAL/OpenALBackend.cpp" 
-"ManulEngine/src/ManulEngine/Audio/OpenAL/OpenALBackend.h"
-"ManulEngine/src/ManulEngine/Audio/FMOD/FMODBackend.cpp"
-"ManulEngine/src/ManulEngine/Audio/FMOD/FMODBackend.h")
+		"ManulEngine/src/ManulEngine/Renderer/ImguiLayer.cpp" 
+		"ManulEngine/src/ManulEngine/Renderer/ImguiLayer.h" 
+		"ManulEngine/src/ManulEngine/Core/Input.cpp" 
+		"ManulEngine/src/ManulEngine/Core/Input.h" 
+		"ManulEngine/src/ManulEngine/Core/MouseCodes.h"
+		"ManulEngine/src/ManulEngine/Core/KeyCodes.h"
+		"ManulEngine/src/ManulEngine/Audio/AudioBackend.h" 
+		"ManulEngine/src/ManulEngine/Audio/OpenAL/OpenALBackend.cpp" 
+		"ManulEngine/src/ManulEngine/Audio/OpenAL/OpenALBackend.h"
+		"ManulEngine/src/ManulEngine/Audio/FMOD/FMODBackend.cpp"
+		"ManulEngine/src/ManulEngine/Audio/FMOD/FMODBackend.h")
 
 #target_link_directories(ManulEngine PUBLIC "external/openal-soft/MinSizeRel")
+target_link_directories(ManulEngine PUBLIC "external/glfw/bin/src/MinSizeRel")
 target_precompile_headers(ManulEngine PRIVATE ManulEngine/src/mapch.h)
 #target_link_libraries(ManulEngine glfw3 glad zlib vulkan-1)
-#target_link_libraries(ManulEngine glfw3 glad vulkan-1)
+target_link_libraries(ManulEngine glfw3 glad imgui vulkan-1)
 #target_link_libraries(ManulEngine glfw glad imgui winmm OpenAL32) #я "точно" добалю поддержку openAL
-target_link_libraries(ManulEngine glfw glad imgui)
+#target_link_libraries(ManulEngine glfw glad imgui)
 set_target_properties(ManulEngine PROPERTIES LINKER_LANGUAGE CXX)
 target_compile_features(ManulEngine PRIVATE cxx_std_20)

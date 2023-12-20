@@ -54,7 +54,7 @@ namespace ManulEngine {
         glfwMakeContextCurrent(windowInstance);
         glfwSetWindowSizeCallback(windowInstance, WindowSizeCallback);
 
-        if (!Renderer::Init(size, Renderer::OpenGL))
+        if (!Renderer::Init(size, Renderer::Vulkan))
         {
             M_CORE_CRITICAL("Failed to initialize renderer");
             return false;

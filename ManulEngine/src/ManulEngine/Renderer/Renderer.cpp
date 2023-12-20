@@ -4,6 +4,7 @@
 #include "ManulEngine/Core/Application.h"
 
 #include "Platform/OpenGL/OpenGLBackend.h"
+#include "Platform/Vulkan/VulkanBackend.h"
 #include "ManulEngine/Core/Log.h"
 #include "ImguiLayer.h"
 
@@ -19,8 +20,10 @@ namespace ManulEngine {
             ImguiLayer::Init(Renderer::OpenGL);
             break;
         case Renderer::Vulkan:
-            M_CORE_CRITICAL("Vulkan not supported");
-            return false;
+            backend = dynamic_cast<RendererBackend*>(new VulkanBackend());
+            if (!backend->Init(windowSize)) return false;
+            //ImguiLayer::Init(Renderer::Vulkan);
+            break;
         case Renderer::DirectX:
             M_CORE_CRITICAL("DirectX not supported");
             return false;
@@ -37,12 +40,13 @@ namespace ManulEngine {
     void Renderer::Render()
     {
         backend->Render();
-        ImguiLayer::Render();
+        
+        //ImguiLayer::Render();
     }
 
     void Renderer::Shutdown()
     {
         backend->Shutdown();
-        ImguiLayer::Shutdown();
+        //ImguiLayer::Shutdown();
     }
 }
