@@ -7,11 +7,11 @@
 class VulkanDevice
 {
 public:
-    void pickPhysicalDevice(VkInstance instance, VkSurfaceKHR vk_surface);
-    void createLogicalDevice(bool enableValidationLayers, GLFWwindow* glfw_window);
-    void createSwapChain();
-    void createImageViews();
-    void createRenderPass();
+    void PickPhysicalDevice(VkInstance instance, VkSurfaceKHR vk_surface);
+    void CreateLogicalDevice(bool enableValidationLayers);
+    void CreateSwapChain();
+    void CreateImageViews();
+    void CreateRenderPass();
 
     VkDevice GetDevice() {return device;}
     VkPhysicalDevice GetPhysicalDevice() {return physicalDevice;}
@@ -34,8 +34,6 @@ private:
     std::vector<VkImageView> swapChainImageViews;
     std::vector<VkFramebuffer> swapChainFramebuffers;
 
-    GLFWwindow* window;
-
     struct QueueFamilyIndices {
         std::optional<uint32_t> graphicsFamily;
         std::optional<uint32_t> presentFamily;
@@ -44,9 +42,7 @@ private:
             return graphicsFamily.has_value() && presentFamily.has_value();
         }
     };
-    const std::vector<const char*> validationLayers = {
-            "VK_LAYER_KHRONOS_validation"
-    };
+    const std::vector<const char*> validationLayers = {"VK_LAYER_KHRONOS_validation"};
     struct SwapChainSupportDetails {
         VkSurfaceCapabilitiesKHR capabilities;
         std::vector<VkSurfaceFormatKHR> formats;

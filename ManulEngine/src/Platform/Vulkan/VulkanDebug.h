@@ -15,15 +15,9 @@ public:
         const VkDebugUtilsMessengerCallbackDataEXT* pCallbackData,
         void* pUserData);
     VkDebugUtilsMessengerEXT debugMessenger;
-    const std::vector<const char*> validationLayers = {
-        "VK_LAYER_KHRONOS_validation"
-    };
+    const std::vector<const char*> validationLayers = {"VK_LAYER_KHRONOS_validation"};
 
     VkResult CreateDebugUtilsMessengerEXT(VkInstance instance, const VkDebugUtilsMessengerCreateInfoEXT* pCreateInfo, const VkAllocationCallbacks* pAllocator, VkDebugUtilsMessengerEXT* pDebugMessenger);
     void DestroyDebugUtilsMessengerEXT(VkInstance instance, VkDebugUtilsMessengerEXT debugMessenger, const VkAllocationCallbacks* pAllocator);
-    
-    bool CheckValidationLayerSupport();
-
-
-    void setupDebugMessenger(bool enableValidationLayers, VkInstance instance);
+    void SetupDebugMessenger(bool enableValidationLayers, VkInstance instance);
 };

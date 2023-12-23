@@ -18,22 +18,16 @@ namespace ManulEngine {
         virtual void Shutdown() override;
     private:
         bool enableValidationLayers = true;
-        const std::vector<const char*> validationLayers = {
-                "VK_LAYER_KHRONOS_validation"
-        };
+        const std::vector<const char*> validationLayers = {"VK_LAYER_KHRONOS_validation"};
         bool checkValidationLayerSupport();
         std::vector<const char*> getRequiredExtensions();
         void populateDebugMessengerCreateInfo(VkDebugUtilsMessengerCreateInfoEXT& createInfo);
-
-
-
         void CreateInstance();
+    private:
         VkInstance instance;
-
         VulkanDevice vulkanDevice;
         VulkanDebug vulkanDebug;
         VulkanSurface vulkanSurface;
         VulkanPipline vulkanPipline;
-
     };
 }

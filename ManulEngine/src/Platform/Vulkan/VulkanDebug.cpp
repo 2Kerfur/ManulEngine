@@ -1,3 +1,4 @@
+#include "mapch.h"
 #include "VulkanDebug.h"
 #include <cstring>
 VulkanDebug::~VulkanDebug()
@@ -13,23 +14,18 @@ VKAPI_ATTR VkBool32 VKAPI_CALL VulkanDebug::DebugCallback(VkDebugUtilsMessageSev
 void VulkanDebug::DestroyDebugUtilsMessengerEXT(VkInstance instance, VkDebugUtilsMessengerEXT debugMessenger, const VkAllocationCallbacks* pAllocator)
 {
     auto func = (PFN_vkDestroyDebugUtilsMessengerEXT)vkGetInstanceProcAddr(instance, "vkDestroyDebugUtilsMessengerEXT");
-    if (func != nullptr) {
-        func(instance, debugMessenger, pAllocator);
-    }
+    if (func != nullptr) func(instance, debugMessenger, pAllocator);
 }
 
 VkResult VulkanDebug::CreateDebugUtilsMessengerEXT(VkInstance instance, const VkDebugUtilsMessengerCreateInfoEXT* pCreateInfo, const VkAllocationCallbacks* pAllocator, VkDebugUtilsMessengerEXT* pDebugMessenger)
 {
     auto func = (PFN_vkCreateDebugUtilsMessengerEXT)vkGetInstanceProcAddr(instance, "vkCreateDebugUtilsMessengerEXT");
-    if (func != nullptr) {
+    if (func != nullptr)
         return func(instance, pCreateInfo, pAllocator, pDebugMessenger);
-    }
-    else {
-        return VK_ERROR_EXTENSION_NOT_PRESENT;
-    }
+    else return VK_ERROR_EXTENSION_NOT_PRESENT;
 }
 
-void VulkanDebug::setupDebugMessenger(bool enableValidationLayers, VkInstance instance) {
+void VulkanDebug::SetupDebugMessenger(bool enableValidationLayers, VkInstance instance) {
     if (!enableValidationLayers) return;
     vkInstance = instance;
     VkDebugUtilsMessengerCreateInfoEXT createInfo{};
@@ -39,7 +35,6 @@ void VulkanDebug::setupDebugMessenger(bool enableValidationLayers, VkInstance in
     createInfo.messageType = VK_DEBUG_UTILS_MESSAGE_TYPE_GENERAL_BIT_EXT | VK_DEBUG_UTILS_MESSAGE_TYPE_VALIDATION_BIT_EXT | VK_DEBUG_UTILS_MESSAGE_TYPE_PERFORMANCE_BIT_EXT;
     createInfo.pfnUserCallback = DebugCallback;
 
-    if (CreateDebugUtilsMessengerEXT(instance, &createInfo, nullptr, &debugMessenger) != VK_SUCCESS) {
-        throw std::runtime_error("failed to set up debug messenger!");
-    }
+    if (CreateDebugUtilsMessengerEXT(instance, &createInfo, nullptr, &debugMessenger) != VK_SUCCESS)
+        M_CORE_ERROR("VULKAN: Failed to set up debug messenger!");
 }

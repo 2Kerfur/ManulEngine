@@ -1,6 +1,6 @@
+#include "mapch.h"
 #include "VulkanDevice.h"
-
-#include <iostream>
+#include "ManulEngine/Core/Window.h"
 #include <set>
 #include <algorithm>
 #include <limits>
@@ -16,24 +16,18 @@ VulkanDevice::QueueFamilyIndices VulkanDevice::findQueueFamilies(VkPhysicalDevic
 
     int i = 0;
     for (const auto& queueFamily : queueFamilies) {
-        if (queueFamily.queueFlags & VK_QUEUE_GRAPHICS_BIT) {
+        if (queueFamily.queueFlags & VK_QUEUE_GRAPHICS_BIT)
             indices.graphicsFamily = i;
-        }
 
         VkBool32 presentSupport = false;
         vkGetPhysicalDeviceSurfaceSupportKHR(device, i, surface, &presentSupport);
 
-        if (presentSupport) {
+        if (presentSupport) 
             indices.presentFamily = i;
-        }
-
-        if (indices.isComplete()) {
+        if (indices.isComplete()) 
             break;
-        }
-
         i++;
     }
-
     return indices;
 }
 
@@ -46,9 +40,8 @@ bool VulkanDevice::checkDeviceExtensionSupport(VkPhysicalDevice device) {
 
     std::set<std::string> requiredExtensions(deviceExtensions.begin(), deviceExtensions.end());
 
-    for (const auto& extension : availableExtensions) {
+    for (const auto& extension : availableExtensions)
         requiredExtensions.erase(extension.extensionName);
-    }
 
     return requiredExtensions.empty();
 }
@@ -89,7 +82,7 @@ bool VulkanDevice::isDeviceSuitable(VkPhysicalDevice device) {
     return indices.isComplete() && extensionsSupported && swapChainAdequate;
 }
 
-void VulkanDevice::pickPhysicalDevice(VkInstance instance, VkSurfaceKHR vk_surface) {
+void VulkanDevice::PickPhysicalDevice(VkInstance instance, VkSurfaceKHR vk_surface) {
     surface = vk_surface;
     uint32_t deviceCount = 0;
     vkEnumeratePhysicalDevices(instance, &deviceCount, nullptr);
@@ -113,8 +106,7 @@ void VulkanDevice::pickPhysicalDevice(VkInstance instance, VkSurfaceKHR vk_surfa
     }
 }
 
-void VulkanDevice::createLogicalDevice(bool enableValidationLayers, GLFWwindow* glfw_window) {
-    window = glfw_window;
+void VulkanDevice::CreateLogicalDevice(bool enableValidationLayers) {
     QueueFamilyIndices indices = findQueueFamilies(physicalDevice);
 
     std::vector<VkDeviceQueueCreateInfo> queueCreateInfos;
@@ -180,7 +172,7 @@ VkExtent2D VulkanDevice::chooseSwapExtent(const VkSurfaceCapabilitiesKHR& capabi
         return capabilities.currentExtent;
     } else {
         int width, height;
-        glfwGetFramebufferSize(window, &width, &height);
+        glfwGetFramebufferSize(&ManulEngine::Window::GetInstatnce(), &width, &height);
 
         VkExtent2D actualExtent = {
                 static_cast<uint32_t>(width),
@@ -193,7 +185,7 @@ VkExtent2D VulkanDevice::chooseSwapExtent(const VkSurfaceCapabilitiesKHR& capabi
         return actualExtent;
     }
 }
-void VulkanDevice::createSwapChain() {
+void VulkanDevice::CreateSwapChain() {
     SwapChainSupportDetails swapChainSupport = querySwapChainSupport(physicalDevice);
 
     VkSurfaceFormatKHR surfaceFormat = chooseSwapSurfaceFormat(swapChainSupport.formats);
@@ -246,7 +238,7 @@ void VulkanDevice::createSwapChain() {
     swapChainExtent = extent;
 }
 
-void VulkanDevice::createImageViews() {
+void VulkanDevice::CreateImageViews() {
     swapChainImageViews.resize(swapChainImages.size());
 
     for (size_t i = 0; i < swapChainImages.size(); i++) {
@@ -271,7 +263,7 @@ void VulkanDevice::createImageViews() {
     }
 }
 
-void VulkanDevice::createRenderPass() {
+void VulkanDevice::CreateRenderPass() {
     VkAttachmentDescription colorAttachment{};
     colorAttachment.format = swapChainImageFormat;
     colorAttachment.samples = VK_SAMPLE_COUNT_1_BIT;

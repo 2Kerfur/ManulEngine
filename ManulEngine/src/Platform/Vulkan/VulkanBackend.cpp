@@ -10,12 +10,12 @@
 
 namespace ManulEngine {
     bool VulkanBackend::Init(Vector2Uint windowSize) {
+        M_CORE_INFO("Vulkan Init Started...");
         CreateInstance();
-        M_CORE_INFO("Vulkan Init Started");
-        vulkanDebug.setupDebugMessenger(enableValidationLayers, instance);
-        vulkanSurface.createSurface(instance, &Window::GetInstatnce());
-        //vulkanDevice.pickPhysicalDevice(instance, vulkanSurface.getSurface());
-        //vulkanDevice.createLogicalDevice(enableValidationLayers, &Window::GetInstatnce());
+        vulkanDebug.SetupDebugMessenger(enableValidationLayers, instance);
+        vulkanSurface.CreateSurface(instance, &Window::GetInstatnce());
+        vulkanDevice.PickPhysicalDevice(instance, vulkanSurface.Get());
+        vulkanDevice.CreateLogicalDevice(enableValidationLayers);
         //vulkanDevice.createSwapChain();
         //vulkanDevice.createImageViews();
         //vulkanDevice.createRenderPass();

@@ -4,8 +4,8 @@
 
 class VulkanSurface {
 public:
-    void createSurface(VkInstance instance, GLFWwindow* window);
-    VkSurfaceKHR getSurface() {return surface;}
+    void CreateSurface(VkInstance instance, GLFWwindow* window);
+    VkSurfaceKHR Get() {return surface;}
 private:
     VkSurfaceKHR surface;
 };
