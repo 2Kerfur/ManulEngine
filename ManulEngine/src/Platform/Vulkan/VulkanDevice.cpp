@@ -88,7 +88,7 @@ void VulkanDevice::PickPhysicalDevice(VkInstance instance, VkSurfaceKHR vk_surfa
     vkEnumeratePhysicalDevices(instance, &deviceCount, nullptr);
 
     if (deviceCount == 0) {
-        std::cout << "failed to find GPUs with Vulkan support!";
+        M_CORE_ERROR("VULKAN: Failed to find GPUs with Vulkan support!");
     }
 
     std::vector<VkPhysicalDevice> devices(deviceCount);
@@ -102,7 +102,7 @@ void VulkanDevice::PickPhysicalDevice(VkInstance instance, VkSurfaceKHR vk_surfa
     }
 
     if (physicalDevice == VK_NULL_HANDLE) {
-        throw std::runtime_error("failed to find a suitable GPU!");
+        M_CORE_ERROR("VULKAN: Failed to find a suitable GPU!");
     }
 }
 
@@ -143,7 +143,7 @@ void VulkanDevice::CreateLogicalDevice(bool enableValidationLayers) {
     }
 
     if (vkCreateDevice(physicalDevice, &createInfo, nullptr, &device) != VK_SUCCESS) {
-        throw std::runtime_error("failed to create logical device!");
+        M_CORE_ERROR("VULKAN: Failed to create logical device!");
     }
 
     vkGetDeviceQueue(device, indices.graphicsFamily.value(), 0, &graphicsQueue);
@@ -227,7 +227,7 @@ void VulkanDevice::CreateSwapChain() {
     createInfo.oldSwapchain = VK_NULL_HANDLE;
 
     if (vkCreateSwapchainKHR(device, &createInfo, nullptr, &swapChain) != VK_SUCCESS) {
-        throw std::runtime_error("failed to create swap chain!");
+        M_CORE_ERROR("VULKAN: Failed to create swap chain!");
     }
 
     vkGetSwapchainImagesKHR(device, swapChain, &imageCount, nullptr);
@@ -258,7 +258,7 @@ void VulkanDevice::CreateImageViews() {
         createInfo.subresourceRange.layerCount = 1;
 
         if (vkCreateImageView(device, &createInfo, nullptr, &swapChainImageViews[i]) != VK_SUCCESS) {
-            throw std::runtime_error("failed to create image views!");
+            M_CORE_ERROR("VULKAN: Failed to create image views!");
         }
     }
 }
@@ -301,7 +301,7 @@ void VulkanDevice::CreateRenderPass() {
     renderPassInfo.pDependencies = &dependency;
 
     if (vkCreateRenderPass(device, &renderPassInfo, nullptr, &renderPass) != VK_SUCCESS) {
-        throw std::runtime_error("failed to create render pass!");
+        M_CORE_ERROR("VULKAN: Failed to create render pass!");
     }
 }
 
