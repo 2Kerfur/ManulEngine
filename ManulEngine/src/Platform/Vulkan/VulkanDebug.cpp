@@ -7,7 +7,7 @@ VulkanDebug::~VulkanDebug()
 }
 VKAPI_ATTR VkBool32 VKAPI_CALL VulkanDebug::DebugCallback(VkDebugUtilsMessageSeverityFlagBitsEXT messageSeverity, VkDebugUtilsMessageTypeFlagsEXT messageType, const VkDebugUtilsMessengerCallbackDataEXT* pCallbackData, void* pUserData)
 {
-    std::cerr << "validation layer: " << pCallbackData->pMessage << std::endl;
+    M_INFO(pCallbackData->pMessage);
     return VK_FALSE;
 }
 

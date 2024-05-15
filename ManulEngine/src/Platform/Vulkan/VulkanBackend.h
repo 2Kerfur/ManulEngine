@@ -22,6 +22,7 @@ namespace ManulEngine {
         bool checkValidationLayerSupport();
         std::vector<const char*> getRequiredExtensions();
         void populateDebugMessengerCreateInfo(VkDebugUtilsMessengerCreateInfoEXT& createInfo);
+        void recordCommandBuffer(VkCommandBuffer commandBuffer, uint32_t imageIndex);
         void CreateInstance();
     private:
         VkInstance instance;

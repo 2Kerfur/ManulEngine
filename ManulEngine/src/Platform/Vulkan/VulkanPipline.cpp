@@ -8,8 +8,7 @@ static std::vector<char> readFile(const std::string& filename) {
     std::ifstream file(filename, std::ios::ate | std::ios::binary);
 
     if (!file.is_open()) {
-        M_CORE_INFO("Failed to load file: {0}", filename.c_str());
-        throw std::runtime_error("failed to open file!");
+        M_CORE_ERROR("VULKAN: Failed to open file!");
     }
 
     size_t fileSize = (size_t) file.tellg();
@@ -31,18 +30,62 @@ VkShaderModule createShaderModule(const std::vector<char>& code, VkDevice vk_dev
 
     VkShaderModule shaderModule;
     if (vkCreateShaderModule(vk_device, &createInfo, nullptr, &shaderModule) != VK_SUCCESS) {
-        throw std::runtime_error("failed to create shader module!");
+        M_CORE_ERROR("VULKAN: Failed to create shader module!");
     }
     return shaderModule;
+}
+void VulkanPipline::createRenderPass() {
+    VkAttachmentDescription colorAttachment{};
+    colorAttachment.format = vkSwapChainImageFormat;
+    colorAttachment.samples = VK_SAMPLE_COUNT_1_BIT;
+    colorAttachment.loadOp = VK_ATTACHMENT_LOAD_OP_CLEAR;
+    colorAttachment.storeOp = VK_ATTACHMENT_STORE_OP_STORE;
+    colorAttachment.stencilLoadOp = VK_ATTACHMENT_LOAD_OP_DONT_CARE;
+    colorAttachment.stencilStoreOp = VK_ATTACHMENT_STORE_OP_DONT_CARE;
+    colorAttachment.initialLayout = VK_IMAGE_LAYOUT_UNDEFINED;
+    colorAttachment.finalLayout = VK_IMAGE_LAYOUT_PRESENT_SRC_KHR;
+
+    VkAttachmentReference colorAttachmentRef{};
+    colorAttachmentRef.attachment = 0;
+    colorAttachmentRef.layout = VK_IMAGE_LAYOUT_COLOR_ATTACHMENT_OPTIMAL;
+
+    VkSubpassDescription subpass{};
+    subpass.pipelineBindPoint = VK_PIPELINE_BIND_POINT_GRAPHICS;
+    subpass.colorAttachmentCount = 1;
+    subpass.pColorAttachments = &colorAttachmentRef;
+
+    VkSubpassDependency dependency{};
+    dependency.srcSubpass = VK_SUBPASS_EXTERNAL;
+    dependency.dstSubpass = 0;
+    dependency.srcStageMask = VK_PIPELINE_STAGE_COLOR_ATTACHMENT_OUTPUT_BIT;
+    dependency.srcAccessMask = 0;
+    dependency.dstStageMask = VK_PIPELINE_STAGE_COLOR_ATTACHMENT_OUTPUT_BIT;
+    dependency.dstAccessMask = VK_ACCESS_COLOR_ATTACHMENT_WRITE_BIT;
+
+    VkRenderPassCreateInfo renderPassInfo{};
+    renderPassInfo.sType = VK_STRUCTURE_TYPE_RENDER_PASS_CREATE_INFO;
+    renderPassInfo.attachmentCount = 1;
+    renderPassInfo.pAttachments = &colorAttachment;
+    renderPassInfo.subpassCount = 1;
+    renderPassInfo.pSubpasses = &subpass;
+    renderPassInfo.dependencyCount = 1;
+    renderPassInfo.pDependencies = &dependency;
+
+    if (vkCreateRenderPass(vkDevice, &renderPassInfo, nullptr, &renderPass) != VK_SUCCESS) {
+        M_CORE_ERROR("VULKAN: Failed to create render pass!");
+    }
 }
 void VulkanPipline::createGraphicsPipeline(VkDevice device,
                                            std::vector<VkImageView>& SwapChainImageViews,
                                            std::vector<VkFramebuffer>& SwapChainFramebuffers,
-                                           VkExtent2D SwapChainExtent) {
+                                           VkExtent2D SwapChainExtent, VkFormat swapChainImageFormat,
+                                            VkRenderPass vkRenderPass) {
+    vkDevice = device;
+    renderPass = vkRenderPass; 
     swapChainExtent = SwapChainExtent;
     swapChainImageViews = SwapChainImageViews;
     swapChainFramebuffers = SwapChainFramebuffers;
-
+    vkSwapChainImageFormat = swapChainImageFormat;
     auto vertShaderCode = readFile("shaders/vert.spv"); //TODO: создать класс для шейдера
     auto fragShaderCode = readFile("shaders/frag.spv");
     VkShaderModule vertShaderModule = createShaderModule(vertShaderCode, device);
@@ -122,8 +165,9 @@ void VulkanPipline::createGraphicsPipeline(VkDevice device,
     pipelineLayoutInfo.pushConstantRangeCount = 0;
 
     if (vkCreatePipelineLayout(device, &pipelineLayoutInfo, nullptr, &pipelineLayout) != VK_SUCCESS) {
-        throw std::runtime_error("failed to create pipeline layout!");
+        M_CORE_ERROR("VULKAN: Failed to create pipeline layout!");
     }
+
 
     VkGraphicsPipelineCreateInfo pipelineInfo{};
     pipelineInfo.sType = VK_STRUCTURE_TYPE_GRAPHICS_PIPELINE_CREATE_INFO;
@@ -142,12 +186,11 @@ void VulkanPipline::createGraphicsPipeline(VkDevice device,
     pipelineInfo.basePipelineHandle = VK_NULL_HANDLE;
 
     if (vkCreateGraphicsPipelines(device, VK_NULL_HANDLE, 1, &pipelineInfo, nullptr, &graphicsPipeline) != VK_SUCCESS) {
-        throw std::runtime_error("failed to create graphics pipeline!");
+        M_CORE_ERROR("VULKAN: Failed to create graphics pipeline!");
     }
 
     vkDestroyShaderModule(device, fragShaderModule, nullptr);
     vkDestroyShaderModule(device, vertShaderModule, nullptr);
-     
 }
 
 void VulkanPipline::createFramebuffers(VkDevice device) {
@@ -168,7 +211,7 @@ void VulkanPipline::createFramebuffers(VkDevice device) {
         framebufferInfo.layers = 1;
 
         if (vkCreateFramebuffer(device, &framebufferInfo, nullptr, &swapChainFramebuffers[i]) != VK_SUCCESS) {
-            throw std::runtime_error("failed to create framebuffer!");
+            M_CORE_ERROR("VULKAN: Failed to create framebuffer!");
         }
     }
 }
@@ -221,7 +264,7 @@ void VulkanPipline::createCommandPool(VkPhysicalDevice physicalDevice, VkDevice 
     poolInfo.queueFamilyIndex = queueFamilyIndices.graphicsFamily.value();
 
     if (vkCreateCommandPool(device, &poolInfo, nullptr, &commandPool) != VK_SUCCESS) {
-        throw std::runtime_error("failed to create command pool!");
+        M_CORE_ERROR("VULKAN: Failed to create command pool!");
     }
 }
 
@@ -233,7 +276,7 @@ void VulkanPipline::createCommandBuffer(VkDevice device) {
     allocInfo.commandBufferCount = 1;
 
     if (vkAllocateCommandBuffers(device, &allocInfo, &commandBuffer) != VK_SUCCESS) {
-        throw std::runtime_error("failed to allocate command buffers!");
+        M_CORE_ERROR("VULKAN: Failed to allocate command buffers!");
     }
 }
 
@@ -248,6 +291,6 @@ void VulkanPipline::createSyncObjects(VkDevice device) {
     if (vkCreateSemaphore(device, &semaphoreInfo, nullptr, &imageAvailableSemaphore) != VK_SUCCESS ||
         vkCreateSemaphore(device, &semaphoreInfo, nullptr, &renderFinishedSemaphore) != VK_SUCCESS ||
         vkCreateFence(device, &fenceInfo, nullptr, &inFlightFence) != VK_SUCCESS) {
-        throw std::runtime_error("failed to create synchronization objects for a frame!");
+        M_CORE_ERROR("VULKAN: Failed to create synchronization objects for a frame!");
     }
 }

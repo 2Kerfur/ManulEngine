@@ -17,8 +17,14 @@ public:
     VkPhysicalDevice GetPhysicalDevice() {return physicalDevice;}
     VkSurfaceKHR GetSurface() {return surface;}
     std::vector<VkImageView>& getSwapChainImageViews(){return swapChainImageViews;}
-    std::vector<VkFramebuffer>& getSwapChainFramebuffers(){return swapChainFramebuffers;}
+    //std::vector<VkFramebuffer>& getSwapChainFramebuffers(){return swapChainFramebuffers;}
     VkExtent2D getSwapChainExtent(){return swapChainExtent; }
+    VkFormat getSwapChainImageFormat() { return swapChainImageFormat; }
+    VkSwapchainKHR getSwapChain() { return swapChain; }
+    VkRenderPass getRenderPass() { return renderPass; }
+    VkQueue getPresentQueue() { return presentQueue; }
+    VkQueue getGraphicsQueue() { return graphicsQueue; }
+    std::vector<VkFramebuffer> swapChainFramebuffers;
 private:
     VkSurfaceKHR surface;
     VkPhysicalDevice physicalDevice = VK_NULL_HANDLE;
@@ -32,7 +38,6 @@ private:
     VkFormat swapChainImageFormat;
     VkExtent2D swapChainExtent;
     std::vector<VkImageView> swapChainImageViews;
-    std::vector<VkFramebuffer> swapChainFramebuffers;
 
     struct QueueFamilyIndices {
         std::optional<uint32_t> graphicsFamily;
