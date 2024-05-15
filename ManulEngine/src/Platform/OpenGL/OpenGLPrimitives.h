@@ -4,12 +4,15 @@
 #include <cstdint>
 #include "ManulEngine/Renderer/Camera.h"
 #include <glm/ext/matrix_float4x4.hpp>
+
 class OpenGLBox
 {
 public:
 	void Create(Vector3 pos, Vector2 size);
     void Bind(uint32_t ebo, uint32_t vao, uint32_t vbo);
 	void Draw(); 
+
+    
     const char* vertexShaderSource1 = "#version 330 core\n"
         "layout(location = 0) in vec3 aPos;\n"
         "layout(location = 1) in vec3 aColor;\n"
@@ -87,6 +90,8 @@ private:
 class OpenGLModel
 {
 public:
+    
+    float MouseX = 0, MouseY = 0;
     const char* vertexShaderSource = "#version 330 core\n"
         "layout (location = 0) in vec3 aPos;\n"
         "layout (location = 1) in vec2 aTexCoord;\n"
@@ -108,6 +113,13 @@ public:
         "   FragColor = texture(texture1, TexCoord);\n"
         "}\n\0";
 
+    glm::mat4 getProjection();
+    glm::mat4 getView();
+    glm::vec3 getCameraPos();
+    glm::mat4 projection;
+    glm::vec3 cameraPos = glm::vec3(0.0f, 0.0f, 3.0f);
+    glm::vec3 cameraFront = glm::vec3(0.0f, 0.0f, -1.0f);
+    glm::vec3 cameraUp = glm::vec3(0.0f, 1.0f, 0.0f);
     void Create();
     void Bind(uint32_t ebo, uint32_t vao, uint32_t vbo);
     void Draw();

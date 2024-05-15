@@ -12,6 +12,7 @@ namespace ManulEngine {
     RendererBackend* Renderer::backend = nullptr;
     bool Renderer::Init(Vector2Uint windowSize, GraphicsAPI api)
     {
+        
         switch (api)
         {
         case Renderer::OpenGL:
@@ -39,6 +40,7 @@ namespace ManulEngine {
     }
     void Renderer::Render()
     {
+        backend->ClearScreen({ 0.8f, 0.3f, 0.2f, 1.0f });
         backend->Render();
         
         //ImguiLayer::Render();
@@ -46,7 +48,8 @@ namespace ManulEngine {
 
     void Renderer::Shutdown()
     {
-        backend->Shutdown();
         //ImguiLayer::Shutdown();
+        backend->Shutdown();
+        
     }
 }

@@ -32,7 +32,7 @@ namespace ManulEngine
         Log::Init();
         m_Window = new Window();
         audioEngine.Init(AudioBackendAPI::FMOD);
-        audioEngine.PlayAudioFile("sound.wav", {0, 0, 0});
+        //audioEngine.PlayAudioFile("sound.wav", {0, 0, 0});
         if (ResourceManager::LoadConfig(config, ResourceManager::GetWorkingDirectory() + "/application.cfg"))
         {
             m_Specification.readFromFile = std::stoi(config[0]);

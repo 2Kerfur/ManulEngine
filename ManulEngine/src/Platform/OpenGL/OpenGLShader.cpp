@@ -41,7 +41,7 @@ int OpenGLShader::Compile(const char* vertexShaderSource, const char* fragmentSh
         M_CORE_ERROR(infoLog);
         return false;
     }   
-
+    M_CORE_INFO("Shader compiled good");
     glDeleteShader(vertexShader);
     glDeleteShader(fragmentShader);
     return true;

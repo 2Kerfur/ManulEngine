@@ -8,6 +8,7 @@ static std::vector<char> readFile(const std::string& filename) {
     std::ifstream file(filename, std::ios::ate | std::ios::binary);
 
     if (!file.is_open()) {
+        M_CORE_INFO("Failed to load file: {0}", filename.c_str());
         throw std::runtime_error("failed to open file!");
     }
 
@@ -38,7 +39,6 @@ void VulkanPipline::createGraphicsPipeline(VkDevice device,
                                            std::vector<VkImageView>& SwapChainImageViews,
                                            std::vector<VkFramebuffer>& SwapChainFramebuffers,
                                            VkExtent2D SwapChainExtent) {
-
     swapChainExtent = SwapChainExtent;
     swapChainImageViews = SwapChainImageViews;
     swapChainFramebuffers = SwapChainFramebuffers;
@@ -46,7 +46,6 @@ void VulkanPipline::createGraphicsPipeline(VkDevice device,
     auto vertShaderCode = readFile("shaders/vert.spv"); //TODO: создать класс для шейдера
     auto fragShaderCode = readFile("shaders/frag.spv");
     VkShaderModule vertShaderModule = createShaderModule(vertShaderCode, device);
-/*
 
     VkShaderModule fragShaderModule = createShaderModule(fragShaderCode, device);
     VkPipelineShaderStageCreateInfo vertShaderStageInfo{};
@@ -126,7 +125,6 @@ void VulkanPipline::createGraphicsPipeline(VkDevice device,
         throw std::runtime_error("failed to create pipeline layout!");
     }
 
-
     VkGraphicsPipelineCreateInfo pipelineInfo{};
     pipelineInfo.sType = VK_STRUCTURE_TYPE_GRAPHICS_PIPELINE_CREATE_INFO;
     pipelineInfo.stageCount = 2;
@@ -149,7 +147,7 @@ void VulkanPipline::createGraphicsPipeline(VkDevice device,
 
     vkDestroyShaderModule(device, fragShaderModule, nullptr);
     vkDestroyShaderModule(device, vertShaderModule, nullptr);
-     */
+     
 }
 
 void VulkanPipline::createFramebuffers(VkDevice device) {

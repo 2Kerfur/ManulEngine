@@ -1,26 +1,28 @@
 #include "mapch.h"
 #include "ImguiLayer.h"
 #include "ManulEngine/Core/Window.h"
-
+#include "ManulEngine/Renderer/Renderer.h"
 #include "imgui.h"
 #include "imgui_internal.h"
 #include "imgui_impl_glfw.h"
 #include "imgui_impl_opengl3.h"
 namespace ManulEngine {
+    static Renderer::GraphicsAPI graphicsApi;
     int ImguiLayer::Init(Renderer::GraphicsAPI api)
     {
+        graphicsApi = api;
         IMGUI_CHECKVERSION();
         ImGui::CreateContext();
-        ImGuiIO& io = ImGui::GetIO(); (void)io;
-        io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;       // Enable Keyboard Controls
-        io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;           // Enable Docking
+        //ImGuiIO& io = ImGui::GetIO(); (void)io;
+        //io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;       // Enable Keyboard Controls
+        //io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;           // Enable Docking
 
-        ImGui::StyleColorsDark();
+        ImGui::StyleColorsDark();   
         ImGui_ImplGlfw_InitForOpenGL(&Window::GetInstatnce(), true);
         ImGui_ImplOpenGL3_Init("#version 330");
         return true;
     }
-
+    
     void ImguiLayer::Render()
     {
         ImGui_ImplOpenGL3_NewFrame();
@@ -28,36 +30,49 @@ namespace ManulEngine {
         ImGui::NewFrame();
 
         //ImGui::DockSpaceOverViewport(ImGui::GetMainViewport());
-        //ImGui::ShowDemoWindow();
+        ImGui::ShowDemoWindow();
         ImGuiIO& io = ImGui::GetIO();
 
         ImGui::Begin("Stats");
         ImGui::Text("Application average %.3f ms/frame (%.1f FPS)", 1000.0f / io.Framerate, io.Framerate);
-        ImGui::End();
-
-        ImGui::Begin("Console");
-        if (ImGui::SmallButton("Add Debug Error")) {
-            //logs.push_back("[ERROR] Debug log");
+        switch (graphicsApi) {
+            case Renderer::OpenGL: ImGui::Text("Renderer graphics api - OpenGL (Stable)"); break;
+            case Renderer::Vulkan: ImGui::Text("Renderer graphics api - Vulkan (Not stable)"); break;
+            case Renderer::DirectX: ImGui::Text("Renderer graphics api - DirectX (Not supported)"); break;
         }
-        ImGui::SameLine();
-        if (ImGui::SmallButton("Clear")) {
-            //logs.clear();
-        }
-        //for (std::string log : logs)
-        //{
-        //    ImGui::TextUnformatted(log.c_str());
-        //}
 
-        ImGui::End();
+        RenderViewport();
 
         ImGui::Render();
-
-        ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
+        switch (graphicsApi)
+        {
+        case Renderer::OpenGL:
+            ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
+            break;
+        case Renderer::Vulkan:
+            break;
+        case Renderer::DirectX:
+            break;
+        }
     }
-
+    void ImguiLayer::RenderViewport()
+    {
+        //ImGui::Begin("Viewport");
+        //
+        //ImGui::End();
+    }
     void ImguiLayer::Shutdown()
     {
-        ImGui_ImplOpenGL3_Shutdown();
+        switch (graphicsApi)
+        {
+        case Renderer::OpenGL:
+            ImGui_ImplOpenGL3_Shutdown();
+            break;
+        case Renderer::Vulkan:
+            break;
+        case Renderer::DirectX:
+            break;
+        }
         ImGui_ImplGlfw_Shutdown();
         ImGui::DestroyContext();
     }

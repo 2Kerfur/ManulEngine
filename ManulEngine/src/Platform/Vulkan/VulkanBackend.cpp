@@ -16,17 +16,17 @@ namespace ManulEngine {
         vulkanSurface.CreateSurface(instance, &Window::GetInstatnce());
         vulkanDevice.PickPhysicalDevice(instance, vulkanSurface.Get());
         vulkanDevice.CreateLogicalDevice(enableValidationLayers);
-        //vulkanDevice.createSwapChain();
-        //vulkanDevice.createImageViews();
-        //vulkanDevice.createRenderPass();
-        //vulkanPipline.createGraphicsPipeline(vulkanDevice.GetDevice(),
-        //    vulkanDevice.getSwapChainImageViews(),
-        //    vulkanDevice.getSwapChainFramebuffers(),
-        //    vulkanDevice.getSwapChainExtent());
-        //vulkanPipline.createFramebuffers(vulkanDevice.GetDevice());
-        //vulkanPipline.createCommandPool(vulkanDevice.GetPhysicalDevice(), vulkanDevice.GetDevice(), vulkanDevice.GetSurface());
-        //vulkanPipline.createCommandBuffer(vulkanDevice.GetDevice());
-        //vulkanPipline.createSyncObjects(vulkanDevice.GetDevice());
+        vulkanDevice.CreateSwapChain();
+        vulkanDevice.CreateImageViews();
+        vulkanDevice.CreateRenderPass();
+        vulkanPipline.createGraphicsPipeline(vulkanDevice.GetDevice(),
+            vulkanDevice.getSwapChainImageViews(),
+            vulkanDevice.getSwapChainFramebuffers(),
+            vulkanDevice.getSwapChainExtent());
+        vulkanPipline.createFramebuffers(vulkanDevice.GetDevice());
+        vulkanPipline.createCommandPool(vulkanDevice.GetPhysicalDevice(), vulkanDevice.GetDevice(), vulkanDevice.GetSurface());
+        vulkanPipline.createCommandBuffer(vulkanDevice.GetDevice());
+        vulkanPipline.createSyncObjects(vulkanDevice.GetDevice());
         return true;
     }
 
@@ -57,17 +57,15 @@ namespace ManulEngine {
             }
             if (!layerFound) return false;
         }
-
         return true;
     }
     std::vector<const char*> VulkanBackend::getRequiredExtensions() {
         uint32_t glfwExtensionCount = 0;
         const char** glfwExtensions;
         glfwExtensions = glfwGetRequiredInstanceExtensions(&glfwExtensionCount);
-
         std::vector<const char*> extensions(glfwExtensions, glfwExtensions + glfwExtensionCount);
-
         if (enableValidationLayers) extensions.push_back(VK_EXT_DEBUG_UTILS_EXTENSION_NAME);
+        M_CORE_INFO("glfwExtensionCount: {:01d}", extensions.size());
         return extensions;
     }
 
@@ -84,7 +82,7 @@ namespace ManulEngine {
 
         VkApplicationInfo appInfo{};
         appInfo.sType = VK_STRUCTURE_TYPE_APPLICATION_INFO;
-        appInfo.pApplicationName = "ManulEngine";
+        appInfo.pApplicationName = "ManulGame";
         appInfo.applicationVersion = VK_MAKE_VERSION(1, 0, 0);
         appInfo.pEngineName = "ManulEngine";
         appInfo.engineVersion = VK_MAKE_VERSION(1, 0, 0);
@@ -95,6 +93,7 @@ namespace ManulEngine {
         createInfo.pApplicationInfo = &appInfo;
 
         auto extensions = getRequiredExtensions();
+        
         createInfo.enabledExtensionCount = static_cast<uint32_t>(extensions.size());
         createInfo.ppEnabledExtensionNames = extensions.data();
 

@@ -2,7 +2,6 @@
 
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
-
 #include <vector>
 enum Camera_Movement {
     FORWARD,
@@ -67,6 +66,8 @@ public:
             Position -= Right * velocity;
         if (direction == RIGHT)
             Position += Right * velocity;
+
+        
     }
     void ProcessMouseMovement(float xoffset, float yoffset, bool constrainPitch = true)
     {

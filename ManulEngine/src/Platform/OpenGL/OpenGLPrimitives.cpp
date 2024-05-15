@@ -8,7 +8,6 @@
 #include <glm/gtc/type_ptr.hpp>
 #include "ManulEngine/ResourceManager/ResourceManager.h"
 
-#include "GLFW/glfw3.h"
 #include "ManulEngine/Core/Window.h"
 
 #include "ManulEngine/Core/Input.h"
@@ -51,6 +50,8 @@ void OpenGLBox::Bind(uint32_t ebo, uint32_t vao, uint32_t vbo)
 }
 float deltaTime = 0;
 float lastFrame = 0.0f;
+
+
 void OpenGLBox::Draw()
 {
     if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
@@ -67,6 +68,8 @@ void OpenGLBox::Draw()
         camera->ProcessKeyboard(LEFT, deltaTime);
     if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
         camera->ProcessKeyboard(RIGHT, deltaTime);
+
+
 
     glActiveTexture(GL_TEXTURE0);
     texture.Bind();
@@ -178,6 +181,18 @@ float cube_vertices[] = {
 };
 glm::vec3 cubePosition = glm::vec3(0.0f,  0.0f,  0.0f);
 
+glm::mat4 OpenGLModel::getProjection()
+{
+    return projection;
+}
+glm::mat4 OpenGLModel::getView()
+{
+    return glm::lookAt(cameraPos, cameraPos + cameraFront, cameraUp);
+}
+glm::vec3 OpenGLModel::getCameraPos()
+{
+    return cameraPos;
+}
 void OpenGLModel::Create()
 {
     glGenVertexArrays(1, &VAO);
@@ -200,14 +215,13 @@ void OpenGLModel::Create()
 
     shader.Use();
     shader.setInt("texture1", 0);
+
+
 }
 
 void OpenGLModel::Bind(uint32_t ebo, uint32_t vao, uint32_t vbo)
 {
 }
-glm::vec3 cameraPos = glm::vec3(0.0f, 0.0f, 3.0f);
-glm::vec3 cameraFront = glm::vec3(0.0f, 0.0f, -1.0f);
-glm::vec3 cameraUp = glm::vec3(0.0f, 1.0f, 0.0f);
 
 bool firstMouse = true;
 float yaw = -90.0f;
@@ -215,6 +229,7 @@ float pitch = 0.0f;
 float lastX = 800.0f / 2.0;
 float lastY = 600.0 / 2.0;
 float fov = 45.0f;
+
 void OpenGLModel::Draw()
 {
     glActiveTexture(GL_TEXTURE0);
@@ -227,10 +242,23 @@ void OpenGLModel::Draw()
     if (ManulEngine::Input::IsKeyPressed(ManulEngine::Key::D))
         cameraPos.x += 0.01f;
 
+    if (ManulEngine::Input::IsKeyPressed(ManulEngine::Key::I))
+        MouseY -= 0.05f;
+    if (ManulEngine::Input::IsKeyPressed(ManulEngine::Key::K))
+        MouseY += 0.05f;
+
+    if (ManulEngine::Input::IsKeyPressed(ManulEngine::Key::L))
+        MouseX -= 0.05f;
+    if (ManulEngine::Input::IsKeyPressed(ManulEngine::Key::J))
+        MouseX += 0.05f;
+    
+
     texture.Bind();
     shader.Use();
     Vector2Uint windowSize = ManulEngine::Window::Get().GetSize();
-    glm::mat4 projection = glm::perspective(glm::radians(fov), (float)windowSize.x / (float)windowSize.y, 0.1f, 100.0f);
+    projection = glm::perspective(glm::radians(fov), (float)windowSize.x / (float)windowSize.y, 0.1f, 100.0f);
+    projection = glm::rotate(projection, glm::radians(MouseY), glm::vec3(0.0f, 0.0f, 1.0f));
+    projection = glm::rotate(projection, glm::radians(MouseX), glm::vec3(0.0f, 1.0f, 0.0f));
     shader.setMat4("projection", projection);
 
     glm::mat4 view = glm::lookAt(cameraPos, cameraPos + cameraFront, cameraUp);

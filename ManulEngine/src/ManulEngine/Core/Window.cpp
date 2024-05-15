@@ -1,5 +1,6 @@
 #include "mapch.h"
 #include "Window.h"
+#define GLFW_INCLUDE_VULKAN
 
 namespace ManulEngine {
     GLFWwindow* Window::windowInstance = nullptr;
@@ -24,25 +25,28 @@ namespace ManulEngine {
     
     bool Window::Create(Vector2Uint size, std::string title, bool fullscreen)
     {
-        
-        windowSize = size;
+        Renderer::GraphicsAPI graphicsApi = Renderer::GraphicsAPI::OpenGL;
+        windowSize = size; 
         windowShouldClose = false;
         if (!glfwInit())
         {
             M_CORE_ERROR("GLFW failed to initialize");
             return false;
         }
-        //TODO: для vulkan api
-        //glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
-        //glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
-
-        glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
-        glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 0);
-        glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-
+        if (graphicsApi == Renderer::GraphicsAPI::Vulkan) {
+            glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
+            glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
+        }
+        else if (graphicsApi == Renderer::GraphicsAPI::OpenGL)
+        {
+            glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
+            glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 0);
+            glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 #ifdef __APPLE__ //Пусть будет
-        glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
+            glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 #endif
+        }
+
 
         windowInstance = glfwCreateWindow(size.x, size.y, title.c_str(), NULL, NULL);
         if (!windowInstance)
@@ -54,7 +58,7 @@ namespace ManulEngine {
         glfwMakeContextCurrent(windowInstance);
         glfwSetWindowSizeCallback(windowInstance, WindowSizeCallback);
 
-        if (!Renderer::Init(size, Renderer::Vulkan))
+        if (!Renderer::Init(size, graphicsApi))
         {
             M_CORE_CRITICAL("Failed to initialize renderer");
             return false;
@@ -79,6 +83,7 @@ namespace ManulEngine {
         glfwPollEvents();
         windowShouldClose = glfwWindowShouldClose(windowInstance);
         Renderer::Render();
+        
         glfwSwapBuffers(windowInstance);
     }
     //Vector2Uint Window::GetWindowSize()

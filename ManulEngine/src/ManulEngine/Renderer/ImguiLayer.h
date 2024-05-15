@@ -6,8 +6,9 @@ namespace ManulEngine {
 	public:
 		static int Init(Renderer::GraphicsAPI api);
 		static void Render();
+		static void RenderViewport();
 		static void Shutdown();
 	private:
-
+		
 	};
 }

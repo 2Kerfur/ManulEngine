@@ -22,7 +22,7 @@ VulkanDevice::QueueFamilyIndices VulkanDevice::findQueueFamilies(VkPhysicalDevic
         VkBool32 presentSupport = false;
         vkGetPhysicalDeviceSurfaceSupportKHR(device, i, surface, &presentSupport);
 
-        if (presentSupport) 
+            if (presentSupport) 
             indices.presentFamily = i;
         if (indices.isComplete()) 
             break;
@@ -78,14 +78,12 @@ bool VulkanDevice::isDeviceSuitable(VkPhysicalDevice device) {
         SwapChainSupportDetails swapChainSupport = querySwapChainSupport(device);
         swapChainAdequate = !swapChainSupport.formats.empty() && !swapChainSupport.presentModes.empty();
     }
-
     return indices.isComplete() && extensionsSupported && swapChainAdequate;
 }
-
 void VulkanDevice::PickPhysicalDevice(VkInstance instance, VkSurfaceKHR vk_surface) {
     surface = vk_surface;
     uint32_t deviceCount = 0;
-    vkEnumeratePhysicalDevices(instance, &deviceCount, nullptr);
+    vkEnumeratePhysicalDevices(instance, &deviceCount, nullptr); //TODO: проверить
 
     if (deviceCount == 0) {
         std::cout << "failed to find GPUs with Vulkan support!";

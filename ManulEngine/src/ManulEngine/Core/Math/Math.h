@@ -48,3 +48,10 @@ struct Vector4Color
     uint8_t b;
     uint8_t a;
 };
+struct Vector4
+{
+    float x;
+    float y;
+    float z;
+    float w;
+};

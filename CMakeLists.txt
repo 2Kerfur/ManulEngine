@@ -53,6 +53,7 @@ include_directories("ManulEngine/src"
 					"external/glm"
 					"external/imgui/include"
 					"external/imgui/backends"
+					"external/FreeImage/Dist/x64"
 					#"external/openal-soft/include"
 )
 
@@ -125,14 +126,21 @@ add_executable(ManulEngine WIN32
 		"ManulEngine/src/ManulEngine/Audio/OpenAL/OpenALBackend.cpp" 
 		"ManulEngine/src/ManulEngine/Audio/OpenAL/OpenALBackend.h"
 		"ManulEngine/src/ManulEngine/Audio/FMOD/FMODBackend.cpp"
-		"ManulEngine/src/ManulEngine/Audio/FMOD/FMODBackend.h")
+		"ManulEngine/src/ManulEngine/Audio/FMOD/FMODBackend.h" 
+		"ManulEngine/src/ManulEngine/Core/Scene.h" 
+		"ManulEngine/src/ManulEngine/Core/Scene.cpp" 
+		"ManulEngine/src/Platform/OpenGL/OpenGLSkybox.cpp" 
+		"ManulEngine/src/Platform/OpenGL/OpenGLSkybox.h" 
+		"ManulEngine/src/Platform/OpenGL/OpenGLScreenShot.h"
+		"external/FreeImage/Dist/x64/FreeImage.h" "ManulEngine/src/Platform/OpenGL/OpenGLScreenShot.cpp")
 
 #target_link_directories(ManulEngine PUBLIC "external/openal-soft/MinSizeRel")
 target_link_directories(ManulEngine PUBLIC "external/glfw/bin/src/MinSizeRel")
+target_link_directories(ManulEngine PUBLIC "external/FreeImage/Dist/x64")
+
 target_precompile_headers(ManulEngine PRIVATE ManulEngine/src/mapch.h)
 #target_link_libraries(ManulEngine glfw3 glad zlib vulkan-1)
-target_link_libraries(ManulEngine glfw3 glad imgui vulkan-1)
+target_link_libraries(ManulEngine glfw3 glad imgui vulkan-1 freeimage)
 #target_link_libraries(ManulEngine glfw glad imgui winmm OpenAL32) #я "точно" добалю поддержку openAL
-#target_link_libraries(ManulEngine glfw glad imgui)
 set_target_properties(ManulEngine PROPERTIES LINKER_LANGUAGE CXX)
 target_compile_features(ManulEngine PRIVATE cxx_std_20)
